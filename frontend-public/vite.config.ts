@@ -8,7 +8,6 @@ export default defineConfig({
     proxy: {
       '/incidents': 'http://localhost:8000',
       '/stats':     'http://localhost:8000',
-      '/ai':        'http://localhost:8000',
     },
   },
   build: {
