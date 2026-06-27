@@ -135,6 +135,17 @@ def get_stats():
         }
     except Exception as e:
         raise HTTPException(500, str(e))
+    
+@app.get("/incidents/slug/{slug}")
+async def get_incident_by_slug(slug: str):
+    from boto3.dynamodb.conditions import Attr
+    result = table.scan(
+        FilterExpression=Attr("slug").eq(slug) & Attr("status").eq("published")
+    )
+    items = result.get("Items", [])
+    if not items:
+        raise HTTPException(status_code=404, detail="Entry not found")
+    return items[0]
 
 
 @app.post("/incidents", status_code=201)
