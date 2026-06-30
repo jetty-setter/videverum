@@ -16,7 +16,7 @@ Routes:
 import os, json, hashlib, re
 from datetime import datetime, timezone
 from typing import Optional
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, Header, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from mangum import Mangum
 from pydantic import BaseModel
@@ -26,11 +26,20 @@ import httpx
 
 app = FastAPI(title="Vide Verum Admin API")
 
+
+def parse_allowed_origins() -> list[str]:
+    raw = os.getenv(
+        "CORS_ALLOWED_ORIGINS",
+        "http://localhost:5173,http://localhost:5174,https://videverum.stephsimmons.dev,https://admin.videverum.stephsimmons.dev",
+    )
+    return [origin.strip() for origin in raw.split(",") if origin.strip()]
+
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Lock down to your CloudFront domain in production
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=parse_allowed_origins(),
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "X-Admin-Token"],
 )
 
 # ── DynamoDB ────────────────────────────────────────────────────────────────
@@ -39,9 +48,38 @@ AWS_REGION  = os.getenv("AWS_REGION", "us-east-1")
 dynamo      = boto3.resource("dynamodb", region_name=AWS_REGION)
 table       = dynamo.Table(TABLE_NAME)
 
-# ── Anthropic API ────────────────────────────────────────────────────────────
+# ── Admin + AI configuration ────────────────────────────────────────────────
+ADMIN_API_TOKEN = os.getenv("ADMIN_API_TOKEN", "")
 ANTHROPIC_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+ANTHROPIC_KEY_PARAM_NAME = os.getenv("ANTHROPIC_KEY_PARAM_NAME", "")
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
+
+
+def require_admin(x_admin_token: Optional[str] = Header(default=None)) -> None:
+    """Protect admin-only routes in portfolio/demo deployments.
+
+    If ADMIN_API_TOKEN is missing, fail closed instead of accidentally exposing
+    write-capable admin behavior on a public Lambda URL.
+    """
+    if not ADMIN_API_TOKEN:
+        raise HTTPException(status_code=503, detail="Admin API token is not configured")
+    if x_admin_token != ADMIN_API_TOKEN:
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
+
+def get_anthropic_key() -> str:
+    """Load the draft-assistant credential from env or SSM Parameter Store."""
+    global ANTHROPIC_KEY
+
+    if ANTHROPIC_KEY:
+        return ANTHROPIC_KEY
+    if not ANTHROPIC_KEY_PARAM_NAME:
+        return ""
+
+    ssm = boto3.client("ssm", region_name=AWS_REGION)
+    response = ssm.get_parameter(Name=ANTHROPIC_KEY_PARAM_NAME, WithDecryption=True)
+    ANTHROPIC_KEY = response["Parameter"]["Value"]
+    return ANTHROPIC_KEY
 
 
 # ── Models ────────────────────────────────────────────────────────────────────
@@ -113,7 +151,7 @@ def health():
 
 
 @app.get("/stats")
-def get_stats():
+def get_stats(_: None = Depends(require_admin)):
     try:
         # Scan is fine for a small editorial database (<10k items)
         resp = table.scan(
@@ -138,7 +176,6 @@ def get_stats():
     
 @app.get("/incidents/slug/{slug}")
 async def get_incident_by_slug(slug: str):
-    from boto3.dynamodb.conditions import Attr
     result = table.scan(
         FilterExpression=Attr("slug").eq(slug) & Attr("status").eq("published")
     )
@@ -149,7 +186,7 @@ async def get_incident_by_slug(slug: str):
 
 
 @app.post("/incidents", status_code=201)
-def create_incident(data: IncidentCreate):
+def create_incident(data: IncidentCreate, _: None = Depends(require_admin)):
     incident_id = make_id(f"{data.title}-{now_iso()}")
     item = incident_to_item(incident_id, {
         **data.dict(),
@@ -169,7 +206,11 @@ def list_incidents(
     tier: Optional[str] = None,
     era: Optional[str] = None,
     limit: int = Query(50, le=200),
+    x_admin_token: Optional[str] = Header(default=None),
 ):
+    if status != "published":
+        require_admin(x_admin_token)
+
     try:
         if status:
             resp = table.query(
@@ -189,17 +230,21 @@ def list_incidents(
             items = [i for i in items if i.get("era") == era]
 
         return {"items": items, "count": len(items)}
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(500, str(e))
 
 
 @app.get("/incidents/{incident_id}")
-def get_incident(incident_id: str):
+def get_incident(incident_id: str, x_admin_token: Optional[str] = Header(default=None)):
     try:
         resp = table.get_item(Key={"incident_id": incident_id})
         item = resp.get("Item")
         if not item:
             raise HTTPException(404, "Incident not found")
+        if item.get("status") != "published":
+            require_admin(x_admin_token)
         return item
     except HTTPException:
         raise
@@ -208,7 +253,7 @@ def get_incident(incident_id: str):
 
 
 @app.put("/incidents/{incident_id}")
-def update_incident(incident_id: str, data: IncidentUpdate):
+def update_incident(incident_id: str, data: IncidentUpdate, _: None = Depends(require_admin)):
     try:
         item = incident_to_item(incident_id, data.dict())
         table.put_item(Item=item)
@@ -218,7 +263,7 @@ def update_incident(incident_id: str, data: IncidentUpdate):
 
 
 @app.post("/incidents/{incident_id}/publish")
-def publish_incident(incident_id: str):
+def publish_incident(incident_id: str, _: None = Depends(require_admin)):
     try:
         resp = table.get_item(Key={"incident_id": incident_id})
         item = resp.get("Item")
@@ -247,7 +292,7 @@ def publish_incident(incident_id: str):
 
 
 @app.post("/incidents/{incident_id}/unpublish")
-def unpublish_incident(incident_id: str):
+def unpublish_incident(incident_id: str, _: None = Depends(require_admin)):
     try:
         table.update_item(
             Key={"incident_id": incident_id},
@@ -261,7 +306,7 @@ def unpublish_incident(incident_id: str):
 
 
 @app.delete("/incidents/{incident_id}")
-def delete_incident(incident_id: str):
+def delete_incident(incident_id: str, _: None = Depends(require_admin)):
     try:
         table.delete_item(Key={"incident_id": incident_id})
         return {"deleted": incident_id}
@@ -271,9 +316,10 @@ def delete_incident(incident_id: str):
 
 # ── AI Draft ──────────────────────────────────────────────────────────────────
 @app.post("/ai/draft")
-async def ai_draft(req: AIDraftRequest):
-    if not ANTHROPIC_KEY:
-        raise HTTPException(500, "ANTHROPIC_API_KEY not configured")
+async def ai_draft(req: AIDraftRequest, _: None = Depends(require_admin)):
+    anthropic_key = get_anthropic_key()
+    if not anthropic_key:
+        raise HTTPException(500, "Anthropic credential not configured")
 
     system = """You are the editorial AI for Vide Verum, a credible UAP encyclopedia written for curious everyday people.
 
@@ -356,13 +402,14 @@ Return ONLY valid JSON (no markdown, no backticks, no preamble):
 
     try:
         async with httpx.AsyncClient(timeout=30) as client:
+            headers = {
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            }
+            headers["x-api-key"] = anthropic_key
             resp = await client.post(
                 ANTHROPIC_URL,
-                headers={
-                    "x-api-key": ANTHROPIC_KEY,
-                    "anthropic-version": "2023-06-01",
-                    "content-type": "application/json",
-                },
+                headers=headers,
                 json={
                     "model": "claude-haiku-4-5",
                     "max_tokens": 2000,
