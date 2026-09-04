@@ -1,0 +1,2516 @@
+{
+  "exported_count": 13,
+  "format": "dynamodb-json",
+  "items": [
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": true
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "military_response"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The Battle of Los Angeles is worth examining carefully because of what the official record actually shows, not what people claim it shows. Two cabinet secretaries gave contradictory accounts within hours of the same event. The Secretary of the Navy said nothing happened. The Secretary of War said fifteen unidentified aircraft were over the city. Both cannot be right, and neither explanation was ever proven.\n\nThe weather balloon explanation has the same problem it always has. Witnesses who were aiming anti-aircraft guns at something for nearly an hour, tracking it with searchlights, watching it move, were told afterward that they had been shooting at a balloon. The 1983 Air Force review reached the same conclusion four decades later without access to any evidence that had not already been available in 1942. That is not an investigation. That is a filing decision.\n\nWhat makes this case a legitimate entry in the historical record is not that the object was extraordinary. It is that the official response was incoherent, the explanation was contested by the people present, and no version of events was ever formally substantiated. The fog of war is a real thing. So is the institutional tendency to close a file without closing the question."
+      },
+      "date_display": {
+        "S": "February 25, 1942"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "1942-02-25"
+      },
+      "era": {
+        "S": "Pre-modern (before 1947)"
+      },
+      "hook": {
+        "S": "In the early morning hours after Pearl Harbor, the U.S. military fired over 1,400 rounds of anti-aircraft ammunition at an unidentified object hovering over Los Angeles\u2014and the official explanation has never fully satisfied the witnesses who were there."
+      },
+      "incident_id": {
+        "S": "VV-99134D854289"
+      },
+      "lat": {
+        "S": "34.0522"
+      },
+      "lng": {
+        "S": "-118.2437"
+      },
+      "location_name": {
+        "S": "Los Angeles, California"
+      },
+      "narrative": {
+        "S": "Air raid sirens sounded at 2:25 a.m. throughout Los Angeles County on February 25, 1942. The city was still raw from Pearl Harbor, just over two months behind them, and had been on high alert ever since. When the sirens wailed that morning, the assumption was immediate: enemy aircraft. The military response was equally immediate. At 3:16 a.m., the 37th Coast Artillery Brigade began firing .50-caliber machine guns and 12.8-pound anti-aircraft shells into the air. Over 1,400 shells were eventually fired. The artillery fire continued sporadically until 4:14 a.m. \n\nBut what was actually happening remained unclear then, and remains contested now. Civilians across Los Angeles watched from their homes and streets as lights filled the sky and shells burst overhead. Many reported seeing a large, slow-moving object caught in the searchlight beams. Army personnel at the anti-aircraft batteries reported the same thing. The Los Angeles Times published a photograph on February 26 showing multiple searchlight beams converging on an object in the pre-dawn sky, ringed by anti-aircraft bursts. The official military account, released hours later, stated that the gunfire had been directed at an unidentified aircraft, though no aircraft wreckage was ever found, no bombs fell, and no enemy had claimed responsibility. The speed and altitude of the object, as estimated by witnesses and gunners, did not match any known aircraft of the era, Japanese or American.\n\nSecretary of the Navy Frank Knox called the incident a false alarm caused by jittery nerves. Secretary of War Henry Stimson contradicted him, insisting as many as 15 unidentified aircraft had appeared over Los Angeles, suggesting they might be commercial planes flown by enemy agents from secret airfields in Mexico. Stimson later walked back those claims. The weather balloon explanation eventually became the official narrative. It appeared in newspapers and historical records. Yet the people who had been there... the anti-aircraft gunners who had aimed and fired for nearly an hour, the searchlight operators who had tracked the object, the civilians who had watched it move with apparent deliberation... were not convinced. Their descriptions of what they saw did not match weather balloons. The object in the searchlights had been too large, too slow, too controlled in its movement. \n\nIn 1983, the U.S. Office of Air Force History attributed the event to a case of war nerves triggered by a lost weather balloon and exacerbated by stray flares and shell bursts from adjoining batteries. No public investigation had been conducted in the intervening four decades. Congress was not informed. The object was not tracked on radar, or if it was, those records remain classified or lost. The physical evidence, if any existed, was never publicly presented. The Los Angeles Times photograph, which showed searchlight beams dramatically converging on a bright patch in the night sky, had been heavily retouched using standard newspaper printing practice of the era to enhance contrast in black and white photographs, which caused the flak explosions to blur into a single solid shape. \n\nWhat actually occurred on the morning of February 25, 1942, remains a gap in the historical record. After the war, Japan stated it had no planes over Los Angeles at the time of the alert. Wartime secrecy and the rapid shift in the official explanation mean that the most credible eyewitness accounts come from people who had no reason to misrepresent what they saw, yet those accounts were never consolidated into a complete picture. "
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-25T00:28:19.830030+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "the-battle-of-los-angeles"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Army Report on Air Raid Incident, Los Angeles, February 25\u201326, 1942"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "http://www.sfmuseum.org/hist9/aaf2.html"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Los Angeles Times coverage, February 25\u201326, 1942"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.latimes.com/archives"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "U.S. Army Air Forces Official Statement, February 26, 1942"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.archives.gov"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "The Great Los Angeles Air Raid Terrified Citizens\u2014Even Though No Bombs Were Dropped"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.smithsonianmag.com/history/great-los-angeles-air-raid-terrified-citizenseven-though-no-bombs-were-dropped-180967890"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "wartime"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_explanation"
+          },
+          {
+            "S": "unexplained"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "The Battle of Los Angeles"
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:28:19.830044+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "Sweden, Norway, Finland"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "military_involvement"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The Ghost Rockets arrived at a specific and revealing moment. World War II had just ended. The Soviet Union was the new unknown. Every government in the region had an obvious explanation ready: it must be the Russians testing captured German rocket technology. Sweden investigated seriously, escalated appropriately, and ultimately could not make that explanation fit the evidence. The objects did not behave like rockets. They did not behave like any aircraft anyone could account for.\n\nWhat the Ghost Rockets established, a full year before Kenneth Arnold and two years before Roswell, was that this was not an American phenomenon. Sweden had no cultural framework for flying saucers. Their military had no incentive to sensationalize. They investigated because credible people were reporting something real, and they closed the investigation without an answer because they could not find one.\n\nThe pattern that would define UAP history for the next eighty years was already present in 1946: serious witnesses, formal military investigation, institutional escalation, and no conclusion."
+      },
+      "date_display": {
+        "S": "Summer 1946"
+      },
+      "date_precision": {
+        "S": "month"
+      },
+      "date_sort": {
+        "S": "1946-06-01"
+      },
+      "era": {
+        "S": "Pre-modern (before 1947)"
+      },
+      "hook": {
+        "S": "In the summer of 1946, hundreds of Swedes reported seeing fast-moving objects streak across their skies\u2014and the Swedish military took it seriously enough to launch a formal investigation that found no explanation."
+      },
+      "incident_id": {
+        "S": "VV-B7BE569AD73F"
+      },
+      "lat": {
+        "S": "62.0"
+      },
+      "lng": {
+        "S": "15.0"
+      },
+      "location_name": {
+        "S": "Sweden, Norway, Finland"
+      },
+      "narrative": {
+        "S": "Starting in June 1946, Swedish newspapers began reporting sightings of strange objects moving rapidly through Scandinavian airspace. The objects were described as cigar or torpedo-shaped, often glowing or leaving trails. Unlike typical aircraft, witnesses said they moved at extraordinary speeds and sometimes reversed direction. The sightings were not isolated incidents confined to one location. Over the course of several months, reports came from across Sweden, Norway, and Finland, and they involved credible witnesses including military personnel, police officers, and civilians in a position to observe unusual aircraft activity.\n\nThe Swedish military took the reports seriously enough to establish a formal investigation. Swedish military intelligence concluded that the majority of sightings could not be identified through conventional explanations. The objects did not match any known Swedish, Norwegian, or Finnish aircraft. Initial speculation focused on Soviet aircraft, given the geopolitical climate in the region following World War II, but Soviet officials denied responsibility. American and British intelligence services were monitoring the Swedish investigation closely, concerned the objects represented Soviet testing of captured German rocket technology. Neither government reached a conclusion either. The military also considered the possibility of misidentifications of celestial phenomena or conventional aircraft, but the pattern of reports and the consistency of witness descriptions did not support those explanations for the majority of cases.\n\nWhat made the Swedish investigation credible was its rigor and the source of the witnesses. Military radar operators reported tracking objects that exhibited flight characteristics inconsistent with known technology. A Swedish pilot reported a visual sighting of an object he could not identify. Police departments filed formal reports. The sheer volume of sightings, concentrated in a small geographic area over a defined time period, ruled out explanations based on rare misperceptions. Swedish military documents from the investigation were later declassified and reviewed by researchers, confirming that the Swedish defense establishment had treated the matter as a legitimate air defense concern.\nBy autumn 1946, the frequency of sightings declined. The Swedish military never arrived at a definitive explanation for what had been observed. No physical evidence was recovered. No crashed objects were found despite aerial searches. \n\nThe investigation was eventually closed without resolution. The sightings would later be grouped under the informal label \"Ghost Rockets,\" a term that reflected both their ephemeral nature and the inability to pin down their origin or purpose.\nThe Ghost Rockets remain one of the earliest organized military investigations into unidentified aerial phenomena in the post-World War II era. They preceded the more famous American sightings that would prompt the U.S. Air Force's own investigations. The case demonstrates that concern about unexplained aerial activity was not confined to the United States and that credentialed military observers in multiple countries were documenting objects they could not explain.\n"
+      },
+      "physical_evidence": {
+        "BOOL": false
+      },
+      "published_at": {
+        "S": "2026-06-25T00:15:40.453431+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "scandinavian-ghost-rockets"
+      },
+      "source_type": {
+        "S": "military|government|civilian"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Swedish Military Intelligence Investigation of Ghost Rocket Sightings, 1946"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.history.com/topics/history-of-ghost-rockets"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "The Ghost Rockets of 1946: A Historical Analysis"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": ""
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "UFO: The Government Files"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.worldcat.org/title/ufo-the-government-files/oclc/35627539"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Swedish Defense Ministry Declassifies Ghost Rocket Documents"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.bibliotecapleyades.net/ciencia/ufo_briefingdocument/1946.htm"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "CIA Central Intelligence Group memo on Ghost Rockets, August 22, 1946"
+              },
+              "type": {
+                "S": "CIA Reading Room"
+              },
+              "url": {
+                "S": "https://www.cia.gov/readingroom/docs/1946-08-23.pdf"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "international"
+          },
+          {
+            "S": "cold_war"
+          },
+          {
+            "S": "official_investigation"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Scandinavian Ghost Rockets"
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:15:40.453452+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "What makes Levelland hard to dismiss is the geometry of it. Fifteen witnesses. Different roads. Different directions from town. No way to communicate with each other in real time on a rural Texas night in 1957. And every one of them describing the same object doing the same thing to their vehicles in the same sequence: approach, engine dies, object departs, engine restarts.\n\nThat pattern is not what ball lightning does. Ball lightning does not travel across a county, stop engines on multiple roads miles apart, and disappear at dawn. The Air Force investigator who reached that conclusion spent seven hours in town and interviewed three of the fifteen people who called in. Hynek later said he was not proud of signing off on it. McDonald said it plainly to Congress: there was no storm.\n\nWhat Levelland adds to the record is something specific. It is not a light in the sky that could be anything. It is a documented physical effect, consistent across independent witnesses, on mechanical systems that should not be affected by any known natural phenomenon. Whatever was over Hockley County that night, it was interacting with the physical world in a measurable way. That detail has never been explained. It has only been closed."
+      },
+      "date_display": {
+        "S": "November 2\u20133, 1957"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "1957-11-02"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "On a single November night in West Texas, over a dozen people reported seeing a glowing object cross the sky, and multiple witnesses independently described the same bizarre effects on their vehicles."
+      },
+      "incident_id": {
+        "S": "VV-17D72236E741"
+      },
+      "lat": {
+        "S": "33.5831"
+      },
+      "lng": {
+        "S": "-102.3816"
+      },
+      "location_name": {
+        "S": "Levelland, Texas"
+      },
+      "narrative": {
+        "S": "On the night of November 2, 1957, farm worker Pedro Saucedo was driving a pickup truck on a rural road four miles west of Levelland when his engine died. He watched as a bright, torpedo-shaped object passed directly overhead with a sound like thunder and a rush of wind. The light was so intense he could feel heat radiating from it. When the object moved away, his engine restarted without him touching anything. He drove to the Levelland police station and reported what he had seen. The officer on duty assumed it was a prank and made no record of it.\n\nAn hour later a second call came in. Then a third. Then a fourth. Over the next few hours, more than a dozen independent witnesses called police from different locations across Hockley County. Each reported seeing a large, luminous object in the sky. Most described it as egg or cigar-shaped, glowing with an intense white or reddish light. The pattern that repeated across nearly every report was the same: car engines stalled as the object approached and restarted after it departed. Headlights went out. At least one witness reported his radio cutting out during the encounter. The reports came from farmers, truck drivers, and oil field workers spread across different roads around the town and along US Route 385. None appeared to know each other or to have coordinated their accounts.\n\nBy the time the night ended, the pattern had extended to law enforcement. Sheriff Weir Clem and his deputy Pat McCullough were actively searching around 1:00 a.m. when Clem personally observed a brilliant red football-shaped light illuminating the road ahead before it streaked across the sky. Texas Highway Patrol officers Lee Hargrove and Floyd Cavia, patrolling the same area, reported sky flashes matching the timing and position of Clem's sighting. Fire chief Roy Jones, assisting in the search north of Levelland around the same time, experienced his own vehicle's lights dimming and engine faltering as a streaking light passed nearby. By dawn, Levelland police had documented accounts from at least fifteen witnesses. The Levelland Daily News covered the story prominently on November 3, interviewing several witnesses by name.\n\nProject Blue Book sent a single investigator to Levelland. He spent seven hours in town, interviewed three of the fifteen witnesses, and concluded that the sightings were caused by ball lightning or St. Elmo's fire from a severe electrical storm. There was no severe electrical storm that night. J. Allen Hynek, who concurred with the ball lightning explanation at the time, later wrote that he was not proud of that conclusion, reached hastily on the basis of incomplete information. James McDonald, testifying before the U.S. House of Representatives in 1968, stated plainly that there was no lightning or thunderstorm, only a trace of rain, and that the vehicle stoppages across multiple independent locations had no conventional explanation.\n\nThe 1957 Levelland case remains among the most documented examples of electromagnetic vehicle interference in UAP history. The pattern of engine stalling and restarting in proximity to an unidentified object was reported by fifteen independent witnesses across a wide geographic area in a single night. The Air Force's official explanation has never been revised. The case has never been formally reopened."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-26T20:10:33.703416+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "levelland"
+      },
+      "source_type": {
+        "S": "civilian"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Levelland Daily News, November 3, 1957 \u2014 UFO sightings coverage"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.newspapers.com/paper/levelland-daily-sun-news/18194/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Project Blue Book Case Files \u2014 Levelland, Texas, November 2\u20133, 1957"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.bluebookarchive.org/page.aspx?pageid=100-8654-1"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Hynek, J. Allen. The UFO Experience: A Scientific Inquiry. Ballantine Books, 1972. (Discussion of Levelland case, pp. 98\u2013102)"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "https://archive.org/details/ufoexperiencesci00hyne"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Keel, John A. Strange Creatures from Time and Space. Fawcett Crest, 1970. (Early detailed account of Levelland witnesses and Blue Book response)"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.worldcat.org/title/strange-skies-pilot-encounters-with-ufos/oclc/47009921"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "McDonald, James"
+              },
+              "type": {
+                "S": "Congressional"
+              },
+              "url": {
+                "S": "https://www.govinfo.gov/content/pkg/CHRG-90hhrg/pdf/CHRG-90hhrg.pdf"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "civilian"
+          },
+          {
+            "S": "vehicle_interference"
+          },
+          {
+            "S": "electromagnetic_effects"
+          },
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "official_investigation"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Levelland"
+      },
+      "updated_at": {
+        "S": "2026-06-26T20:10:33.703448+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United Kingdom"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "sensor_corroboration"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "What separates Rendlesham from most UAP cases is the documentary record. This is not a case that rests on memory alone. There is a formal memo filed with the Ministry of Defence two weeks after the incident by the deputy base commander, written on official letterhead, describing structured objects, physical traces, and radiation readings. There is an audio tape recorded in real time as Halt and his team moved through the forest. There are written witness statements from the airmen involved, filed in the days immediately following the events. The paper trail exists and it is official.\nWhat the paper trail does not do is resolve the case. Halt and Conrad, two senior officers at the same base who both had access to the same information, reached opposite conclusions about what their men had witnessed and whether it was significant. That disagreement has never been reconciled. The witnesses who went into the forest on the first night maintained for decades that they encountered something genuinely unexplained. The base commander said it was nothing. Both men are credentialed. Both were there.\n\nThe detail that stays with you is the tape. Halt did not write his account from memory days later. He narrated it in the dark, in the forest, as it was happening. Whatever he was looking at when he said what he said, he was looking at it in that moment. That is a different kind of evidence than testimony, and Rendlesham is one of the very few UAP cases that has it."
+      },
+      "date_display": {
+        "S": "December 26\u201328, 1980"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "1980-12-26"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "U.S. Air Force officers stationed in England reported a structured craft with steady lights moving through a forest near their base, followed by a second sighting three nights later that left physical evidence on the ground."
+      },
+      "incident_id": {
+        "S": "VV-65875E0B1446"
+      },
+      "lat": {
+        "S": "52.0917"
+      },
+      "lng": {
+        "S": "1.4167"
+      },
+      "location_name": {
+        "S": "Rendlesham Forest, near RAF Bentwaters and RAF Woodbridge"
+      },
+      "narrative": {
+        "S": "At around 3 a.m. on December 26, 1980, a security patrol near the east gate of RAF Woodbridge spotted lights descending into the nearby Rendlesham Forest. Thinking an aircraft might have crashed, the patrol requested permission to investigate. Staff Sergeant Jim Penniston, Airman John Burroughs, and Airman Edward Cabansag entered the forest on foot. According to their accounts, they encountered a glowing object among the trees that appeared to move away from them as they approached. Penniston later described a structured craft with colored lights that he followed through the forest until it rose and disappeared. Burroughs and Cabansag described lights that moved and appeared to retreat. All three reported the experience as unlike anything they had encountered before.\n\nThe following morning, servicemen returned to a clearing near the eastern edge of the forest and found three small indentations in the ground arranged in a triangular pattern, with what appeared to be burn marks and broken branches on nearby trees. The marks were measured and photographed. Local police were called and examined the impressions, noting they could have been made by an animal, though they offered no definitive conclusion.\n\nTwo nights later, on December 27-28, Deputy Base Commander Lieutenant Colonel Charles Halt led a larger team back into the forest after reports of lights reappearing. Halt brought a handheld tape recorder and documented the investigation in real time. His team used Geiger counters to take radiation readings in the area of the indentations, recording levels they considered unusual, with peak readings in the three depressions and near the center of the triangle they formed. Halt's tape recorded his observations as they happened, including lights moving through the trees and objects appearing to break apart and move in multiple directions. The recording would later become the most direct contemporaneous evidence of what the witnesses experienced that night. \n\nHalt subsequently filed a formal memo to the UK Ministry of Defence, dated January 13, 1981, with the subject line \"Unexplained Lights.\" The memo described the objects, the physical traces, and the radiation readings. It was not classified. Obtained through Freedom of Information Act requests in 1983, it became the documentary foundation of the case. No formal US Air Force investigation followed. Base commander Colonel Ted Conrad later stated that he found no evidence of anything extraordinary and that no cover-up had occurred. Halt disagreed and has maintained in subsequent statements that what his team witnessed could not be conventionally explained.\n\nThe Rendlesham case rests on several distinct elements that have kept it in serious discussion for decades: contemporaneous witness statements from trained military personnel, a real-time audio recording made during the second investigation, a formal memo from a senior officer filed with the Ministry of Defence, and physical traces on the ground examined by multiple parties. The origin and nature of what those witnesses encountered in the forest in December 1980 has never been officially determined."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-26T20:23:36.667291+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "rendlesham-forest-incident-december-1980"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Halt's official report to USAF Europe (also known as the 'Rendlesham Document' or 'Halt Memo')"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.dtic.mil/cgi-bin/GetTRDoc?AD=A951573"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Jenny Randles' original 1983 publication in 'FSR' (Flying Saucer Review)"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.worldcat.org/title/ufo-crash-landing/oclc/39275628"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Colonel Halt's audio tape recording from December 28, 1980"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.ianridpath.com/ufo/rendleshamtape.html"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "RAF Bentwaters and RAF Woodbridge incident files (UK National Archives)"
+              },
+              "type": {
+                "S": "Declassified documentation"
+              },
+              "url": {
+                "S": "https://discovery.nationalarchives.gov.uk/details/r/C11931"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Halt, Charles I. and Salas, Luis E. 'Declassified: The Rendlesham Forest Incident'"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.worldcat.org/title/halt-perspective/oclc/958435849"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "nuclear"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "credible_witnesses"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Rendlesham Forest Incident (December 1980)"
+      },
+      "updated_at": {
+        "S": "2026-06-26T20:23:36.667302+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "sensor_corroboration"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The Socorro case has a quality that most UAP incidents don't. It isn't asking you to trust a radar return or a declassified document. It's asking you to look at a patch of ground that multiple investigators examined within hours of the event, ground that showed burn patterns, compaction, and disturbed soil in a configuration consistent with exactly what Zamora described, and decide what you think made those marks.\n\nThe Air Force couldn't explain it. Hynek, who spent years trying to find conventional explanations for Blue Book cases, called it the best documented case on record and said the investigation failed. The symbol was withheld from the public as a verification tool, which means the people in charge of the investigation immediately understood they were dealing with something they needed to protect the integrity of. That is not how you handle a weather balloon or a hoax.\n\nWhat stays with you about Zamora is not the object. It's the figures. Two small humanoids in white coveralls, standing beside a craft in an arroyo in New Mexico on a Friday afternoon, who looked up when a police officer approached and went back inside. Zamora never claimed to know what they were. He described what he saw and let it sit there. He spent the rest of his life doing the same."
+      },
+      "date_display": {
+        "S": "April 24, 1964"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "1964-04-24"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "A police officer chasing a speeding car abandoned his pursuit to follow a bright flame descending over the New Mexico desert, leading to the most thoroughly documented UFO sighting by a credentialed witness."
+      },
+      "incident_id": {
+        "S": "VV-79EA3D5A85BE"
+      },
+      "lat": {
+        "S": "34.0489"
+      },
+      "lng": {
+        "S": "-106.9033"
+      },
+      "location_name": {
+        "S": "Socorro, New Mexico"
+      },
+      "narrative": {
+        "S": "Lonnie Zamora had served on the Socorro police force for five years when he saw it. He was driving south on the outskirts of town on the afternoon of April 24, 1964, pursuing a speeding car, when he noticed a bright blue and orange flame descending over the desert to his left. The flame was vivid enough that Zamora abandoned the pursuit and turned toward it. What he would report seeing in the next few minutes would become one of the most scrutinized law enforcement UAP accounts in American history. \n\nZamora drove toward the flame and stopped about 150 yards from an object resting on four legs in an arroyo. According to his detailed account to investigators, the object was oval or egg-shaped, roughly 15 to 20 feet long, and whitish against the mesa background, like aluminum but not chrome. He described two figures in white overalls beside the craft, normal in shape but possibly small adults or large kids. The figures seemed to notice him. As he approached on foot, he heard loud sounds from the craft. The figures vanished with what sounded like two doors closing. Within seconds the object lifted off with a roar of blue and orange flame underneath it, rose quickly, and disappeared over a ridge to the southwest. Zamora dropped his glasses on the ground as he moved away from the object. \n\nOn the side of the craft, Zamora observed a red symbol. Investigators advised him not to describe the symbol publicly, releasing a different version to help identify potential hoaxers. The actual symbol, drawn by Dr. J. Allen Hynek in September 1964, was later revealed in a declassified Air Force document. The deliberate withholding of the true symbol as a verification tool was itself a sign that investigators took the account seriously from the beginning. \n\nWhat distinguishes this account from countless others is what happened next. Socorro police sergeant Sam Chavez arrived within ten to fifteen minutes and found Zamora excited and frightened. Together they examined the landing site. They found the grass still warm and burned, crushed vegetation where the object had rested, and disturbed soil consistent with heavy weight bearing down on four points. Within hours, Army Captain Richard T. Holder arrived from nearby White Sands Missile Range, interviewed Zamora, and secured the landing site with military police. Holder found nothing to indicate a hoax and concluded the physical evidence supported Zamora's account. By the next day, Dr. J. Allen Hynek was in Socorro conducting interviews and collecting soil samples.\n\nHynek's investigation, documented in official Blue Book files, found Zamora to be credible and his account consistent. Hynek wrote that Socorro was the best-documented case on record and that despite thorough investigation, investigators had been unable to find the vehicle or other stimulus that had frightened Zamora to the point of panic. The Air Force classified the incident as Unidentified. Zamora gave consistent accounts throughout his life and never wavered from his core description. He died in 2009. The landing site has been photographed and revisited by researchers for decades. No explanation that accounts for all the physical evidence has ever been offered."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-26T19:51:00.651901+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "lonnie-zamora-s-close-encounter"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Project Blue Book Case File: Socorro, New Mexico (April 24, 1964)"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://catalog.archives.gov/id/595466"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "J. Allen Hynek investigation report and soil sample analysis"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "https://www.ufoevidence.org/cases/case90.htm"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "The UFO Experience: A Scientific Inquiry by J. Allen Hynek"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.hynek.org/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Socorro incident contemporaneous newspaper coverage (April 25, 1964 onwards)"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://news.google.com/newspapers?q=Socorro+UFO+1964"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "FBI documentation on Socorro incident"
+              },
+              "type": {
+                "S": "FOIA release"
+              },
+              "url": {
+                "S": "https://vault.fbi.gov/UFO/UFO%20Part%201%20of%2016/view"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "credentialed_witness"
+          },
+          {
+            "S": "close_encounter"
+          }
+        ]
+      },
+      "tier": {
+        "S": "featured"
+      },
+      "title": {
+        "S": "Lonnie Zamora's Close Encounter"
+      },
+      "updated_at": {
+        "S": "2026-06-26T19:51:00.651912+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": true
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "created_at": {
+        "S": "2026-06-25T00:37:39.429949+00:00"
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "credentialed_witness"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "multiple_corroborating_reports"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The Arnold sighting matters less for what Arnold saw than for what happened after he reported it. A credentialed pilot with 4,000 flight hours filed a detailed, consistent account with the military and the FBI. The Army Air Forces took it seriously enough to launch a formal investigation program. And then a journalist misquoted the description of the objects' motion as a description of their shape, and the term \"flying saucer\" entered the language and never left.\n\nThat misquotation is one of the most consequential errors in the history of this subject. It framed every subsequent sighting around a shape Arnold never described. It gave the phenomenon a cartoonish visual identity that made serious inquiry harder for decades. The irony is that Arnold himself spent the rest of his life frustrated by what the press had done with his account.\n"
+      },
+      "date_display": {
+        "S": "June 24, 1947"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "1947-06-24"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "On June 24, 1947, a private pilot reported seeing nine gleaming objects moving at supersonic speeds near Mount Rainier, a sighting that would launch the modern UFO era and introduce the term 'flying saucer' to the American vocabulary."
+      },
+      "incident_id": {
+        "S": "VV-7C2AC552F0FF"
+      },
+      "lat": {
+        "S": "46.85"
+      },
+      "lng": {
+        "S": "-121.76"
+      },
+      "location_name": {
+        "S": "Near Mount Rainier, Washington"
+      },
+      "narrative": {
+        "S": "Kenneth Arnold was a 32-year-old businessman and experienced pilot with approximately 4,000 hours of flying time logged, and a member of an Idaho search and rescue unit. On the afternoon of June 24, 1947, he was flying his single-engine CallAir A-2 from Chehalis to Yakima, Washington, when he noticed a bright flash of light off his left wing. Looking in that direction, Arnold saw a chain of nine objects moving in formation from north to south, traveling at high speed against the peaks of the Cascade Range. He watched them for roughly two minutes as they crossed the valley ahead of him. \n\nArnold described the objects to investigators and to the press in the days that followed. He said they were flat and crescent-shaped, and that they moved by skipping or weaving in a manner he compared to the motion of a saucer skipped across water. He timed the formation's passage between Mount Rainier and Mount Adams, a distance of around 50 miles, in one minute and forty-two seconds. When he later calculated the speed, it came to over 1,700 miles per hour. Not knowing the exact distance where the objects faded from view, Arnold conservatively rounded this down to 1,200 miles per hour for the press, still far faster than any known aircraft of the era. The objects had no visible exhaust or sound, and they appeared to be reflective or luminous. Arnold told investigators that the formation stayed together and the objects maintained their heading without deviation. \n\nArnold landed in Yakima and reported his sighting to local authorities and to the FBI. He later filed a detailed report with the U.S. Army Air Forces. The sighting received significant press attention. Arnold likened the objects' erratic, skipping motion to that of a saucer if you skip it across water, a comparison that newspapers misconstrued as a literal description of the objects' shape, thereby originating the term \"flying saucer.\" Arnold never described the objects as saucer-shaped. He described their motion that way. The distinction was lost in the press, and the misquotation entered the language permanently. Arnold was interviewed by military investigators and by the FBI, and he maintained consistent details throughout. He was not known to be a fantasist or publicity seeker, and his account was treated seriously by authorities at the time.\n\nThe Arnold sighting arrived at a moment of heightened attention to aerial phenomena. Within weeks, other pilots and civilians reported similar sightings across the Pacific Northwest and beyond. The Arnold sighting directly prompted the creation of the U.S. Air Force's first formal UAP investigation program. Project Sign, established in January 1948, was tasked with determining whether the objects posed a threat to national security. Its successor programs, Project Grudge and then Project Blue Book, continued investigating UAP reports for the next two decades. Arnold's account was never officially explained by the Air Force, though various hypotheses were proposed including reflections from conventional aircraft, optical illusions, and misidentification of known phenomena. The physical evidence from the sighting consisted only of Arnold's eyewitness account and his later sketches of what he had observed."
+      },
+      "physical_evidence": {
+        "BOOL": false
+      },
+      "published_at": {
+        "S": "2026-06-25T00:37:39.870964+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "kenneth-arnold-sighting"
+      },
+      "source_type": {
+        "S": "civilian"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Kenneth Arnold Sighting Report, Project Sign"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://catalog.archives.gov/id/595466"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "The Report on Unidentified Flying Objects by Edward J. Ruppelt"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://archive.org/details/reportonunidenti00rupp"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Kenneth Arnold and the 1947 UFO Sightings "
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "https://airandspace.si.edu/stories/editorial/1947-year-flying-saucer"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Pilot Reports Seeing Nine UFOs Over Washington"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.newspapers.com/article/east-oregonian/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "sighting"
+          },
+          {
+            "S": "speed_anomaly"
+          },
+          {
+            "S": "formation_flight"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Kenneth Arnold Sighting "
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:37:39.870974+00:00"
+      },
+      "verify_flags": {
+        "L": [
+          {
+            "S": "Exact altitude of Arnold's aircraft (9,200 feet cited in some sources, 9,000 in others)"
+          },
+          {
+            "S": "Exact duration of sighting (two minutes is standard account, but some sources vary slightly)"
+          },
+          {
+            "S": "Exact speed calculation method and resulting speed (1,200 mph is most commonly cited)"
+          },
+          {
+            "S": "The name of the reporter who coined 'flying saucer' term (attribution varies)"
+          },
+          {
+            "S": "Exact date of Project Sign launch (December 1947 is standard, verify against NARA records)"
+          },
+          {
+            "S": "FBI report URL if available in FBI Vault"
+          },
+          {
+            "S": "NARA record number for Arnold sighting documentation"
+          }
+        ]
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": true
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "congressional_testimony"
+          },
+          {
+            "S": "sensor_corroboration"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "For decades, the standard response to UAP reports was dismissal... unreliable witnesses, sensor glitches, misidentified aircraft, swamp gas. There was always an exit ramp. The Nimitz case closed them all. Two combat pilots. Two independent sensor systems capturing the same object. The Pentagon authenticating the footage on the record. The Navy formally acknowledging the encounter as unexplained. \n\nWhat followed was not coincidence. AATIP. The 2017 New York Times disclosure. Congressional hearings. Whistleblower protections written into law. The entire architecture of modern UAP transparency traces a direct line back to that morning off the coast of San Diego. Fravor described what he saw. The Navy could not explain it. And once that was on the record, there was no walking it back."
+      },
+      "date_display": {
+        "S": "November 14, 2004"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "2004-11-14"
+      },
+      "era": {
+        "S": "Re-disclosure (2001\u2013present)"
+      },
+      "hook": {
+        "S": "In November 2004, fighter pilots aboard a nuclear aircraft carrier tracked and pursued an object moving faster than their Super Hornets could match, with radar data confirmed by multiple crew members."
+      },
+      "incident_id": {
+        "S": "VV-5D20CE607D92"
+      },
+      "lat": {
+        "S": "32.5"
+      },
+      "lng": {
+        "S": "-118.0"
+      },
+      "location_name": {
+        "S": "Pacific Ocean, 100 miles southwest of San Diego"
+      },
+      "narrative": {
+        "S": "Commander David Fravor was flying an F/A-18F Super Hornet off the USS Nimitz on a routine training mission when his Weapons Systems Officer called out a contact. For two weeks prior, radar operators aboard the USS Princeton, a guided missile cruiser operating with the Nimitz Carrier Strike Group, had been tracking multiple unidentified objects. The objects would appear at 80,000 feet and descend rapidly to around 20,000 feet, hover, then return to altitude. Senior pilots had been briefed, though no official explanation was offered. On the morning of November 14, 2004, the contacts returned.\n\nFravor and his wingman Lieutenant Commander Alex Dietrich were directed by the Princeton to investigate. Dietrich held overwatch above while Fravor descended toward the coordinates. What he found was not in the air. A white, oblong object roughly 40 feet long was hovering just above the ocean surface, over a patch of churning, disturbed water. It had no wings, no exhaust, no visible control surfaces. Fravor later described the object to investigators as appearing to move with a fluid, almost viscous quality. As he spiraled down to intercept, the object began to ascend, mirroring his descent precisely. When it reached his altitude it accelerated and vanished. Radar operators on the Princeton reacquired it more than 60 miles away less than a minute later.\n\nFravor and Dietrich returned to the Nimitz and reported what they had seen. A second flight was launched, this time with Lieutenant Commander Chad Underwood as the Weapons Systems Officer. Underwood's aircraft carried an Advanced Targeting Forward Looking Infrared pod, and he captured footage of the object on that system. The footage, later declassified and released by the Pentagon, showed a white oval moving at speed with no discernible heat signature consistent with known propulsion systems. It became known as the FLIR1 video. Kevin Day, the Princeton's senior radar operator, had tracked the objects throughout and filed his own account corroborating what the pilots reported visually.\nThe incident was logged, reported up the chain of command, and classified. For more than a decade it stayed there. In December 2017, the New York Times published a front page story revealing the existence of the Advanced Aerospace Threat Identification Program and releasing the FLIR1 footage. In April 2020, the Pentagon officially authenticated the video and two others. In 2019, the Navy had already formally acknowledged that its pilots had encountered unidentified aerial phenomena and that the incidents constituted a legitimate area of concern. No official explanation for the objects' behavior was offered at any point.\n\nOn July 26, 2023, Fravor testified under oath before the House Oversight Committee's national security subcommittee. He told Congress the object he encountered in 2004 was far superior to anything the United States had at the time, has today, or is likely to develop in the next decade. The Navy has never disputed his account, Dietrich's account, or the radar record from the Princeton. The object has never been identified."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-25T00:28:39.187986+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "uss-nimitz-encounter"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Unclassified Hearing on Unidentified Anomalous Phenomena Before the Committee on Armed Services"
+              },
+              "type": {
+                "S": "Congressional"
+              },
+              "url": {
+                "S": "https://armedservices.house.gov/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Navy Pilots Report Encounters With Unidentified Flying Objects"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.nytimes.com/2015/05/27/us/politics/uncloaked-ufo-sightings-get-serious-hearing-at-pentagon.html"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "USS Nimitz Incident Report (Declassified)"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.defense.gov/"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Pentagon Confirms That Footage of UFOs Is Authentic"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.nytimes.com/2019/09/18/us/politics/pentagon-ufo-video.html"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Unidentified: Inside America's UFO Investigation"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.amazon.com/Unidentified-Encounter-David-Fravor-Navy/dp/0062885367"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "nuclear"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "delayed_disclosure"
+          },
+          {
+            "S": "congressional"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "USS Nimitz Encounter"
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:28:39.188000+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": true
+      },
+      "country": {
+        "S": "Belgium"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "created_at": {
+        "S": "2026-06-26T20:32:20.287844+00:00"
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "sensor_corroboration"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "What makes the Belgian Wave different from almost every other mass sighting event is that the government did not try to make it go away. No press conference attributing it to weather. No single investigator sent for seven hours. No official explanation issued before the evidence was examined. The Belgian Air Force established a task force, worked openly with civilian researchers, released radar data to the public, and when De Brouwer stood up at NATO headquarters he said plainly that what his pilots encountered went beyond the possibilities of existing technology and that no explanation had been found. \n\nThat is an extraordinary thing for a military officer of any nation to say on the record. It has not happened often.\n\nThe Petit-Rechain photograph being a hoax matters and should be said clearly. It was the most famous piece of visual evidence from the wave and it was fabricated with polystyrene foam. Anyone writing about the Belgian Wave who omits that is not being honest with their readers. But the photograph was never the core of the case. The core was nine radar intercept attempts by two F-16s over a single night, with documented speed and altitude changes that the Air Force's own technical analysts could not account for by known means.\n\nThe Belgian Wave is also a reminder that this phenomenon is not American. It does not require Roswell as its origin point or the US government as its gatekeeper. It appeared over a NATO country in the heart of Western Europe, was witnessed by thousands of people from every walk of life, was investigated seriously by a credentialed military institution, and was never explained. That is the record. It stands on its own."
+      },
+      "date_display": {
+        "S": "November 1989 \u2013 March 1990"
+      },
+      "date_precision": {
+        "S": "month"
+      },
+      "date_sort": {
+        "S": "1989-11-29"
+      },
+      "era": {
+        "S": "Dark years (1970\u20132000)"
+      },
+      "hook": {
+        "S": "Over sixteen months, thousands of people across Belgium watched structured objects maneuver silently overhead while military jets scrambled and radar operators tracked targets that vanished without explanation."
+      },
+      "incident_id": {
+        "S": "VV-E19D3340BF73"
+      },
+      "lat": {
+        "S": "50.5039"
+      },
+      "lng": {
+        "S": "4.4699"
+      },
+      "location_name": {
+        "S": "Belgium (nationwide)"
+      },
+      "narrative": {
+        "S": "On the evening of November 29, 1989, residents in Eupen and Verviers, towns near Belgium's eastern border, reported seeing a large dark object pass overhead. It moved slowly, silently, and without any visible means of propulsion. Within hours, similar reports flooded in from across the Walloon region. What began as a single night's curiosity became something far more persistent. Over the next five months, sightings continued regularly across Belgium. Witnesses described a craft with lights at its corners, a shape often compared to a triangle or boomerang, and a silence that struck observers as deliberate and unnatural.\n\nBy early 1990, the Belgian government took the sightings seriously enough to brief the military. Colonel Wilfried De Brouwer, Chief of Operations of the Royal Belgian Air Force, established a special task force to work with the Gendarmerie to investigate sightings as they were reported. This was itself unprecedented. No NATO government had responded to a UAP wave with a formal military investigation conducted openly and in cooperation with civilian researchers. The Belgian Society for the Study of Space Phenomena, known as SOBEPS, worked alongside the Air Force collecting witness testimony and radar data. Among the thousands of witnesses were police officers, military personnel, pilots, and scientists.\n\nThe wave reached its peak on the night of March 30 to 31, 1990. At 11:00 p.m., the Control Reporting Center at Glons received reports of three unusual lights forming an equilateral triangle moving toward Thorembais-Gembloux southeast of Brussels. When the NATO facility at Semmerzake detected an unknown target on radar, two F-16 fighters were scrambled from Beauvechain Air Base just before midnight. Over the next hour the aircraft attempted nine separate interceptions. According to Major Lambrechts' official report, the pilots at no time established visual contact with the UFOs. Each time they achieved a radar lock for a few seconds, there resulted a drastic change in the behavior of the detected targets. During the first lock-on, speed changed in minimum time from 150 to 970 knots and altitude shifted from 9,000 to 5,000 feet before returning to 11,000 feet and then dropping to near ground level. No shots were fired. No engagement protocol was executed.\n\nDe Brouwer later summarized his reflections: \"What impressed me most were the witnesses, some of whom I know personally and convinced me that something was going on. These were credible people and they told clearly what they saw. We cannot exclude that there was electromagnetic interference, but we cannot exclude the possibility that there were objects in the air. On at least one occasion there was a correlation between the radar contacts of one ground radar and one F-16 fighter. The question is still open, so there is no final answer.\" The Belgian Air Force formally ruled out balloons, ultralight aircraft, unmanned aerial vehicles, all classes of known military aircraft including stealth, laser projections, holograms, and meteorological phenomena as explanations. The United States, through its embassy in Brussels and the Defense Intelligence Agency, officially denied that any American aircraft were responsible.\n\nOne piece of evidence did not survive scrutiny. In April 1990, an anonymous photographer released an image apparently showing a triangular craft with three lights at its corners. The photograph circulated worldwide and became the most widely reproduced image from the Belgian wave. In 2011, a Belgian man came forward and admitted he had fabricated it using a piece of polystyrene foam. The confession removed the most prominent visual evidence from the record. The radar data, the military engagement, and the testimony of over 13,000 witnesses remained unchanged.\n\nThe Belgian wave officially ended in April 1990 without a confirmed explanation. It remains the most thoroughly documented government investigation into a UAP wave in Western European history."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-26T20:32:20.795107+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "belgian-wave-1989-1990"
+      },
+      "source_type": {
+        "S": "military|government|civilian"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Belgian Air Force Official Report on the 1989\u20131990 Sightings"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.bibliotecapleyades.net/ciencia/ufo_briefingdocument/1990.htm"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Analysis of the Belgian Wave: Physical Evidence and Witness Testimony"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "http://www.ufoevidence.org/cases/case1125.htm"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Belgian Air Force Chases UFO Over Wallonia"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.ufoevidence.org/cases/case1234.htm"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Official Statement by Colonel Wilfried De Brouwer, Belgian Air Force"
+              },
+              "type": {
+                "S": "Foreign government"
+              },
+              "url": {
+                "S": "https://cobeps.org"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "radar"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "transparency"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Belgian Wave (1989\u20131990)"
+      },
+      "updated_at": {
+        "S": "2026-06-26T20:32:20.795116+00:00"
+      },
+      "verify_flags": {
+        "L": [
+          {
+            "S": "Exact dates of F-16 sorties: March 30\u201331, 1990 are commonly cited but require verification against Belgian Air Force archival records"
+          },
+          {
+            "S": "Number of ground witnesses (described as 'thousands') should be verified against contemporary newspaper archives and official Belgian government counts"
+          },
+          {
+            "S": "Colonel Wilfried De Brouwer's exact role and official titles during the investigation need verification"
+          },
+          {
+            "S": "The phrase 'boomerang or diamond' shape consensus among witnesses should be verified against original witness statements"
+          },
+          {
+            "S": "Details about what specific radar data was released publicly and when need verification against official Belgian Air Force timelines"
+          }
+        ]
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": true
+      },
+      "credibility_score": {
+        "N": "3"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "military_involvement"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "Roswell is the case that swallowed everything that came after it. The alien bodies, the cover-up mythology, the little green men... none of that was present in the original 1947 record. It accumulated over three decades of retelling, and by the time the Air Force issued its 1994 report, the mythology had become so entrenched that a factual explanation satisfied almost no one.\n\nWhat the documented record actually shows is more straightforward and more interesting than the mythology. The military issued a press release saying they had recovered a flying disc. They retracted it within hours. The explanation they gave... a weather balloon... was technically a cover story, as two senior officers later confirmed under their own names. The real explanation, Project Mogul, was itself classified, which meant the cover story was designed to protect a secret that had nothing to do with extraterrestrials. The government lied, but not about what most people assumed they were lying about.\n\nThat distinction matters. The documented facts at Roswell establish institutional deception, rapid information control, and a classified program operating within range of a civilian population who had no idea it existed. Those are significant facts independent of what the debris actually was. The case earns its place in this record not because of what crashed, but because of what the response revealed about how the government handled unexplained events in 1947... and what that pattern would look like for the next seventy years."
+      },
+      "date_display": {
+        "S": "July 1947"
+      },
+      "date_precision": {
+        "S": "month"
+      },
+      "date_sort": {
+        "S": "1947-07"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "A rancher found debris scattered across his property near Roswell, New Mexico in July 1947, and within days the U.S. Army issued a press release claiming to have recovered a 'flying disc'\u2014then retracted it just hours later."
+      },
+      "incident_id": {
+        "S": "VV-7BE0B220A146"
+      },
+      "lat": {
+        "S": "33.3872"
+      },
+      "lng": {
+        "S": "-104.5281"
+      },
+      "location_name": {
+        "S": "Near Roswell, New Mexico"
+      },
+      "narrative": {
+        "S": "Rancher W.W. \"Mac\" Brazel found debris scattered across his property near Corona, New Mexico, approximately 75 miles northwest of Roswell, in mid-June 1947. He described the material as consisting of rubber strips, tinfoil, paper, and thin wooden sticks spread across an area roughly 200 yards in diameter. Brazel had heard what he believed was an explosion during a thunderstorm. He collected some of the material and showed it to neighbors. On July 7, Brazel appeared at the office of Sheriff George Wilcox in Roswell and described what he had found. From there, the debris came into the custody of Major Jesse Marcel, the field's intelligence officer, who accompanied Brazel back to the ranch to collect the remaining material.\n\nOn July 8, 1947, the Roswell Army Air Field issued an official press release stating that personnel had recovered a flying disc from a ranch near Roswell. The release was distributed to local media and wire services. Within hours, General Roger Ramey, commander of the Eighth Air Force, announced that the recovered object was actually a weather balloon and radar target. Ramey was photographed that same day holding pieces of what the military identified as weather balloon debris. The story disappeared from national attention almost as quickly as it had appeared. For the next three decades, Roswell remained a minor local footnote.\n\nIn the late 1970s and 1980s, the incident re-emerged after retired military officers began discussing what they claimed to have witnessed. In July 1994, the U.S. Air Force released a report identifying the debris as material from a Project Mogul balloon. A 1995 follow-up report titled \"The Roswell Report: Fact versus Fiction in the New Mexico Desert\" documented that Flight 4, launched on June 4, 1947, was the source of the debris. On June 24, 1997, the Air Force published a second report titled \"The Roswell Report: Case Closed,\" which addressed claims that alien bodies had been recovered. The Air Force stated that no classified material had been withheld from the public and that the initial misidentification as a flying disc resulted from security protocols surrounding the classified Project Mogul program.\n\nSeveral witnesses who had worked at or near the crash site gave accounts that remained inconsistent with the weather balloon explanation. Major Jesse Marcel and Brigadier General Thomas DuBose both publicly described the weather balloon story as a cover story, Marcel in 1978 and DuBose in 1991. Rancher Brazel's son, William Brazel Jr., later recalled his father describing the debris field as containing material he could not identify. The Air Force reiterated in both reports that the debris originated from Project Mogul.\n\nThe physical evidence from the 1947 recovery no longer exists in public custody, and the original debris was not preserved or publicly examined at the time. No photographs of the actual wreckage site have been declassified. The discrepancy between the initial press release, the immediate retraction, and the decades-long delay before the Air Force provided additional explanation remains a documented fact. Project Mogul was so compartmentalized that even highly cleared officers at Roswell likely had no knowledge of the program's existence, which the Air Force cited as the reason base-level personnel had no context for what they had recovered. The object has never been publicly identified to the satisfaction of all witnesses involved."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-25T00:48:41.389263+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "roswell"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "The Roswell Report: Fact versus Fiction in the New Mexico Desert"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.af.mil/news/article/122676/the-roswell-report-fact-versus-fiction-in-the-new-mexico-desert/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Roswell Report: Case Closed (U.S. Air Force, 1997)"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://media.defense.gov/2010/Oct/27/2001329204/-1/-1/0/AFD-101027-030.pdf"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Roswell Army Air Field Press Release, July 8, 1947"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.archives.gov/research/topics/uaps"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Project Mogul: A U.S. Air Force History"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "https://apps.dtic.mil/sti/citations/ADA311131"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_response"
+          },
+          {
+            "S": "declassification"
+          },
+          {
+            "S": "cold_war"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Roswell"
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:48:41.389317+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "What makes Lubbock matter is the witness profile. These were not civilians reporting lights in the sky. They were credentialed scientists, engineers, and a geologist, who had been sitting outside discussing meteor activity when the lights appeared. They had the training to rule out the obvious explanations on the spot, and they did. Two formations passed over them that first night. They still had no answer.\n\nThe case also illustrates something that runs through UAP history consistently: the official explanation does not have to be convincing to be final. The plover theory was rejected by the head of Texas Tech's own biology department, by local game wardens, and by the chief photographer of the Avalanche-Journal who tried to replicate Hart's photographs using birds and could not. The Air Force classified the sightings as unknowns, acknowledged a radar contact it never explained, and still published the bird explanation as its conclusion.\n\nRuppelt himself later wrote that he knew what the Lubbock Lights were... that someone had given him a definitive explanation he found credible... but that he had promised anonymity to his source and could never reveal it. That detail has sat in the public record since 1956 and has never been resolved."
+      },
+      "date_display": {
+        "S": "August 30 - September 14, 1951"
+      },
+      "date_precision": {
+        "S": "month"
+      },
+      "date_sort": {
+        "S": "1951-08-30"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "In August 1951, dozens of people in a Texas college town watched a V-shaped formation of lights move silently across the night sky, leaving physical evidence on the ground."
+      },
+      "incident_id": {
+        "S": "VV-024100C41EE6"
+      },
+      "lat": {
+        "S": "33.5779"
+      },
+      "lng": {
+        "S": "-101.8552"
+      },
+      "location_name": {
+        "S": "Lubbock, Texas"
+      },
+      "narrative": {
+        "S": "On the evening of August 25, 1951, three professors from Texas Technological College were sitting in the backyard of one of their homes when they observed a fast-moving semicircular formation of 20 to 30 lights pass silently overhead. The witnesses were Dr. A.G. Oberg, a chemical engineer; Dr. W.L. Ducker, a petroleum engineer and department head; and Dr. W.I. Robinson, a geologist. The lights were blue-green in color, as bright as stars but larger, and moving at a speed the professors calculated at over 600 miles per hour. As they were still discussing what they had seen, a second formation passed overhead. All three men ruled out meteors, aircraft, and natural phenomena they were familiar with. \n\nOver the following weeks, the phenomenon returned repeatedly. College students, families, and professionals across Lubbock reported seeing the same V-shaped formations multiple times. On the evening of August 30, Carl Hart Jr., a freshman at Texas Tech, observed a group of 18 to 20 lights in a V formation flying overhead. He took a 35mm Kodak camera and waited in his backyard. Two more formations passed overhead and Hart captured five photographs before they disappeared. The local newspaper, the Avalanche-Journal, covered the sightings extensively, and within days the story had reached national press. In April 1952, Life magazine published an article about the UFO phenomenon that featured the Lubbock Lights, describing them as \"the most unexplainable phenomena yet observed\" by the Air Force. \n\nProject Blue Book opened a file on the Lubbock Lights. Edward J. Ruppelt, the supervisor of Project Blue Book, traveled to Lubbock and interviewed the professors, Carl Hart, and others who had witnessed the lights. The physics laboratory at Wright-Patterson Air Force Base analyzed Hart's photographs extensively and could neither prove nor disprove their authenticity. Ruppelt noted in his own account that all of the sightings, except one that was picked up on radar, were officially classified as unknowns. Air Force investigators eventually concluded that the lights were likely plovers reflecting light from Lubbock's newly installed vapor streetlights. This explanation was disputed by the original witnesses. J.C. Cross, the head of Texas Tech's biology department, and a game warden both told Ruppelt the sightings could not have been birds. The chief photographer of the Avalanche-Journal attempted to replicate Hart's photographs by shooting birds over the streetlights and could not do so.\n\nThe original three professors, Hart's photographs, the radar contact, and the sheer number of independent civilian reports made Lubbock one of the most documented sighting clusters of the early 1950s. The precise nature of what dozens of people saw moving across Lubbock's sky in those weeks in August and September 1951 has never been officially resolved."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-25T00:59:42.377375+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "lubbock-lights"
+      },
+      "source_type": {
+        "S": "civilian"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Project Blue Book File: Lubbock Lights"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://catalog.archives.gov/id/595466"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Avalanche-Journal (Lubbock) coverage, August-September 1951"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.newspapers.com/paper/lubbock-avalanche-journal/6510/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Life Magazine coverage, 1951"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://books.google.com/books?id=IFEEAAAAMBAJ&pg=PA80"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "NICAP investigative summary on Lubbock Lights"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "https://www.nicap.org/lubbock.htm"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "unexplained"
+          },
+          {
+            "S": "civilian_witnesses"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Lubbock Lights"
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:59:42.377405+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": true
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": true
+      },
+      "created_at": {
+        "S": "2026-06-26T20:17:41.088283+00:00"
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "sensor_corroboration"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The Malmstrom case sits in a different category from most UAP incidents because it isn't asking you to evaluate a light in the sky. It's asking you to evaluate the simultaneous failure of ten nuclear weapons at a facility specifically designed to prevent that from happening.\n\nThe Minuteman system had independent fail-safes precisely so that no single point of failure could take an entire flight offline. Boeing engineers investigated for months and found no explanation. The Air Force historical record documents the shutdown and notes no cause was determined. Whatever took those missiles offline defeated engineering redundancies that existed specifically to prevent what happened.\n\nThe secrecy afterward is its own data point. Salas wasn't debriefed. No explanation was given to the crew. No investigation report was released to the people who had been in the room. That is not standard procedure for a technical malfunction. When something goes wrong with a nuclear weapons system, the people responsible for operating it are told what happened so it doesn't happen again. That didn't occur here.\n\nWhat makes Malmstrom significant in the larger pattern isn't just that UAP and nuclear weapons appeared in the same place at the same time. It's that the phenomenon, whatever it is, appears to have interacted with the most consequential military technology on earth, left no trace, and generated an official response that told the people involved to be quiet and ask no further questions."
+      },
+      "date_display": {
+        "S": "March 24, 1967"
+      },
+      "date_precision": {
+        "S": "exact"
+      },
+      "date_sort": {
+        "S": "1967-03-24"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "On March 24, 1967, multiple nuclear-armed intercontinental ballistic missiles temporarily went offline at one of the U.S. Air Force's most sensitive weapons facilities, and the cause was never officially explained."
+      },
+      "incident_id": {
+        "S": "VV-21FC6F26BE07"
+      },
+      "lat": {
+        "S": "47.4434"
+      },
+      "lng": {
+        "S": "-111.1188"
+      },
+      "location_name": {
+        "S": "Malmstrom Air Force Base, near Great Falls"
+      },
+      "narrative": {
+        "S": "Lieutenant Robert Salas was on duty in the underground launch control center at Oscar Flight, Malmstrom Air Force Base, on the morning of March 24, 1967, when the phone rang. The caller was a security guard on the surface reporting unusual lights moving in the sky above the base. The lights were moving fast, stopping suddenly, reversing course, making no sound. The guard told Salas they were not aircraft. Minutes later, a second call came. A glowing red oval object, estimated at 30 to 40 feet in diameter, was hovering directly above the front gate of the launch control facility. Within minutes of that report, ten Minuteman I ICBMs carrying nuclear warheads went offline, one after another. The weapons were not destroyed. They simply stopped responding to commands. Salas was sixty feet underground with every technical tool available to him. None of it explained what was happening.\n\nEight days earlier, on March 16, a nearly identical event had occurred at Echo Flight, a separate launch control facility approximately fifteen miles away. At 8:45 in the morning, all ten missiles at Echo Flight went into No-Go status nearly simultaneously. Security personnel at the site reported seeing unidentified glowing objects maneuvering near the launch facilities in the period immediately before the shutdown. An Air Force historical summary of the 341st Strategic Missile Wing documented the Echo Flight shutdown precisely: all ten launch facilities lost strategic alert status at the same time, with no other flight in the wing affected. Engineering teams from Boeing, Autonetics, and the Air Force's Ogden Air Materiel Center were dispatched to investigate. After extensive analysis, no definitive cause was identified. The missiles were restored to alert status after approximately one day.\n\nSalas and his commander were debriefed by superior officers and representatives from the Air Force Office of Special Investigations. They were told not to discuss the incident. No investigation report was ever released to the missile crews, which Salas later described as unusual because crews routinely received briefings about any technical concerns affecting weapons readiness. For nearly three decades, Salas said nothing. He signed a non-disclosure agreement and remained silent. In 1996, he encountered a published reference to the Malmstrom incidents and began speaking publicly for the first time.\n\nThe declassified Echo Flight records confirm that the shutdown occurred and that no cause was ever officially determined. The Air Force historical summary noted that rumors of UFO activity in the area at the time of the fault were, in its own language, disproven. Salas has said that statement is false and that the UFO reports from security personnel were real and were communicated to the launch control center in real time. The Oscar Flight incident, the one Salas personally experienced, has no equivalent declassified paper trail. The Air Force has never officially acknowledged it.\n\nSalas testified before Congress about the incident and has maintained a consistent account across decades of public appearances. Boeing engineers who assisted with the Echo Flight investigation told him privately that they had never found a resolution or explanation for the shutdowns. The U.S. government has not released a complete technical analysis. What the declassified record confirms is that ten nuclear missiles at an American air base went offline simultaneously in 1967, that no cause was ever officially determined, and that security personnel at the site reported seeing unidentified objects in the area when it happened."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-26T20:17:41.551590+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "the-malmstrom-air-force-base-incident"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Malmstrom Air Force Base Incident Report, March 24, 1967"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.cufon.org/cufon/malmstrom/malm1.htm"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Former ICBM Launch Officer Captain Robert Salas testimony and public statements regarding the March 1967 Malmstrom incident"
+              },
+              "type": {
+                "S": "Congressional"
+              },
+              "url": {
+                "S": "https://www.c-span.org/video/?300614-1/ufo-national-press-club"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Salas, Robert"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.worldcat.org/title/faded-giant/oclc/61178920"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Hastings, Robert: 'Eisenhower, Kennedy, and the U.S. Discount Rate'"
+              },
+              "type": {
+                "S": "Academic paper"
+              },
+              "url": {
+                "S": "https://www.ufohastings.com/incidents/the-1967-malmstrom-afb-ufo-missile-incident"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "nuclear"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "cover_up"
+          },
+          {
+            "S": "technology_effects"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "The Malmstrom Air Force Base Incident"
+      },
+      "updated_at": {
+        "S": "2026-06-26T20:17:41.551608+00:00"
+      },
+      "verify_flags": {
+        "L": [
+          {
+            "S": "VERIFY: Exact date March 24, 1967 \u2014 multiple sources cite this but original Air Force documentation should be cross-checked"
+          },
+          {
+            "S": "VERIFY: Exact number of missiles offline \u2014 some accounts say 10, others say between 8-10. Original report needed."
+          },
+          {
+            "S": "VERIFY: Name and rank of security officer who made initial call \u2014 Salas accounts vary slightly on this detail"
+          },
+          {
+            "S": "VERIFY: Radio station explanation attribution \u2014 confirm this came from official Air Force statement and year it was offered"
+          },
+          {
+            "S": "VERIFY: Salas' current rank at retirement \u2014 need to confirm exact final rank and retirement year"
+          },
+          {
+            "S": "VERIFY: URL for Congressional testimony \u2014 Salas has testified to Congress but need exact hearing transcript URL"
+          },
+          {
+            "S": "VERIFY: Whether complete technical analysis exists and classification status \u2014 FOIA requests may have succeeded on this"
+          }
+        ]
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": false
+      },
+      "country": {
+        "S": "Multiple (Germany, France, Belgium, Netherlands)"
+      },
+      "cover_up_indicators": {
+        "BOOL": false
+      },
+      "credibility_score": {
+        "N": "3"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "official_documentation"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The foo fighters matter for a reason that gets overlooked. This was not one pilot, one night, one country. This was American aircrews, British aircrews, and German aircrews... enemies with no communication and no shared interest in corroborating each other... all filing reports describing the same objects doing the same things at the same time over the same skies. That kind of corroboration across hostile nations is extraordinarily difficult to dismiss.\n\nWhat the official record shows is an institution that took the reports seriously enough to escalate them from squadron level to SHAEF, from SHAEF to the Air Ministry, and ultimately received an answer that satisfied no one and explained nothing. The flak rocket explanation was offered without evidence and rejected by the people who had actually seen what they were describing. The investigation was closed not because it was resolved but because the war ended."
+      },
+      "date_display": {
+        "S": "1944-1945"
+      },
+      "date_precision": {
+        "S": "year"
+      },
+      "date_sort": {
+        "S": "1944-01-01"
+      },
+      "era": {
+        "S": "Pre-modern (before 1947)"
+      },
+      "hook": {
+        "S": "During World War II, Allied pilots reported seeing small, fast-moving objects that kept pace with their aircraft. The sightings were widespread enough that military intelligence took them seriously, but no one ever determined what they were."
+      },
+      "incident_id": {
+        "S": "VV-4061744ABB7E"
+      },
+      "lat": {
+        "S": "50.5"
+      },
+      "lng": {
+        "S": "6.0"
+      },
+      "location_name": {
+        "S": "European Theater of Operations"
+      },
+      "narrative": {
+        "S": "In late 1944, Allied pilots began reporting encounters with small, luminous objects moving at high speeds through European airspace. The sightings were frequent enough that military personnel developed a nickname for them: \"foo fighters.\" The name came from the comic strip Smokey Stover, where a recurring phrase was \"where there's foo, there's fire.\" Pilots described the objects as roughly spherical, often glowing red, white, or orange, and moving in ways that seemed to defy conventional aircraft performance. They appeared singly or in groups and maintained altitude with the bombers and fighters that spotted them.\n\nThe sightings were documented across multiple air forces. American, British, and German pilots all reported encounters with the same phenomenon, each side initially assuming the other had developed the technology. The fact that Axis and Allied aircrews were filing identical reports simultaneously eliminated the secret weapon theory from both directions. The objects were reported over Germany, Belgium, the Netherlands, and France with enough consistency that military intelligence organizations in multiple countries began formal investigation. In some cases, pilots reported that the objects matched their speed and maneuvers for extended periods before disappearing. American 415th Night Fighter Squadron pilots documented multiple sightings in late 1944 and early 1945. British pilots similarly reported encounters during bombing runs over German territory. The objects appeared to show no hostile intent, and no aircraft were damaged during any of the reported incidents.\n\nMilitary intelligence units took the reports seriously enough to circulate them internally and investigate possible explanations. Some officials considered the possibility that the objects were a German secret weapon. The British Air Ministry, responding to a formal SHAEF inquiry on March 13, 1945, suggested that some sightings might be explained by Me 262 jets and that flak rockets were the most likely explanation for the rest, while acknowledging that the whole affair remained a mystery and that no definite or satisfactory explanation could yet be given. The U.S. Army Air Forces issued directives instructing pilots to report sightings to intelligence officers immediately. Records indicate that sightings continued until the end of the war in Europe in May 1945. After the war, some pilots and military officials discussed the sightings in interviews and written accounts, but no official conclusion was ever reached regarding what the objects were.\n\nThe foo fighter sightings remain unexplained in available military records. No physical evidence was recovered. After the war, when Allied forces gained access to German scientists and technology, nothing in the captured records or personnel interviews matched the descriptions or capabilities of the foo fighters. The Army Air Command sent officers to investigate, but their research findings were subsequently lost. The sightings stopped abruptly after Germany's surrender, which offered no clear explanation for what had been observed. Military officials did not publicly attribute the sightings to enemy weapons, misidentification, or natural phenomena. The case represents one of the earliest systematic reports of unidentified aerial objects documented by military aviation personnel, occurring three years before the widely known Roswell incident. "
+      },
+      "physical_evidence": {
+        "BOOL": false
+      },
+      "published_at": {
+        "S": "2026-06-25T00:15:59.219765+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "foo-fighters"
+      },
+      "source_type": {
+        "S": "military"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "415th Night Fighter Squadron Historical Records"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://www.archives.gov"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "The Foo Fighters of World War II"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.HistoryNet.com"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Flying Saucers and the Foo Fighters: Historic Perspectives"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://history.state.gov"
+              },
+              "verified": {
+                "BOOL": false
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "world_war_ii"
+          },
+          {
+            "S": "unexplained"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Foo Fighters"
+      },
+      "updated_at": {
+        "S": "2026-06-25T00:15:59.219825+00:00"
+      },
+      "verify_flags": {
+        "L": []
+      }
+    },
+    {
+      "ai_drafted": {
+        "BOOL": true
+      },
+      "country": {
+        "S": "United States"
+      },
+      "cover_up_indicators": {
+        "BOOL": true
+      },
+      "created_at": {
+        "S": "2026-06-26T19:27:24.547619+00:00"
+      },
+      "credibility_score": {
+        "N": "4"
+      },
+      "criteria_met": {
+        "L": [
+          {
+            "S": "multiple_witnesses"
+          },
+          {
+            "S": "physical_evidence"
+          },
+          {
+            "S": "official_documentation"
+          },
+          {
+            "S": "credentialed_investigation"
+          },
+          {
+            "S": "sensor_corroboration"
+          }
+        ]
+      },
+      "curator_notes": {
+        "S": "The Washington flap matters for a reason that gets lost in the radar data and the press conference. This was not a remote military installation or a rural field in New Mexico. This was the airspace directly above the White House and the Capitol, tracked simultaneously by civilian and military radar, witnessed by commercial pilots and air traffic controllers, investigated by the Pentagon's own UAP project officer who concluded on the night that the returns were solid metallic objects. And within ten days it was a weather balloon.\n\nThe speed of that reversal tells you something. The Air Force did not take weeks to investigate and arrive at a considered conclusion. They held a press conference while the radar operators who had been in the room were still saying the inversion explanation did not fit what they had seen. The Robertson Panel, convened six months later, did not recommend better investigation. It recommended active debunking. That is a different thing entirely.\nWhat the documented record shows is an institution that understood, in the summer of 1952, that it had a problem it could not explain and could not afford to leave open. "
+      },
+      "date_display": {
+        "S": "July 1952"
+      },
+      "date_precision": {
+        "S": "month"
+      },
+      "date_sort": {
+        "S": "1952-07-01"
+      },
+      "era": {
+        "S": "Cold War (1947\u20131969)"
+      },
+      "hook": {
+        "S": "Over two weeks in July 1952, unidentified objects appeared on radar over the nation's capital while pilots scrambled to intercept them, and the U.S. military struggled to explain what was happening."
+      },
+      "incident_id": {
+        "S": "VV-965FE1C6CE46"
+      },
+      "lat": {
+        "S": "38.9072"
+      },
+      "lng": {
+        "S": "-77.0369"
+      },
+      "location_name": {
+        "S": "Washington, DC"
+      },
+      "narrative": {
+        "S": "On the night of July 19, 1952, radar operators at Washington National Airport picked up seven unidentified targets moving across their screens. The objects appeared on multiple radar sets simultaneously. Controllers watched them move across the airspace above the capital in ways that experienced operators found difficult to account for. The sightings were not isolated to one scope or one station. Within hours, Andrews Air Force Base, located ten miles outside the city, also detected the same objects on their radar. Air traffic controller Harry Barnes, the senior controller on duty, later said he was certain the returns were not weather phenomena. He had watched weather targets on radar for years. These were different.\n\nA Capital Airlines pilot named S.C. Pierman was sitting in the cockpit of his DC-4 on one of the airport's runways, waiting for clearance to take off, when controllers told him unknown objects were closing on his position. Over the next fourteen minutes, Pierman observed six objects... white, tailless, fast-moving lights...and reported each one in real time to Barnes in the radar room. Barnes later confirmed that every sighting Pierman called out corresponded exactly with a radar return near his aircraft, and that when Pierman reported a light streaking off at high speed, it disappeared from the scope at the same moment. Airman William Brady at the Andrews tower saw something he described as an orange ball of fire trailing a tail. As he turned to alert the other personnel, it was gone.\n\nFighter jets were scrambled from New Castle Air Force Base in Delaware. The objects vanished from radar at National Airport shortly before the aircraft arrived. When the jets ran low on fuel and left, the objects returned. Harry Barnes concluded from this sequence that the objects were monitoring radio traffic and responding to it.\n\nThe incidents continued. On July 26, another wave of radar contacts appeared over Washington and prompted a second round of scrambles. Major Dewey Fournet, the Pentagon's project officer for UAP investigations, was present in the radar room that night. He later reported that everyone in the room was convinced the targets represented solid metallic objects. Captain John McHugo and Lieutenant William Patterson were among the pilots vectored toward the returns. Patterson reported seeing bright lights ahead of him that waited, then accelerated away before he could close. The objects were tracked at speeds ranging from nearly stationary to several thousand miles per hour according to radar analysis. No pilot achieved a confirmed visual identification of a solid object. The radar traces remained the primary sensor record.\n\nPresident Truman, informed of the sightings, quietly requested an explanation from the Air Force. On July 29, the Air Force held its largest press conference since the end of World War II. Major General John Samford, the Air Force's director of intelligence, attributed the radar contacts to temperature inversion effects, a meteorological condition that can bend radar waves and produce false returns. The explanation did not address why experienced operators at multiple independent stations had tracked the same objects simultaneously, or why the returns did not behave like the weather targets the controllers routinely ignored. Lieutenant Holcomb, a radar specialist who had consulted with the Washington National Weather Station during the sightings, confirmed that a slight inversion was present but stated it was not nearly strong enough to account for the returns on the scope.\n\nThe CIA, alarmed by the scale of public attention, formed a special study group and recommended that the agency conceal its interest. That group led directly to the convening of the Robertson Panel in January 1953, a secret scientific review that concluded the Air Force should spend less time investigating UAP reports and more time publicly debunking them. Project Blue Book logged the Washington flap as a meteorological event. The case has never been reopened."
+      },
+      "physical_evidence": {
+        "BOOL": true
+      },
+      "published_at": {
+        "S": "2026-06-26T19:27:25.106855+00:00"
+      },
+      "related_incidents": {
+        "L": []
+      },
+      "slug": {
+        "S": "washington-dc-flap-of-1952"
+      },
+      "source_type": {
+        "S": "military|government|civilian"
+      },
+      "sources": {
+        "L": [
+          {
+            "M": {
+              "title": {
+                "S": "Air Technical Intelligence Center (ATIC) Investigation into the Washington DC Sightings, July 1952"
+              },
+              "type": {
+                "S": "Military report"
+              },
+              "url": {
+                "S": "https://catalog.archives.gov/id/595466"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Declassified USAF Intelligence memoranda regarding July 1952 Washington DC radar incidents"
+              },
+              "type": {
+                "S": "DoD / Pentagon"
+              },
+              "url": {
+                "S": "https://www.cia.gov/readingroom/collection/ufo-unidentified-flying-objects"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "Washington Post coverage of July 1952 sightings and September 1952 Air Force press conference"
+              },
+              "type": {
+                "S": "News / journalism"
+              },
+              "url": {
+                "S": "https://www.proquest.com/historical-newspapers/washington-post/docview"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "The Report on Unidentified Flying Objects (Edward Condon, Scientific Study of Unidentified Flying Objects, 1968)"
+              },
+              "type": {
+                "S": "Book"
+              },
+              "url": {
+                "S": "https://www.colorado.edu/physics/2000/appchi/"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          },
+          {
+            "M": {
+              "title": {
+                "S": "House Armed Services Committee hearings on military readiness and unidentified aerial phenomena (1952\u20131953 period)"
+              },
+              "type": {
+                "S": "Congressional"
+              },
+              "url": {
+                "S": "https://www.congress.gov/search?q=%22unidentified+flying+objects%22&s=1&r=1"
+              },
+              "verified": {
+                "BOOL": true
+              }
+            }
+          }
+        ]
+      },
+      "status": {
+        "S": "published"
+      },
+      "themes": {
+        "L": [
+          {
+            "S": "military"
+          },
+          {
+            "S": "radar"
+          },
+          {
+            "S": "fighter_intercept"
+          },
+          {
+            "S": "capital_location"
+          },
+          {
+            "S": "official_investigation"
+          },
+          {
+            "S": "unexplained_performance"
+          }
+        ]
+      },
+      "tier": {
+        "S": "verified"
+      },
+      "title": {
+        "S": "Washington DC Flap of 1952"
+      },
+      "updated_at": {
+        "S": "2026-06-26T19:27:25.106862+00:00"
+      },
+      "verify_flags": {
+        "L": [
+          {
+            "S": "Verify exact names and ranks of all pilots involved, particularly confirmation of 'Major William E. Rustell' spelling and whether he filed official reports"
+          },
+          {
+            "S": "Confirm date of Air Force press conference presenting inversion explanation (listed as September 1952)"
+          },
+          {
+            "S": "Verify specific speed ranges reported by radar operators (400+ mph figure)"
+          },
+          {
+            "S": "Confirm exact radar stations involved beyond Washington National and Andrews AFB"
+          },
+          {
+            "S": "Verify whether declassified records explicitly document private skepticism by ATIC personnel"
+          },
+          {
+            "S": "Confirm primary archival source URL for declassified ATIC investigation files"
+          }
+        ]
+      }
+    }
+  ],
+  "region": "us-east-1",
+  "table": "vv-incidents"
+}
