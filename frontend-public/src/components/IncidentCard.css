@@ -5,7 +5,7 @@
 }
 
 .card-link:focus-visible .card {
-  outline: 1px solid var(--violet);
+  outline: 1px solid var(--accent);
   outline-offset: 2px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .card--featured {
-  border-color: rgba(167, 139, 250, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -33,22 +33,13 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--violet), transparent);
-  opacity: 0.6;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.8;
 }
 
-.card-link:hover .card--featured { border-color: rgba(167, 139, 250, 0.4); }
+.card-link:hover .card--featured { border-color: rgba(255, 255, 255, 0.4); }
 .card-link:hover .card--featured::before { opacity: 1; }
-
-.card-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.75rem;
-  flex-wrap: wrap;
-}
 
 .card-meta {
   display: flex;
@@ -58,43 +49,15 @@
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
 }
 
 .card-sep { opacity: 0.4; }
 .card-location { color: var(--text-dim); }
 
-.card-badges {
-  display: flex;
-  gap: 0.4rem;
-  flex-shrink: 0;
-}
-
-.badge {
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 2px 7px;
-  border-radius: 2px;
-  border: 1px solid;
-}
-
-.badge--featured {
-  color: var(--gold);
-  border-color: rgba(201, 168, 76, 0.35);
-  background: rgba(201, 168, 76, 0.06);
-}
-
-.badge--verified {
-  color: var(--verified);
-  border-color: rgba(94, 234, 212, 0.3);
-  background: rgba(94, 234, 212, 0.05);
-}
-
-.badge--score {
+.card-tier {
+  font-style: italic;
   color: var(--text-dim);
-  border-color: var(--border);
-  background: transparent;
 }
 
 .card-title {
@@ -118,7 +81,7 @@
 
 .curator-note {
   margin: 0.75rem 0;
-  border-left: 2px solid rgba(94, 234, 212, 0.3);
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
   padding-left: 0.75rem;
 }
 
@@ -126,7 +89,7 @@
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: var(--verified);
+  color: var(--accent);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -155,29 +118,12 @@ details[open] .curator-note-icon { transform: rotate(90deg); }
   font-style: italic;
 }
 
-.card-themes {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-  margin-top: 0.75rem;
-}
-
-.theme-tag {
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  border: 1px solid var(--border);
-  padding: 2px 8px;
-  border-radius: 2px;
-}
-
 .card-cta {
   margin-top: 1rem;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: var(--violet);
+  color: var(--accent);
   opacity: 0;
   transition: opacity var(--transition);
 }

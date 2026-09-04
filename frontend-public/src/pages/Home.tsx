@@ -13,10 +13,11 @@ export default function Home() {
     <main className="home">
       <section className="hero">
         <div className="hero-inner">
-          <p className="hero-eyebrow">A curated record of unexplained aerial phenomena</p>
+          <p className="hero-eyebrow">The vetted UAP record — 75 years documented</p>
           <h1 className="hero-headline">
             See the truth.<br />
-            <em>Where it's been documented.</em>
+            <em>Where it's been</em><br />
+            documented.
           </h1>
           <p className="hero-sub">
             Vide Verum is an encyclopedia of rigorously sourced UAP encounters —
@@ -24,36 +25,19 @@ export default function Home() {
             No speculation. No aggregation. Primary sources only.
           </p>
           <div className="hero-actions">
-            <Link to="/catalog" className="btn btn--primary">Browse the catalog</Link>
-            <Link to="/about" className="btn btn--ghost">Our editorial standards</Link>
+            <Link to="/catalog" className="btn btn--primary">Browse the collection</Link>
+            <Link to="/about" className="btn btn--ghost">Editorial standards</Link>
           </div>
         </div>
         <div className="hero-rule" aria-hidden />
       </section>
 
       {stats && (
-        <section className="stats-bar" aria-label="Collection statistics">
-          <div className="stats-inner">
-            <div className="stat">
-              <span className="stat-num">{stats.total}</span>
-              <span className="stat-label">Documented entries</span>
-            </div>
-            <div className="stat-divider" aria-hidden />
-            <div className="stat">
-              <span className="stat-num">{stats.featured}</span>
-              <span className="stat-label">Featured encounters</span>
-            </div>
-            <div className="stat-divider" aria-hidden />
-            <div className="stat">
-              <span className="stat-num">{stats.verified}</span>
-              <span className="stat-label">Verified accounts</span>
-            </div>
-            <div className="stat-divider" aria-hidden />
-            <div className="stat">
-              <span className="stat-num">{stats.eras}</span>
-              <span className="stat-label">Decades covered</span>
-            </div>
-          </div>
+        <section className="collection-note" aria-label="About the collection">
+          <p className="collection-note-text">
+            {stats.total} cases in the permanent collection, spanning {stats.eras} eras of documented encounters —
+            each admitted only after independent review.
+          </p>
         </section>
       )}
 
@@ -72,8 +56,8 @@ export default function Home() {
 
           {featured && (
             <div className="featured-grid">
-              {featured.incidents.map(incident => (
-                <IncidentCard key={incident.id} incident={incident} variant="featured" />
+              {featured.items.map(incident => (
+                <IncidentCard key={incident.incident_id} incident={incident} variant="featured" />
               ))}
             </div>
           )}
@@ -87,7 +71,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-inner">
           <p className="footer-name">Vide Verum</p>
-          <p className="footer-tagline">Latin: <em>See the Truth</em></p>
+          <p className="footer-tagline">A small museum for UAP testimony.</p>
           <p className="footer-note">
             All entries are sourced from government documents, declassified records,
             and credentialed witness testimony. Editorial standards are published{' '}

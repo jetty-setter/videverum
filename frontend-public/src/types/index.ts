@@ -9,7 +9,7 @@ export interface Source {
 }
 
 export interface Incident {
-  id: string;
+  incident_id: string;
   title: string;
   hook: string;
   date_display: string;
@@ -17,8 +17,8 @@ export interface Incident {
   date_precision: string;
   location_name: string;
   country: string;
-  lat?: number;
-  lng?: number;
+  lat?: string;
+  lng?: string;
   era: string;
   source_type: string;
   narrative: string;
@@ -36,7 +36,7 @@ export interface Incident {
 }
 
 export interface IncidentListResponse {
-  incidents: Incident[];
+  items: Incident[];
   count: number;
   last_key?: string;
 }

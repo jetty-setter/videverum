@@ -13,12 +13,12 @@
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--violet);
+  color: var(--green);
   margin-bottom: 1rem;
 }
 
 .about-title {
-  font-family: var(--font-display);
+  font-family: var(--font-condensed);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 700;
   line-height: 1.15;
@@ -52,7 +52,7 @@
 }
 
 .about-section-title {
-  font-family: var(--font-display);
+  font-family: var(--font-condensed);
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text);
@@ -81,10 +81,10 @@
 .sourcing-item:hover { background: var(--bg-hover); }
 
 .sourcing-tier {
-  font-family: var(--font-display);
+  font-family: var(--font-condensed);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--violet-dim);
+  color: var(--green-dim);
   opacity: 0.5;
   flex-shrink: 0;
   min-width: 28px;

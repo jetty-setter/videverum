@@ -1,21 +1,22 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useCart } from '../lib/cart';
 import './Nav.css';
 
 const NAV_LINKS = [
-  { to: '/catalog', label: 'Catalog' },
-  { to: '/eras', label: 'By Era' },
+  { to: '/catalog', label: 'The Collection' },
+  { to: '/shop', label: 'The Crate' },
   { to: '/about', label: 'About' },
 ];
 
 export default function Nav() {
   const { pathname } = useLocation();
+  const { count } = useCart();
 
   return (
     <header className="nav">
       <div className="nav-inner">
         <Link to="/" className="nav-logo">
-          <span className="nav-logo-vv">VV</span>
-          <span className="nav-logo-text">VIDE VERUM</span>
+          <img src="/logo-white.png" alt="Vide Verum" className="nav-logo-img" />
         </Link>
 
         <nav className="nav-links" aria-label="Main navigation">
@@ -26,6 +27,9 @@ export default function Nav() {
               className={`nav-link ${pathname.startsWith(link.to) ? 'active' : ''}`}
             >
               {link.label}
+              {link.to === '/shop' && count > 0 && (
+                <span className="nav-crate-count">{count}</span>
+              )}
             </Link>
           ))}
         </nav>

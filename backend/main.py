@@ -53,6 +53,7 @@ class Source(BaseModel):
 
 class IncidentCreate(BaseModel):
     title: str
+    slug: str = ""
     hook: str = ""
     date_display: str = ""
     date_sort: str = ""
@@ -91,8 +92,14 @@ def make_id(seed: str) -> str:
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
+def slugify(text: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    return s
+
 def incident_to_item(incident_id: str, data: dict) -> dict:
     item = {**data, "incident_id": incident_id, "updated_at": now_iso()}
+    if not item.get("slug"):
+        item["slug"] = slugify(item.get("title", "")) or incident_id.lower()
     # Ensure lat/lng are stored as Decimal-compatible strings for DynamoDB
     for k in ("lat", "lng"):
         if item.get(k) is not None:
@@ -117,7 +124,7 @@ def get_stats():
     try:
         # Scan is fine for a small editorial database (<10k items)
         resp = table.scan(
-            ProjectionExpression="incident_id, #s, tier",
+            ProjectionExpression="incident_id, #s, tier, era",
             ExpressionAttributeNames={"#s": "status"}
         )
         items = resp.get("Items", [])
@@ -126,8 +133,10 @@ def get_stats():
         verified   = sum(1 for i in items if i.get("tier") == "verified")
         pending    = sum(1 for i in items if i.get("status") == "pending")
         published  = sum(1 for i in items if i.get("status") == "published")
+        eras       = len({i["era"] for i in items if i.get("era")})
         return {
             "total": total,
+            "eras": eras,
             "featured": featured,
             "verified": verified,
             "pending": pending,

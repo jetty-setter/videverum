@@ -7,10 +7,6 @@ interface Props {
   variant?: 'featured' | 'list';
 }
 
-const CREDIBILITY_LABEL: Record<number, string> = {
-  1: 'Unverified', 2: 'Disputed', 3: 'Plausible', 4: 'Credible', 5: 'Definitive',
-};
-
 export default function IncidentCard({ incident, variant = 'list' }: Props) {
   const isFeatured = incident.tier === 'featured';
 
@@ -19,24 +15,26 @@ export default function IncidentCard({ incident, variant = 'list' }: Props) {
       className={`card card--${variant} card--tier-${incident.tier}`}
       aria-label={incident.title}
     >
-      <div className="card-header">
-        <div className="card-meta">
-          <span className="card-date">{incident.date_display}</span>
-          {incident.location_name && (
-            <>
-              <span className="card-sep">·</span>
-              <span className="card-location">{incident.location_name}</span>
-            </>
-          )}
-        </div>
-
-        <div className="card-badges">
-          {isFeatured && <span className="badge badge--featured">Featured</span>}
-          {incident.tier === 'verified' && <span className="badge badge--verified">Verified</span>}
-          <span className="badge badge--score">
-            {CREDIBILITY_LABEL[incident.credibility_score] ?? `Score ${incident.credibility_score}`}
-          </span>
-        </div>
+      <div className="card-meta">
+        <span className="card-date">{incident.date_display}</span>
+        {incident.location_name && (
+          <>
+            <span className="card-sep">·</span>
+            <span className="card-location">{incident.location_name}</span>
+          </>
+        )}
+        {isFeatured && (
+          <>
+            <span className="card-sep">·</span>
+            <span className="card-tier">Featured</span>
+          </>
+        )}
+        {incident.tier === 'verified' && (
+          <>
+            <span className="card-sep">·</span>
+            <span className="card-tier">Verified</span>
+          </>
+        )}
       </div>
 
       <h2 className="card-title">{incident.title}</h2>
@@ -53,23 +51,15 @@ export default function IncidentCard({ incident, variant = 'list' }: Props) {
         </details>
       )}
 
-      {incident.themes?.length > 0 && (
-        <div className="card-themes">
-          {incident.themes.slice(0, 4).map(t => (
-            <span key={t} className="theme-tag">{t}</span>
-          ))}
-        </div>
-      )}
-
       {isFeatured && (
         <div className="card-cta">Read full entry <span aria-hidden>→</span></div>
       )}
     </article>
   );
 
-  return isFeatured ? (
+  return (
     <Link to={`/entry/${incident.slug}`} className="card-link" aria-label={`Read entry: ${incident.title}`}>
       {card}
     </Link>
-  ) : card;
+  );
 }

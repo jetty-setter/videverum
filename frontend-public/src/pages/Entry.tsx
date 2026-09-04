@@ -32,7 +32,7 @@ export default function Entry() {
       <main className="entry">
         <div className="entry-inner">
           <ErrorState message={error ?? 'Entry not found.'} />
-          <Link to="/catalog" className="back-link">← Back to catalog</Link>
+          <Link to="/catalog" className="back-link">← Back to the collection</Link>
         </div>
       </main>
     );
@@ -49,15 +49,20 @@ export default function Entry() {
         <nav className="entry-breadcrumb" aria-label="Breadcrumb">
           <Link to="/" className="breadcrumb-link">Vide Verum</Link>
           <span className="breadcrumb-sep" aria-hidden>›</span>
-          <Link to="/catalog" className="breadcrumb-link">Catalog</Link>
+          <Link to="/catalog" className="breadcrumb-link">The Collection</Link>
           <span className="breadcrumb-sep" aria-hidden>›</span>
           <span className="breadcrumb-current">{incident.title}</span>
         </nav>
 
         <header className="entry-header">
           <div className="entry-meta">
-            <span className="badge--featured">Featured</span>
-            {incident.era && <span className="entry-era">{incident.era}</span>}
+            {incident.tier === 'featured' && <span className="entry-tier">Featured</span>}
+            {incident.era && (
+              <>
+                {incident.tier === 'featured' && <span className="entry-meta-sep">·</span>}
+                <span className="entry-era">{incident.era}</span>
+              </>
+            )}
           </div>
           <h1 className="entry-title">{incident.title}</h1>
           <div className="entry-locus">
@@ -75,23 +80,14 @@ export default function Entry() {
             )}
           </div>
           {incident.hook && <p className="entry-hook">{incident.hook}</p>}
+          {credibility && (
+            <p className="entry-credibility-line">
+              {credibility.label} — {credibility.desc}
+            </p>
+          )}
         </header>
 
         <div className="entry-divider" aria-hidden />
-
-        {credibility && (
-          <aside className="entry-credibility" aria-label="Credibility rating">
-            <div className="cred-score">
-              <div className="cred-pips">
-                {[1,2,3,4,5].map(n => (
-                  <span key={n} className={`cred-pip ${n <= incident.credibility_score ? 'active' : ''}`} aria-hidden />
-                ))}
-              </div>
-              <span className="cred-label">{credibility.label}</span>
-            </div>
-            <p className="cred-desc">{credibility.desc}</p>
-          </aside>
-        )}
 
         {incident.narrative && (
           <section aria-label="Incident narrative">
@@ -133,30 +129,9 @@ export default function Entry() {
           </section>
         )}
 
-        {(incident.themes?.length > 0 || incident.criteria_met?.length > 0) && (
-          <section className="entry-taxonomy" aria-label="Classification">
-            {incident.themes?.length > 0 && (
-              <div className="taxonomy-group">
-                <h3 className="taxonomy-label">Themes</h3>
-                <div className="taxonomy-tags">
-                  {incident.themes.map(t => <span key={t} className="theme-tag">{t}</span>)}
-                </div>
-              </div>
-            )}
-            {incident.criteria_met?.length > 0 && (
-              <div className="taxonomy-group">
-                <h3 className="taxonomy-label">Criteria met</h3>
-                <div className="taxonomy-tags">
-                  {incident.criteria_met.map(c => <span key={c} className="criteria-tag">{c}</span>)}
-                </div>
-              </div>
-            )}
-          </section>
-        )}
-
         <div className="entry-footer">
           {pubDate && <p className="entry-pub-date">Published {pubDate}</p>}
-          <Link to="/catalog" className="back-link">← Back to catalog</Link>
+          <Link to="/catalog" className="back-link">← Back to the collection</Link>
         </div>
       </div>
     </main>

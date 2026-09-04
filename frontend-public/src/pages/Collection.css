@@ -1,0 +1,116 @@
+.collection {
+  padding: 3rem 2rem;
+  min-height: calc(100vh - 60px);
+}
+
+.collection-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.collection-header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.collection-title {
+  font-family: var(--font-condensed);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.collection-desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.decade-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.decade-tab {
+  background: transparent;
+  border: none;
+  padding: 0.3rem 0;
+  color: var(--text-dim);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  position: relative;
+  transition: color var(--transition);
+}
+
+.decade-tab:hover { color: var(--text-muted); }
+
+.decade-tab.active {
+  color: var(--accent);
+}
+
+.decade-tab.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.decade-context {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.filters {
+  margin-bottom: 1.75rem;
+}
+
+.filter-search {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.filter-search::placeholder { color: var(--text-dim); }
+.filter-search:focus { border-bottom-color: var(--accent); color: var(--text); }
+
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.collection-list > * { background: var(--bg-card); }
+
+@media (max-width: 600px) {
+  .collection { padding: 2rem 1rem; }
+  .collection-header { flex-direction: column; gap: 0.25rem; }
+  .decade-nav { gap: 1rem; }
+}
