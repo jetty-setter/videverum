@@ -3,35 +3,236 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VideVerum</title>
-    <meta name="description" content="VideVerum is the parent company behind a small family of independent software products." />
+    <meta name="theme-color" content="#f3f0e8" />
+    <title>VideVerum — Independent Software Company</title>
+    <meta
+      name="description"
+      content="VideVerum is an independent software company and the company behind RabbitHole and QuicLens."
+    />
     <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="VideVerum — Independent Software Company" />
+    <meta
+      property="og:description"
+      content="Independent software, built deliberately. Meet RabbitHole and QuicLens."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://videverum.com/" />
+    <link rel="canonical" href="https://videverum.com/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <style>
-      :root { color-scheme: light dark; }
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html, body { height: 100%; }
-      body {
-        font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        color: #1a1a1a;
-        background: #fafafa;
-        display: grid;
-        place-items: center;
-        padding: 2rem;
-      }
-      main { max-width: 32rem; text-align: center; }
-      h1 { font-size: 1.5rem; letter-spacing: 0.02em; font-weight: 600; }
-      p { margin-top: 0.75rem; color: #555; }
-      @media (prefers-color-scheme: dark) {
-        body { color: #ededed; background: #111; }
-        p { color: #aaa; }
-      }
-    </style>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
+
   <body>
-    <main>
-      <h1>VideVerum</h1>
-      <p>Parent company to a small family of independent software products. A proper site is on its way.</p>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="#top" aria-label="VideVerum home">
+          <span class="wordmark-mark" aria-hidden="true">VV</span>
+          <span>VideVerum</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#products">Products</a>
+          <a href="#company">Company</a>
+          <a class="optional" href="https://github.com/jetty-setter" rel="noreferrer">GitHub ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div>
+            <p class="eyebrow">Independent software company</p>
+            <h1>Independent software,<br /><span>built deliberately.</span></h1>
+          </div>
+
+          <p class="hero-copy">
+            <strong>VideVerum is the company behind RabbitHole and QuicLens.</strong>
+            Two products with very different purposes, built around the people and work they serve.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="products">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Current products</p>
+              <h2>What we make.</h2>
+            </div>
+            <p>
+              Each VideVerum product stands on its own. The company gives them a home without asking them to become the same thing.
+            </p>
+          </div>
+
+          <div class="product-stack">
+            <article class="product product-rabbit">
+              <div class="product-copy">
+                <span class="product-number">Product 01 · Consumer</span>
+
+                <div>
+                  <h3>Made for getting a little lost.</h3>
+                  <p class="product-description">
+                    Follow whatever catches your attention and see where it leads.
+                  </p>
+
+                  <div class="product-meta" aria-label="RabbitHole product details">
+                    <span>RabbitHole</span>
+                    <span>Video discovery</span>
+                    <span>Public application</span>
+                  </div>
+
+                  <a
+                    class="product-link"
+                    href="https://rabbithole.stephsimmons.dev/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >Explore RabbitHole</a>
+                </div>
+              </div>
+
+              <div class="product-visual rabbit-visual" aria-hidden="true">
+                <div class="rabbit-ui">
+                  <div class="rabbit-brand">Rabbit<span>Hole</span></div>
+
+                  <div class="rabbit-path">
+                    <div class="rabbit-path-label">Where next?</div>
+                    <div class="rabbit-choice"><span>Follow the strange detail</span><span>→</span></div>
+                    <div class="rabbit-choice"><span>Take a turn</span><span>→</span></div>
+                    <div class="rabbit-choice"><span>Go deeper</span><span>→</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product product-quic">
+              <div class="product-copy">
+                <span class="product-number">Product 02 · Research</span>
+
+                <div>
+                  <h3>Bring the experiment into focus.</h3>
+                  <p class="product-description">
+                    Research software for RT-QuIC and neurodegenerative disease studies, designed to support assay review, data interpretation, and experimental context in one workspace.
+                  </p>
+
+                  <div class="product-meta" aria-label="QuicLens product details">
+                    <span>QuicLens</span>
+                    <span>RT-QuIC</span>
+                    <span>Research software</span>
+                  </div>
+
+                  <a
+                    class="product-link"
+                    href="https://quiclens.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >Explore QuicLens</a>
+                </div>
+              </div>
+
+              <div class="product-visual quic-visual" aria-hidden="true">
+                <div class="quic-window">
+                  <div class="quic-toolbar">
+                    <div class="quic-logo">QuicLens</div>
+                    <div class="quic-study">ASSAY WORKSPACE</div>
+                  </div>
+
+                  <div class="quic-body">
+                    <div class="quic-plate-wrap">
+                      <div class="quic-label">Plate overview</div>
+                      <div class="plate">
+                        <span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span>
+                        <span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span>
+                        <span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span>
+                        <span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span>
+                        <span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span>
+                        <span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span><span class="well"></span>
+                      </div>
+                    </div>
+
+                    <div class="quic-chart">
+                      <div class="quic-label">Signal view</div>
+                      <div class="chart-card">
+                        <svg viewBox="0 0 320 220" role="presentation">
+                          <line x1="20" y1="190" x2="305" y2="190" stroke="rgba(16,36,47,.16)" />
+                          <line x1="20" y1="30" x2="20" y2="190" stroke="rgba(16,36,47,.16)" />
+                          <path d="M20 179 C64 178 78 174 98 162 S126 122 151 106 S185 105 204 86 S234 47 305 42" fill="none" stroke="#397f77" stroke-width="4" stroke-linecap="round" />
+                          <path d="M20 183 C71 182 94 178 121 169 S155 147 180 142 S212 111 235 102 S269 82 305 74" fill="none" stroke="#7abcae" stroke-width="3" stroke-linecap="round" />
+                          <path d="M20 185 C74 185 112 182 145 177 S188 169 215 158 S260 142 305 134" fill="none" stroke="#b7d9d1" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                      </div>
+
+                      <div class="quic-readout">
+                        <div class="readout"><small>Review</small><strong>Well-level context</strong></div>
+                        <div class="readout"><small>Interpret</small><strong>Assay patterns</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section company" id="company">
+        <div class="shell">
+          <div class="company-grid">
+            <div>
+              <p class="eyebrow">VideVerum</p>
+              <h2>Different problems deserve different products.</h2>
+            </div>
+
+            <div class="company-copy">
+              <p>
+                VideVerum develops and operates independent software products. RabbitHole and QuicLens serve very different audiences, and that is intentional.
+              </p>
+              <p>
+                Each product is shaped around its own purpose, workflow, and identity rather than being forced into a single platform or design system.
+              </p>
+
+              <div class="company-principles" aria-label="VideVerum principles">
+                <div class="principle">
+                  <span class="principle-number">01</span>
+                  <strong>Focused by design</strong>
+                </div>
+                <div class="principle">
+                  <span class="principle-number">02</span>
+                  <strong>Built to be useful</strong>
+                </div>
+                <div class="principle">
+                  <span class="principle-number">03</span>
+                  <strong>Room to evolve</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-brand">VideVerum</p>
+            <p class="footer-copy">Independent software company. Home to RabbitHole and QuicLens.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#products">Products</a>
+            <a href="#company">Company</a>
+            <a href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">RabbitHole ↗</a>
+            <a href="https://quiclens.com/" target="_blank" rel="noreferrer">QuicLens ↗</a>
+            <a href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 VideVerum.</span>
+          <span>videverum.com</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
