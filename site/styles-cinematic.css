@@ -2,8 +2,6 @@
   --black: #08080a;
   --black-soft: #111114;
   --bone: #f1ede6;
-  --bone-soft: #e6e0d8;
-  --smoke: #9b9893;
   --ink: #16161a;
   --petrol: #263438;
   --petrol-text: #eef0ec;
@@ -38,7 +36,8 @@ a { color: inherit; text-decoration: none; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 30;
-  background: linear-gradient(to bottom, rgba(8,8,10,.82), rgba(8,8,10,0));
+  color: #fff;
+  mix-blend-mode: difference;
 }
 .header-inner {
   min-height: 82px;
@@ -59,13 +58,13 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
 }
 .site-nav a {
-  color: rgba(241,237,230,.62);
+  opacity: .68;
   font-size: .73rem;
   font-weight: 600;
-  transition: color .25s ease;
+  transition: opacity .25s ease;
 }
 .site-nav a:hover,
-.site-nav a:focus-visible { color: var(--bone); }
+.site-nav a:focus-visible { opacity: 1; }
 
 .hero {
   min-height: min(760px, 82svh);
@@ -151,16 +150,12 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.04rem;
 }
 
-.product-list {
-  display: block;
-}
+.product-list { display: block; }
 .product-row {
   min-height: clamp(520px, 66vw, 720px);
-  display: grid;
-  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
-  gap: clamp(3rem, 8vw, 7rem);
+  display: flex;
   align-items: center;
-  padding: clamp(4rem, 7vw, 6rem) var(--pad);
+  padding: clamp(4rem, 7vw, 6rem) 0;
 }
 .product-row:nth-child(odd) {
   color: var(--ink);
@@ -169,6 +164,14 @@ a { color: inherit; text-decoration: none; }
 .product-row:nth-child(even) {
   color: var(--bone);
   background: var(--black-soft);
+}
+.product-inner {
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+}
+.product-row:nth-child(even) .product-inner {
   grid-template-columns: minmax(0, 1.28fr) minmax(0, .72fr);
 }
 .product-row:nth-child(even) .product-copy { order: 2; }
@@ -193,7 +196,6 @@ a { color: inherit; text-decoration: none; }
 }
 .product-row:nth-child(even) .product-copy p { color: rgba(241,237,230,.58); }
 .product-copy p strong {
-  color: currentColor;
   font-size: 1.08rem;
   font-weight: 620;
 }
@@ -213,15 +215,15 @@ a { color: inherit; text-decoration: none; }
 }
 
 .product-placeholder {
-  min-height: clamp(330px, 42vw, 520px);
-  width: min(100%, 760px);
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  max-width: 760px;
   display: grid;
   place-items: center;
   justify-self: stretch;
   position: relative;
   overflow: hidden;
   background: #d6d0c8;
-  border-radius: clamp(20px, 3vw, 34px);
 }
 .product-row:nth-child(even) .product-placeholder { background: #1e2024; }
 .placeholder-label,
@@ -242,16 +244,16 @@ a { color: inherit; text-decoration: none; }
   line-height: 1;
   letter-spacing: -.05em;
   font-weight: 560;
-  color: rgba(22,22,26,.52);
+  color: rgba(22,22,26,.48);
 }
-.product-row:nth-child(even) .placeholder-center strong { color: rgba(241,237,230,.5); }
+.product-row:nth-child(even) .placeholder-center strong { color: rgba(241,237,230,.46); }
 .placeholder-center span {
   display: block;
   margin-top: .6rem;
-  color: rgba(22,22,26,.38);
+  color: rgba(22,22,26,.36);
   font-size: .7rem;
 }
-.product-row:nth-child(even) .placeholder-center span { color: rgba(241,237,230,.34); }
+.product-row:nth-child(even) .placeholder-center span { color: rgba(241,237,230,.32); }
 
 .statement {
   padding: clamp(6rem, 11vw, 10rem) 0;
@@ -313,8 +315,8 @@ a { color: inherit; text-decoration: none; }
   .hero-inner,
   .section-head,
   .statement .shell,
-  .product-row,
-  .product-row:nth-child(even) {
+  .product-inner,
+  .product-row:nth-child(even) .product-inner {
     grid-template-columns: 1fr;
   }
   .hero { min-height: auto; }
@@ -328,12 +330,10 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 640px) {
-  .site-header { position: absolute; }
   .site-nav .optional,
   .site-nav a:nth-child(2) { display: none; }
   .hero-inner { padding-top: 8rem; }
-  .product-row { padding-left: var(--pad); padding-right: var(--pad); }
-  .product-placeholder { min-height: 280px; border-radius: 20px; }
+  .product-placeholder { min-height: 260px; aspect-ratio: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
