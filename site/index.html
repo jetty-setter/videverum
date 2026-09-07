@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles-browser.css" />
+    <link rel="stylesheet" href="/styles-reel-v1.css" />
   </head>
   <body>
     <header class="site-header">
@@ -32,68 +32,66 @@
     </header>
 
     <main id="top">
-      <h1 class="sr-only">VideVerum software portfolio</h1>
+      <h1 class="sr-only">VideVerum software company</h1>
 
-      <section class="browser-wrap" id="products" aria-labelledby="products-title">
+      <section class="company-intro">
+        <div class="shell intro-row">
+          <p class="intro-label">VideVerum</p>
+          <p class="intro-copy">We build software with different jobs, audiences, and identities — and give each product room to become its own thing.</p>
+        </div>
+      </section>
+
+      <section class="products" id="products" aria-labelledby="products-title">
         <div class="shell">
-          <div class="portfolio-context">
-            <span>Software portfolio</span>
-            <p>Distinct products for distinct problems. RabbitHole is public and available now; QuicLens is enterprise research software in development.</p>
+          <div class="products-head">
+            <h2 id="products-title">Products</h2>
+            <p>Current portfolio</p>
           </div>
 
-          <div class="product-browser">
-            <aside class="browser-sidebar" aria-label="VideVerum products">
-              <p class="sidebar-label" id="products-title">Products</p>
-              <div class="product-list" role="tablist" aria-orientation="vertical">
-                <button class="product-select" type="button" role="tab" id="tab-rabbit" aria-controls="panel-rabbit" aria-selected="true" data-product="rabbit">
-                  <span class="select-name">RabbitHole</span>
-                  <span class="select-meta">Public product · Available now</span>
-                </button>
-                <button class="product-select" type="button" role="tab" id="tab-quic" aria-controls="panel-quic" aria-selected="false" data-product="quic" tabindex="-1">
-                  <span class="select-name">QuicLens</span>
-                  <span class="select-meta">Enterprise research software · In development</span>
-                </button>
+          <div class="product-reel">
+            <article class="product-panel product-rabbit">
+              <div class="panel-top">
+                <p class="product-type">Public product</p>
+                <p class="product-status">Available now</p>
               </div>
-              <p class="sidebar-foot">New products join the index when they are ready to be shown.</p>
-            </aside>
 
-            <div class="browser-detail">
-              <section class="product-view is-active" role="tabpanel" id="panel-rabbit" aria-labelledby="tab-rabbit" data-product="rabbit">
-                <div class="detail-primary">
-                  <h2 class="detail-name">RabbitHole</h2>
-                  <p class="detail-tagline">Made for getting a little lost.</p>
-                  <p class="detail-copy">Follow whatever catches your attention and see where it leads.</p>
-                  <a class="detail-link" href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">Explore RabbitHole <span aria-hidden="true">↗</span></a>
-                </div>
-                <dl class="detail-status">
-                  <div><dt>Type</dt><dd>Public product</dd></div>
-                  <div><dt>Status</dt><dd>Available now</dd></div>
-                </dl>
-              </section>
+              <div class="panel-main">
+                <h3 class="product-name">RabbitHole</h3>
+                <p class="product-tagline">Made for getting a little lost.</p>
+              </div>
 
-              <section class="product-view" role="tabpanel" id="panel-quic" aria-labelledby="tab-quic" data-product="quic" hidden>
-                <div class="detail-primary">
-                  <h2 class="detail-name">QuicLens</h2>
-                  <p class="detail-tagline">Bring the experiment into focus.</p>
-                  <p class="detail-copy">Software for RT-QuIC and neurodegenerative disease studies, designed to support assay review, data interpretation, and experimental context.</p>
-                  <a class="detail-link" href="https://quiclens.com/" target="_blank" rel="noreferrer">Learn about QuicLens <span aria-hidden="true">↗</span></a>
-                </div>
-                <dl class="detail-status">
-                  <div><dt>Type</dt><dd>Enterprise research software</dd></div>
-                  <div><dt>Status</dt><dd>In development</dd></div>
-                </dl>
-              </section>
-            </div>
+              <div class="panel-bottom">
+                <p class="product-copy">Follow whatever catches your attention and see where it leads.</p>
+                <a class="product-link" href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">Explore RabbitHole <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="product-panel product-quic">
+              <div class="panel-top">
+                <p class="product-type">Enterprise research software</p>
+                <p class="product-status">In development</p>
+              </div>
+
+              <div class="panel-main">
+                <h3 class="product-name">QuicLens</h3>
+                <p class="product-tagline">Bring the experiment into focus.</p>
+              </div>
+
+              <div class="panel-bottom">
+                <p class="product-copy">Software for RT-QuIC and neurodegenerative disease studies, designed to support assay review, data interpretation, and experimental context.</p>
+                <a class="product-link" href="https://quiclens.com/" target="_blank" rel="noreferrer">Learn about QuicLens <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="about" id="company">
+      <section class="company" id="company">
         <div class="shell">
-          <div class="about-panel">
-            <p class="about-label">Company</p>
-            <p class="about-title">VideVerum gives independent products a shared home without forcing them into a shared category or identity.</p>
-            <p class="about-copy"><em>VideVerum</em> comes from the Latin “see what is true.” For us: look closely at the problem, understand the context, and build something useful around it.</p>
+          <div class="company-strip">
+            <p class="company-label">Company</p>
+            <p class="company-copy">VideVerum is the shared home behind distinct software products. The company provides the structure; each product keeps its own purpose, audience, and identity.</p>
+            <p class="company-name"><em>VideVerum</em> comes from the Latin “see what is true.” For us: look closely, understand the problem, and build something useful around it.</p>
           </div>
         </div>
       </section>
@@ -109,7 +107,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="/browser.js" defer></script>
   </body>
 </html>
