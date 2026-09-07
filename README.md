@@ -76,10 +76,10 @@ Automatic. Push to `main` with changes under `site/` and
 
 You can also trigger it manually from the Actions tab (`workflow_dispatch`).
 
-`site/` is currently a hand-written placeholder — no build step. When the real
-corporate site is built (any stack), keep the contract: the workflow deploys
-whatever ends up in `site/` (add a build step before the sync if the stack needs
-one).
+`site/` contains the hand-written static production website, so there is no build
+step today. If the site later moves to a framework or compiled frontend, keep the
+same deployment contract: build first, then deploy the resulting static output to
+the production site bucket.
 
 ### Infrastructure (Terraform)
 
