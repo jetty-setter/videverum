@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0a0a0c" />
+    <meta name="theme-color" content="#0b0b0d" />
     <title>VideVerum — Independent Software Company</title>
     <meta name="description" content="VideVerum is an independent software company building and operating distinct software products." />
     <meta name="robots" content="index, follow" />
@@ -16,81 +16,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles-index.css" />
+    <link rel="stylesheet" href="/styles-lobby.css" />
   </head>
 
-  <body data-mode="default">
-    <div class="page">
-      <header class="topbar">
-        <a class="brand" href="/" aria-label="VideVerum home">
-          <span class="brand-name">VideVerum</span>
-          <span class="brand-role">Independent software company</span>
-        </a>
-
-        <div class="top-actions">
-          <button class="about-trigger" type="button">About</button>
-          <a class="github-link" href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
-        </div>
-      </header>
-
-      <main class="stage">
-        <nav class="product-index" aria-label="VideVerum products">
-          <a
-            class="product-item"
-            data-product="rabbit"
-            href="https://rabbithole.stephsimmons.dev/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="product-name">RabbitHole</span>
-            <span class="product-arrow" aria-hidden="true">↗</span>
-            <span class="product-sub">Made for getting a little lost.</span>
-          </a>
-
-          <a
-            class="product-item"
-            data-product="quic"
-            href="https://quiclens.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="product-name">QuicLens</span>
-            <span class="product-arrow" aria-hidden="true">↗</span>
-            <span class="product-sub">Research software for RT-QuIC and neurodegenerative disease studies.</span>
-          </a>
+  <body data-scene="intro">
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="VideVerum home">VideVerum</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#products">Products</a>
+          <a href="#company">Company</a>
+          <a href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
         </nav>
-
-        <section class="context" aria-live="polite" aria-label="Selected product context">
-          <p class="context-kicker">VideVerum</p>
-          <h1 class="context-title">Different products. Their own direction.</h1>
-          <p class="context-body">VideVerum is an independent software company built to give distinct applications a shared home without forcing them into the same category, audience, or identity.</p>
-        </section>
-      </main>
-
-      <footer class="bottombar">
-        <span class="copyright">© 2026 VideVerum</span>
-        <div class="bottom-actions">
-          <span class="copyright">Omaha, Nebraska</span>
-        </div>
-      </footer>
-    </div>
-
-    <dialog class="about-dialog" id="about-dialog">
-      <div class="about-inner">
-        <div class="about-head">
-          <p class="about-label">About VideVerum</p>
-          <button class="close-dialog" type="button" aria-label="Close about panel">Close</button>
-        </div>
-
-        <div class="about-copy">
-          <h2>Some ideas want a broad audience. Others are made for a very specific room.</h2>
-          <p>VideVerum is built to hold both. Each product can develop around the people it serves, while the company provides the structure behind it. RabbitHole and QuicLens are the current applications, with room for the company to grow around whatever comes next.</p>
-        </div>
-
-        <span class="about-foot">Independent software company · 2026</span>
       </div>
-    </dialog>
+    </header>
 
-    <script src="/index-interactions.js" defer></script>
+    <main>
+      <section class="intro" id="top" data-scene-target="intro">
+        <div class="shell intro-layout">
+          <div class="intro-copy reveal is-active">
+            <p class="intro-role">Independent software company</p>
+            <h1>VideVerum</h1>
+            <p class="intro-lede">We build distinct software products for very different kinds of problems. Each one gets its own audience, identity, and direction.</p>
+          </div>
+
+          <div class="roster" id="products" aria-label="Current VideVerum products">
+            <a class="roster-item" href="#rabbithole">
+              <span class="roster-name">RabbitHole</span>
+              <span class="roster-meta">Public application · Made for getting a little lost.</span>
+            </a>
+            <a class="roster-item" href="#quiclens">
+              <span class="roster-name">QuicLens</span>
+              <span class="roster-meta">Research software · RT-QuIC and neurodegenerative disease studies.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-rabbit" id="rabbithole" data-scene-target="rabbit">
+        <div class="shell chapter-inner reveal">
+          <div class="chapter-title-wrap">
+            <p class="chapter-kind">Public application</p>
+            <h2>RabbitHole</h2>
+          </div>
+          <div class="chapter-copy">
+            <strong>Made for getting a little lost.</strong>
+            <p>Follow whatever catches your attention and see where it leads.</p>
+            <a class="chapter-link" href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">Visit RabbitHole ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter-quic" id="quiclens" data-scene-target="quic">
+        <div class="shell chapter-inner reveal">
+          <div class="chapter-title-wrap">
+            <p class="chapter-kind">Research software</p>
+            <h2>QuicLens</h2>
+          </div>
+          <div class="chapter-copy">
+            <strong>Bring the experiment into focus.</strong>
+            <p>Research software for RT-QuIC and neurodegenerative disease studies, designed to support assay review, data interpretation, and experimental context in one workspace.</p>
+            <a class="chapter-link" href="https://quiclens.com/" target="_blank" rel="noreferrer">Visit QuicLens ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="company" id="company" data-scene-target="company">
+        <div class="shell company-inner reveal">
+          <h2>Some ideas want a broad audience. Others are made for a very specific room.</h2>
+          <p>VideVerum is built to hold both. The company provides the structure behind each application while giving every product room to become its own thing.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <p class="footer-brand">VideVerum</p>
+          <span class="footer-meta">© 2026 · Independent software company</span>
+        </div>
+        <div class="footer-links">
+          <a href="#products">Products</a>
+          <a href="#company">Company</a>
+          <a href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/lobby.js" defer></script>
   </body>
 </html>
