@@ -1,19 +1,18 @@
 (() => {
-  const world = document.querySelector('.world');
-  if (!world) return;
+  const stage = document.querySelector('.stage');
+  if (!stage) return;
 
   const controls = [...document.querySelectorAll('[data-view-target]')];
   const views = {
-    origin: document.querySelector('.view--origin'),
-    rabbit: document.querySelector('.view--rabbit'),
-    quic: document.querySelector('.view--quic'),
+    origin: document.querySelector('.state--origin'),
+    rabbit: document.querySelector('.state--rabbit'),
+    quic: document.querySelector('.state--quic'),
   };
-
   const validViews = new Set(Object.keys(views));
 
   function setView(next, { updateHash = true } = {}) {
     if (!validViews.has(next)) next = 'origin';
-    world.dataset.view = next;
+    stage.dataset.view = next;
 
     Object.entries(views).forEach(([name, section]) => {
       if (!section) return;
@@ -21,8 +20,10 @@
     });
 
     controls.forEach((control) => {
-      if (control.classList.contains('identity')) return;
-      control.setAttribute('aria-pressed', control.dataset.viewTarget === next ? 'true' : 'false');
+      const active = control.dataset.viewTarget === next;
+      if (control.matches('.mark-hit')) {
+        control.setAttribute('aria-pressed', active ? 'true' : 'false');
+      }
     });
 
     if (updateHash) {
@@ -36,7 +37,7 @@
   });
 
   window.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') setView('origin');
+    if (event.key === 'Escape' || event.key === 'ArrowUp') setView('origin');
     if (event.key === 'ArrowLeft') setView('rabbit');
     if (event.key === 'ArrowRight') setView('quic');
   });
