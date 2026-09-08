@@ -1,28 +1,27 @@
 (() => {
-  const field = document.querySelector('.field');
-  if (!field) return;
+  const crossing = document.querySelector('.crossing');
+  if (!crossing) return;
 
-  const controls = [...document.querySelectorAll('[data-mode-target]')];
-  const modeButtons = [...document.querySelectorAll('.mode')];
-  const states = {
-    home: document.querySelector('.home-state'),
-    rabbit: document.querySelector('.product-state--rabbit'),
-    quic: document.querySelector('.product-state--quic'),
+  const controls = [...document.querySelectorAll('[data-view-target]')];
+  const productControls = [...document.querySelectorAll('.vector')];
+  const details = {
+    rabbit: document.querySelector('.detail--rabbit'),
+    quic: document.querySelector('.detail--quic'),
   };
-  const validModes = new Set(Object.keys(states));
 
-  function setMode(next, { updateHash = true } = {}) {
-    if (!validModes.has(next)) next = 'home';
-    field.dataset.mode = next;
-    delete field.dataset.preview;
+  const validViews = new Set(['home', 'rabbit', 'quic']);
 
-    Object.entries(states).forEach(([name, section]) => {
+  function setView(next, { updateHash = true } = {}) {
+    if (!validViews.has(next)) next = 'home';
+    crossing.dataset.view = next;
+
+    Object.entries(details).forEach(([name, section]) => {
       if (!section) return;
       section.setAttribute('aria-hidden', name === next ? 'false' : 'true');
     });
 
-    modeButtons.forEach((button) => {
-      button.setAttribute('aria-pressed', button.dataset.modeTarget === next ? 'true' : 'false');
+    productControls.forEach((control) => {
+      control.setAttribute('aria-pressed', control.dataset.viewTarget === next ? 'true' : 'false');
     });
 
     if (updateHash) {
@@ -33,30 +32,21 @@
 
   controls.forEach((control) => {
     control.addEventListener('click', (event) => {
-      if (control.tagName === 'A') event.preventDefault();
-      setMode(control.dataset.modeTarget);
-    });
-  });
-
-  modeButtons.forEach((button) => {
-    button.addEventListener('pointerenter', () => {
-      if (field.dataset.mode === 'home') field.dataset.preview = button.dataset.modeTarget;
-    });
-    button.addEventListener('pointerleave', () => {
-      delete field.dataset.preview;
+      if (control.matches('a')) event.preventDefault();
+      setView(control.dataset.viewTarget);
     });
   });
 
   window.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' || event.key === 'ArrowUp') setMode('home');
-    if (event.key === 'ArrowLeft') setMode('rabbit');
-    if (event.key === 'ArrowRight') setMode('quic');
+    if (event.key === 'Escape' || event.key === 'ArrowUp') setView('home');
+    if (event.key === 'ArrowLeft') setView('rabbit');
+    if (event.key === 'ArrowRight') setView('quic');
   });
 
   window.addEventListener('hashchange', () => {
     const next = location.hash.replace('#', '');
-    setMode(next || 'home', { updateHash: false });
+    setView(next || 'home', { updateHash: false });
   });
 
-  setMode(location.hash.replace('#', '') || 'home', { updateHash: false });
+  setView(location.hash.replace('#', '') || 'home', { updateHash: false });
 })();
