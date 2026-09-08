@@ -7,6 +7,7 @@
   --faint: #5f646c;
   --orange: #ff5a2f;
   --line: #2a2e35;
+  --rail-space: clamp(2.2rem, 4vw, 4rem);
   --font: "Instrument Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --focus-y: 50%;
@@ -114,7 +115,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   max-width: 1050px;
   justify-self: end;
-  padding-left: clamp(2.2rem, 4vw, 4rem);
+  padding-left: var(--rail-space);
 }
 
 .focus-rail {
@@ -161,7 +162,7 @@ a { color: inherit; text-decoration: none; }
 .product::after {
   content: "";
   position: absolute;
-  left: calc(clamp(2.2rem, 4vw, 4rem) * -1);
+  left: calc(0px - var(--rail-space));
   top: 50%;
   width: 0;
   height: 1px;
@@ -290,7 +291,7 @@ a { color: inherit; text-decoration: none; }
   .intro h1 { max-width: 520px; }
   .product-list {
     max-width: none;
-    padding-left: 2rem;
+    --rail-space: 2rem;
   }
   .product--quic { margin-left: 0; }
   .product-main {
@@ -320,14 +321,11 @@ a { color: inherit; text-decoration: none; }
   .workspace { padding-top: 1.7rem; }
   .intro { margin-bottom: 2.8rem; }
   .intro h1 { font-size: clamp(2.8rem, 13vw, 4.4rem); }
-  .product-list { padding-left: 1.55rem; }
+  .product-list { --rail-space: 1.55rem; }
   .focus-rail { width: 12px; }
   .rail-line { left: 5px; }
   .rail-marker { left: 1px; }
-  .product::after { left: -1.55rem; }
-  .product-main {
-    display: block;
-  }
+  .product-main { display: block; }
   .product h2 { font-size: clamp(3.25rem, 16vw, 5.6rem); }
   .product-main > p { margin-top: .75rem; max-width: 320px; }
   .product-action { margin-top: 1rem; }
