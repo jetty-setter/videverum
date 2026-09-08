@@ -3,86 +3,71 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#07090d" />
+    <meta name="theme-color" content="#ffffff" />
     <title>VideVerum — Independent Software Company</title>
     <meta name="description" content="VideVerum is the independent software company behind RabbitHole and QuicLens." />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="VideVerum — Independent Software Company" />
-    <meta property="og:description" content="Two products. Two modes of seeing." />
+    <meta property="og:description" content="RabbitHole follows the thread. QuicLens finds the signal." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://videverum.com/" />
     <link rel="canonical" href="https://videverum.com/" />
-    <link rel="icon" href="/favicon-v3.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-v4.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="brand" href="#" data-mode-target="home" aria-label="Vide Verum home">
-          <img src="/brand-mark-dark.svg" alt="" />
-          <span>VIDE VERUM</span>
-        </a>
-        <div class="topbar-center">Independent software company</div>
-        <a class="github" href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </header>
+    <header class="masthead">
+      <button class="brand" type="button" data-view-target="home" aria-label="Vide Verum home">
+        <span class="brand-mark"><img src="/brand-mark-v4.svg" alt="" /></span>
+        <span>VIDE VERUM</span>
+      </button>
+      <div class="masthead-meta">
+        <span>Independent software company</span>
+        <a href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </header>
 
-      <main class="field" data-mode="home">
-        <div class="title-field" aria-hidden="true">
-          <span class="title-word title-word--vide">VIDE</span>
-          <span class="title-word title-word--verum">VERUM</span>
-        </div>
+    <main class="crossing" data-view="home">
+      <button class="vector vector--rabbit" type="button" data-view-target="rabbit" aria-pressed="false" aria-label="View RabbitHole">
+        <span class="vector-copy">RABBITHOLE · FOLLOW THE THREAD · RABBITHOLE · FOLLOW THE THREAD ·</span>
+      </button>
 
-        <div class="shutter" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-        </div>
+      <button class="vector vector--quic" type="button" data-view-target="quic" aria-pressed="false" aria-label="View QuicLens">
+        <span class="vector-copy">QUICLENS · FIND THE SIGNAL · QUICLENS · FIND THE SIGNAL ·</span>
+      </button>
 
-        <section class="home-state" aria-labelledby="home-title">
-          <p class="micro">SEE WHAT IS TRUE</p>
-          <h1 id="home-title">Two modes of seeing.</h1>
-          <p>One follows what opens up. One narrows toward what matters.</p>
-        </section>
+      <button class="origin" type="button" data-view-target="home" aria-label="Return to Vide Verum">
+        <img src="/brand-mark-v4.svg" alt="" />
+        <span class="origin-name">VIDE VERUM</span>
+        <span class="origin-line">SEE WHAT IS TRUE</span>
+      </button>
 
-        <section class="product-state product-state--rabbit" aria-labelledby="rabbit-title" aria-hidden="true">
-          <p class="micro">MODE 01 / EXPAND</p>
-          <h2 id="rabbit-title">RabbitHole</h2>
-          <p>Follow a question past the obvious answer and keep going.</p>
-          <a href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">Enter RabbitHole ↗</a>
-        </section>
+      <section class="detail detail--rabbit" aria-labelledby="rabbit-title" aria-hidden="true">
+        <p class="detail-index">01 / RABBITHOLE</p>
+        <h1 id="rabbit-title">Follow the thread.</h1>
+        <p>Curiosity rarely moves in a straight line. RabbitHole is built for what happens next.</p>
+        <a href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">Enter RabbitHole ↗</a>
+      </section>
 
-        <section class="product-state product-state--quic" aria-labelledby="quic-title" aria-hidden="true">
-          <p class="micro">MODE 02 / RESOLVE</p>
-          <h2 id="quic-title">QuicLens</h2>
-          <p>Reduce noise, preserve context, and bring experimental signal into focus.</p>
-          <a href="https://quiclens.com/" target="_blank" rel="noreferrer">Open QuicLens ↗</a>
-        </section>
+      <section class="detail detail--quic" aria-labelledby="quic-title" aria-hidden="true">
+        <p class="detail-index">02 / QUICLENS</p>
+        <h1 id="quic-title">Find the signal.</h1>
+        <p>QuicLens helps researchers examine RT-QuIC experiments with context intact and noise reduced.</p>
+        <a href="https://quiclens.com/" target="_blank" rel="noreferrer">Open QuicLens ↗</a>
+      </section>
 
-        <button class="mode mode--rabbit" type="button" data-mode-target="rabbit" aria-pressed="false">
-          <span class="mode-index">01</span>
-          <span class="mode-name">RabbitHole</span>
-          <span class="mode-verb">Follow outward</span>
-        </button>
+      <div class="home-note" aria-hidden="true">
+        <span>FOLLOW</span>
+        <strong>Two different products.<br />One company built around seeing more clearly.</strong>
+        <span>FOCUS</span>
+      </div>
 
-        <button class="mode mode--quic" type="button" data-mode-target="quic" aria-pressed="false">
-          <span class="mode-index">02</span>
-          <span class="mode-name">QuicLens</span>
-          <span class="mode-verb">Focus inward</span>
-        </button>
-
-        <button class="reset" type="button" data-mode-target="home" aria-label="Return to Vide Verum">
-          <span class="reset-line"></span>
-          <span>RESET VIEW</span>
-        </button>
-      </main>
-
-      <footer class="footerline">
-        <span>© 2026 VideVerum</span>
-        <span>RabbitHole / QuicLens</span>
-      </footer>
-    </div>
+      <div class="corner corner--left">© 2026</div>
+      <div class="corner corner--right">OMAHA / VIDEVERUM</div>
+    </main>
 
     <script src="/script.js" defer></script>
   </body>
