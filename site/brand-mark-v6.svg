@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170" role="img" aria-labelledby="title desc">
+  <title id="title">VideVerum brand mark</title>
+  <desc id="desc">Two offset circles intersect around a dark central lens.</desc>
+  <defs>
+    <clipPath id="clip-lower" clipPathUnits="userSpaceOnUse">
+      <circle cx="140" cy="105" r="58"/>
+    </clipPath>
+    <g id="lens-shape">
+      <circle cx="80" cy="65" r="58" clip-path="url(#clip-lower)"/>
+    </g>
+  </defs>
+  <circle cx="80" cy="65" r="53" fill="none" stroke="#4C7DFF" stroke-width="10"/>
+  <circle cx="140" cy="105" r="58" fill="#4C7DFF"/>
+  <use href="#lens-shape" fill="#0D0F14"/>
+</svg>
