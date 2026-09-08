@@ -28,15 +28,15 @@ jobs:
           role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
-      # Hashed/static assets: immutable long cache. Removes anything no longer
-      # in site/ (e.g. the retired UFO build). index.html / robots.txt handled
-      # separately so they are never long-cached.
+      # This site is hand-written and currently has no content-hashed build assets.
+      # Do not mark CSS/SVG files immutable: their URLs are stable and are edited
+      # in place, so a year-long browser cache can keep an obsolete design visible.
       - name: Sync static assets
         run: |
           aws s3 sync site/ "s3://${{ vars.SITE_BUCKET }}/" \
             --no-progress --delete \
             --exclude "index.html" --exclude "robots.txt" \
-            --cache-control "public,max-age=31536000,immutable"
+            --cache-control "no-cache"
 
       - name: Upload entry documents (no cache)
         run: |

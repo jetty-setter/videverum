@@ -9,10 +9,8 @@
       <circle cx="80" cy="65" r="60" clip-path="url(#clip-orange)"/>
     </g>
   </defs>
-
   <circle cx="80" cy="65" r="60" fill="#18C3BB"/>
   <circle cx="140" cy="105" r="60" fill="#FF5A2F"/>
-
   <use href="#lens-shape" fill="#F6F1E7"/>
   <g transform="translate(110 85) scale(.72) translate(-110 -85)">
     <use href="#lens-shape" fill="#11131A"/>
