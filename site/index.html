@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#050505" />
+    <meta name="theme-color" content="#14161a" />
     <title>VideVerum — Independent Software Company</title>
     <meta name="description" content="VideVerum is the independent software company behind RabbitHole and QuicLens." />
     <meta name="robots" content="index, follow" />
@@ -12,7 +12,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://videverum.com/" />
     <link rel="canonical" href="https://videverum.com/" />
-    <link rel="icon" href="/favicon-v4.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-v5.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet" />
@@ -22,46 +22,57 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="/" aria-label="Vide Verum home">
-          <img src="/brand-mark-v4.svg" alt="" />
+          <img src="/brand-mark-v5.svg" alt="" />
           <span>VIDE VERUM</span>
         </a>
-
-        <p class="company-line">Independent software company</p>
-
+        <span class="company-line">Independent software company</span>
         <a class="github-link" href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
       </header>
 
-      <main class="type-stage" data-active="none">
-        <div class="stage-intro">
+      <main class="workspace" data-active="none">
+        <section class="intro" aria-labelledby="intro-title">
           <p class="eyebrow">SEE WHAT IS TRUE</p>
-          <p class="intro-copy">Independent software for curiosity and research.</p>
-        </div>
+          <h1 id="intro-title">Software for looking closer.</h1>
+          <p class="intro-copy">One product follows curiosity. One helps researchers bring experimental signal into focus.</p>
+        </section>
 
-        <a class="product product--rabbit" data-product="rabbit" data-word="RABBITHOLE" href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">
-          <span class="product-meta">01 / AVAILABLE NOW</span>
-          <span class="product-name">RabbitHole</span>
-          <span class="product-description">A curiosity-driven video experience.</span>
-          <span class="product-tagline">Made for getting a little lost.</span>
-          <span class="product-action">Visit RabbitHole <b aria-hidden="true">↗</b></span>
-        </a>
+        <section class="product-list" aria-label="Vide Verum products">
+          <div class="focus-rail" aria-hidden="true">
+            <span class="rail-line"></span>
+            <span class="rail-marker"></span>
+          </div>
 
-        <a class="product product--quic" data-product="quic" data-word="QUICLENS" href="https://quiclens.com/" target="_blank" rel="noreferrer">
-          <span class="product-meta">02 / IN DEVELOPMENT</span>
-          <span class="product-name">QuicLens</span>
-          <span class="product-description">Research software for RT-QuIC studies.</span>
-          <span class="product-tagline">Bring the experiment into focus.</span>
-          <span class="product-action">View QuicLens <b aria-hidden="true">↗</b></span>
-        </a>
+          <a class="product product--rabbit" data-product="rabbit" href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">
+            <div class="product-meta">
+              <span>01</span>
+              <span>AVAILABLE NOW</span>
+            </div>
+            <div class="product-main">
+              <h2>RabbitHole</h2>
+              <p>A curiosity-driven video experience.</p>
+              <span class="product-action">Visit RabbitHole <b aria-hidden="true">↗</b></span>
+            </div>
+            <p class="product-note">Made for getting a little lost.</p>
+          </a>
 
-        <div class="stage-note" aria-hidden="true">
-          <span>RABBITHOLE</span>
-          <span>QUICLENS</span>
-        </div>
+          <a class="product product--quic" data-product="quic" href="https://quiclens.com/" target="_blank" rel="noreferrer">
+            <div class="product-meta">
+              <span>02</span>
+              <span>IN DEVELOPMENT</span>
+            </div>
+            <div class="product-main">
+              <h2>QuicLens</h2>
+              <p>Research software for RT-QuIC studies.</p>
+              <span class="product-action">View QuicLens <b aria-hidden="true">↗</b></span>
+            </div>
+            <p class="product-note">Bring the experiment into focus.</p>
+          </a>
+        </section>
       </main>
 
       <footer class="footerline">
         <span>© 2026 VideVerum</span>
-        <span>Two products. Different jobs.</span>
+        <span>RabbitHole / QuicLens</span>
       </footer>
     </div>
 

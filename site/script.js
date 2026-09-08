@@ -1,35 +1,34 @@
 (() => {
-  const stage = document.querySelector('.type-stage');
+  const workspace = document.querySelector('.workspace');
+  const list = document.querySelector('.product-list');
   const products = [...document.querySelectorAll('.product[data-product]')];
-  if (!stage || !products.length) return;
+  if (!workspace || !list || !products.length) return;
 
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function setActive(product) {
+    if (!product) {
+      workspace.dataset.active = 'none';
+      return;
+    }
 
-  function setActive(name = 'none') {
-    stage.dataset.active = name;
+    workspace.dataset.active = product.dataset.product || 'none';
+
+    const listRect = list.getBoundingClientRect();
+    const productRect = product.getBoundingClientRect();
+    const center = productRect.top - listRect.top + productRect.height / 2;
+    list.style.setProperty('--focus-y', `${center}px`);
   }
 
   products.forEach((product) => {
-    const name = product.dataset.product;
-
-    product.addEventListener('pointerenter', () => setActive(name));
-    product.addEventListener('focus', () => setActive(name));
-    product.addEventListener('pointerleave', () => setActive('none'));
-    product.addEventListener('blur', () => setActive('none'));
+    product.addEventListener('pointerenter', () => setActive(product));
+    product.addEventListener('focus', () => setActive(product));
+    product.addEventListener('pointerleave', () => setActive(null));
+    product.addEventListener('blur', () => setActive(null));
   });
 
-  if (!reduceMotion) {
-    stage.addEventListener('pointermove', (event) => {
-      const rect = stage.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
-      stage.style.setProperty('--mx', `${x * 18}px`);
-      stage.style.setProperty('--my', `${y * 18}px`);
-    });
-
-    stage.addEventListener('pointerleave', () => {
-      stage.style.setProperty('--mx', '0px');
-      stage.style.setProperty('--my', '0px');
-    });
-  }
+  window.addEventListener('resize', () => {
+    const activeName = workspace.dataset.active;
+    if (!activeName || activeName === 'none') return;
+    const active = products.find((product) => product.dataset.product === activeName);
+    if (active) setActive(active);
+  });
 })();
