@@ -73,7 +73,7 @@ a {
   height: 88px;
   max-width: 190px;
   transform: translateY(-10px);
-  filter: brightness(1.38) saturate(1.22);
+  
   object-fit: contain;
 }
 
