@@ -113,10 +113,9 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 38px;
-  padding: 0 1rem;
+  padding: 0 1.05rem;
   border: 1px solid #4a4752;
-  border-radius: 0;
-  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  border-radius: 999px;
   color: #ffffff;
   font-size: .76rem;
   font-weight: 650;
@@ -182,11 +181,10 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 46px;
-  padding: 0 1.25rem;
-  border-radius: 0;
+  padding: 0 1.35rem;
+  border-radius: 999px;
   font-size: .78rem;
   font-weight: 650;
-  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
   transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
