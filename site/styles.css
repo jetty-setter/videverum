@@ -115,18 +115,20 @@ a {
   min-height: 38px;
   padding: 0 1rem;
   border: 1px solid #4a4752;
+  border-radius: 12px;
   color: #ffffff;
   font-size: .76rem;
   font-weight: 650;
   white-space: nowrap;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .header-cta:hover,
 .header-cta:focus-visible {
-  background: #ffffff;
-  border-color: #ffffff;
-  color: #0a0a0c;
+  background: var(--purple);
+  border-color: var(--purple);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .eyebrow {
@@ -178,39 +180,61 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 1.1rem;
-  border: 1px solid currentColor;
+  min-height: 46px;
+  padding: 0 1.25rem;
+  border: 0;
+  border-radius: 14px;
   font-size: .78rem;
   font-weight: 650;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .button-primary {
   background: var(--purple);
-  border-color: var(--purple);
   color: white;
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: #5121ad;
-  border-color: #5121ad;
+  background: #5f36bf;
+  transform: translateY(-1px);
 }
 
 .button-secondary {
+  min-height: auto;
+  padding: .35rem 0;
+  border-radius: 0;
+  background: transparent;
   color: var(--text);
-  border-color: #99949d;
+  position: relative;
+}
+
+.button-secondary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--purple);
+  transform-origin: left;
+  transition: transform 160ms ease;
 }
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
-  border-color: var(--black);
+  color: var(--purple);
+}
+
+.button-secondary:hover::after,
+.button-secondary:focus-visible::after {
+  transform: scaleX(.72);
 }
 
 .button-light {
   background: white;
-  border-color: white;
   color: var(--black);
+  border-radius: 14px;
 }
 
 .offer-strip {
