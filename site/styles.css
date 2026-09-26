@@ -791,3 +791,22 @@ a {
     max-height: 56px;
   }
 }
+
+
+/* Header-specific crop of the approved logo */
+.site-header .brand-logo {
+  width: 184px;
+  max-height: 66px;
+  object-fit: contain;
+}
+
+.site-header .brand-lockup {
+  overflow: visible;
+}
+
+@media (max-width: 620px) {
+  .site-header .brand-logo {
+    width: 158px;
+    max-height: 58px;
+  }
+}
