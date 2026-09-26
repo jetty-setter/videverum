@@ -6,8 +6,8 @@
   --muted: #66616b;
   --line: #d3cec6;
   --dark-line: #2b2930;
-  --purple: #6432c7;
-  --purple-soft: #aa8df0;
+  --purple: #7447D9;
+  --purple-soft: #B69AF0;
   --font: "Instrument Sans", Arial, Helvetica, sans-serif;
   --page: min(1160px, calc(100vw - 48px));
 }
