@@ -43,60 +43,71 @@ a {
   position: sticky;
   top: 0;
   z-index: 50;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  height: 84px;
+  display: flex;
   align-items: center;
-  min-height: 72px;
   padding: 0 max(24px, calc((100vw - 1160px) / 2));
-  background: rgb(10 10 12 / 97%);
-  border-bottom: 1px solid var(--dark-line);
-  backdrop-filter: blur(14px);
+  background: #0a0a0c;
+  border-bottom: 1px solid #242329;
 }
 
 .brand-lockup {
-  display: inline-flex;
-  align-items: center;
-  height: 72px;
+  position: relative;
+  flex: 0 0 176px;
+  height: 84px;
+  overflow: hidden;
 }
 
 .brand-logo {
-  display: block;
-  width: 136px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 176px;
+  max-width: none;
   height: auto;
-  transform: translateY(-4px);
+  transform: translateY(-51%);
 }
 
 .nav-links {
-  justify-self: end;
+  margin-left: auto;
   display: flex;
-  gap: 1.55rem;
-  margin-right: 1.5rem;
-  color: #a9a5af;
-  font-size: .78rem;
+  align-items: center;
+  gap: 1.65rem;
+  color: #9f9ba5;
+  font-size: .8rem;
+}
+
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  transition: color 160ms ease;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: white;
+  color: #ffffff;
 }
 
 .header-cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 34px;
-  padding: 0 .9rem;
-  border: 1px solid #3b3942;
-  color: white;
-  font-size: .74rem;
+  min-height: 38px;
+  margin-left: 1.65rem;
+  padding: 0 1rem;
+  border: 1px solid #4a4752;
+  color: #ffffff;
+  font-size: .76rem;
   font-weight: 650;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .header-cta:hover,
 .header-cta:focus-visible {
-  background: white;
-  border-color: white;
-  color: var(--black);
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0a0a0c;
 }
 
 .eyebrow {
@@ -495,12 +506,28 @@ a {
 
 @media (max-width: 980px) {
   .site-header {
-    grid-template-columns: auto 1fr;
+    height: 76px;
     padding-inline: 16px;
+  }
+
+  .brand-lockup {
+    flex-basis: 158px;
+    height: 76px;
+  }
+
+  .brand-logo {
+    width: 158px;
+    transform: translateY(-51%);
   }
 
   .nav-links {
     display: none;
+  }
+
+  .header-cta {
+    min-height: 36px;
+    margin-left: 0;
+    padding-inline: .9rem;
   }
 
   .hero {
@@ -555,22 +582,23 @@ a {
   }
 
   .site-header {
-    min-height: 64px;
+    height: 70px;
     padding-inline: 10px;
   }
 
   .brand-lockup {
-    height: 64px;
+    flex-basis: 142px;
+    height: 70px;
   }
 
   .brand-logo {
-    width: 116px;
-    transform: translateY(-3px);
+    width: 142px;
+    transform: translateY(-51%);
   }
 
   .header-cta {
-    min-height: 32px;
-    padding: 0 .72rem;
+    min-height: 34px;
+    padding-inline: .75rem;
     font-size: .7rem;
   }
 
@@ -625,4 +653,11 @@ a {
   *::after {
     transition: none !important;
   }
+}
+
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
