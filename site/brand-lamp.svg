@@ -1,15 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 118" role="img" aria-labelledby="title">
-  <title id="title">Vide Verum lamp mark</title>
-  <path d="M90 0v22" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
-  <rect x="82" y="21" width="16" height="12" rx="2" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-  <rect x="76" y="32" width="28" height="18" rx="2" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-  <path d="M77 41l-10 14M103 41l10 14" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="66" cy="57" r="3.5" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-  <circle cx="114" cy="57" r="3.5" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-  <path d="M90 49c-31 0-54 21-63 49h126c-9-28-32-49-63-49z"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" role="img" aria-labelledby="title">
+  <title id="title">Vide Verum industrial pendant lamp</title>
+
+  <path d="M90 0v54" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="83" y="52" width="14" height="11" rx="2"
+        fill="#09090b" stroke="#ffffff" stroke-width="3"/>
+  <rect x="77" y="62" width="26" height="20" rx="2"
+        fill="#09090b" stroke="#ffffff" stroke-width="3"/>
+
+  <path d="M78 70l-10 16M102 70l10 16"
+        stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="67" cy="88" r="3.5"
+          fill="#09090b" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="113" cy="88" r="3.5"
+          fill="#09090b" stroke="#ffffff" stroke-width="3"/>
+
+  <path d="M90 80c-29 0-52 20-61 48h122c-9-28-32-48-61-48z"
         fill="#09090b"
         stroke="#ffffff"
-        stroke-width="4"
+        stroke-width="3"
         stroke-linejoin="round"/>
-  <ellipse cx="90" cy="98" rx="63" ry="8" fill="#ffffff"/>
+
+  <ellipse cx="90" cy="128" rx="61" ry="8" fill="#ffffff"/>
 </svg>
