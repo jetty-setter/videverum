@@ -75,7 +75,7 @@ a {
   transform: translateY(-10px);
   
   object-fit: contain;
-  filter: brightness(1.28) saturate(1.12);
+  filter: brightness(1.75) saturate(0.92);
 }
 
 .nav-group {
@@ -503,7 +503,7 @@ a {
   display: block;
   width: 120px;
   height: auto;
-  filter: brightness(1.28) saturate(1.12);
+  filter: brightness(1.75) saturate(0.92);
 }
 
 .site-footer p {
