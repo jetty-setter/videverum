@@ -59,20 +59,21 @@ a {
 }
 
 .brand-lockup {
-  position: relative;
-  flex: 0 0 176px;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
   height: 98px;
   overflow: visible;
 }
 
 .brand-logo {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 168px;
-  max-width: none;
-  height: auto;
-  transform: translateY(-50%);
+  position: static;
+  display: block;
+  width: auto;
+  height: 88px;
+  max-width: 190px;
+  transform: none;
+  object-fit: contain;
 }
 
 .nav-group {
@@ -215,22 +216,8 @@ a {
 }
 
 .offer-intro {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 2.5rem;
-  align-items: start;
-  padding: 2rem 0 2.4rem;
+  padding: 2rem 0 1.4rem;
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.offer-intro h2 {
-  max-width: 700px;
-  margin: 0;
-  font-size: clamp(2.5rem, 3.8vw, 4rem);
-  line-height: 1;
-  font-weight: 600;
-  letter-spacing: -.04em;
 }
 
 .offer {
@@ -527,14 +514,14 @@ a {
   }
 
   .brand-lockup {
-    flex-basis: 154px;
     height: 88px;
-    overflow: visible;
   }
 
   .brand-logo {
-    width: 150px;
-    transform: translateY(-47%);
+    width: auto;
+    height: 78px;
+    max-width: 170px;
+    transform: none;
   }
 
   .nav-links {
@@ -607,14 +594,14 @@ a {
   }
 
   .brand-lockup {
-    flex-basis: 138px;
     height: 80px;
-    overflow: visible;
   }
 
   .brand-logo {
-    width: 136px;
-    transform: translateY(-47%);
+    width: auto;
+    height: 70px;
+    max-width: 150px;
+    transform: none;
   }
 
   .header-cta {
