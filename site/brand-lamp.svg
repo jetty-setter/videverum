@@ -1,51 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 205" role="img" aria-labelledby="title desc">
-  <title id="title">Vide Verum</title>
-  <desc id="desc">Industrial pendant lamp illuminating the Vide Verum wordmark</desc>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-labelledby="title">
+  <title id="title">Vide Verum lamp mark</title>
   <defs>
     <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity=".42"/>
-      <stop offset=".48" stop-color="#ffffff" stop-opacity=".22"/>
-      <stop offset=".78" stop-color="#8d62e8" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#8d62e8" stop-opacity="0"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
-
-    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1d1d21"/>
-      <stop offset="1" stop-color="#070708"/>
-    </linearGradient>
-
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="5"/>
-    </filter>
   </defs>
 
-  <g>
-    <path d="M280 2v24" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
-    <rect x="268" y="25" width="24" height="14" rx="2" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-    <rect x="260" y="38" width="40" height="20" rx="3" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-    <path d="M260 48l-14 17M300 48l14 17" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="245" cy="67" r="4" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-    <circle cx="315" cy="67" r="4" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
-
-    <path d="M280 57c-46 0-80 29-92 68h184c-12-39-46-68-92-68z"
-          fill="url(#shade)"
-          stroke="#ffffff"
-          stroke-width="4"
-          stroke-linejoin="round"/>
-
-    <ellipse cx="280" cy="125" rx="92" ry="10" fill="#ffffff"/>
-    <ellipse cx="280" cy="126" rx="103" ry="16" fill="#ffffff" opacity=".20" filter="url(#glow)"/>
-  </g>
-
-  <path d="M192 129L118 192H442L368 129Z" fill="url(#beam)"/>
-
-  <text x="280" y="189"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="50"
-        font-weight="700"
-        letter-spacing="2">
-    <tspan fill="#ffffff">VIDE</tspan><tspan dx="8" fill="#5b2bb8">VERUM</tspan>
-  </text>
+  <path d="M120 0v31" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <rect x="111" y="30" width="18" height="14" rx="2" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
+  <rect x="104" y="43" width="32" height="20" rx="2" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
+  <path d="M105 53l-13 17M135 53l13 17" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="91" cy="72" r="4" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="149" cy="72" r="4" fill="#09090b" stroke="#ffffff" stroke-width="4"/>
+  <path d="M120 61c-36 0-63 24-74 56h148c-11-32-38-56-74-56z"
+        fill="#09090b"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+  <ellipse cx="120" cy="117" rx="74" ry="9" fill="#ffffff"/>
+  <path d="M53 123L30 150H210L187 123Z" fill="url(#beam)"/>
 </svg>
