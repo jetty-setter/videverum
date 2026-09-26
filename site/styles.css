@@ -61,7 +61,7 @@ a {
 
 .brand-lockup img {
   display: block;
-  width: 188px;
+  width: 214px;
   height: 84px;
   object-fit: contain;
 }
@@ -437,8 +437,8 @@ a {
 }
 
 .footer-brand img {
-  width: 170px;
-  height: 78px;
+  width: 194px;
+  height: 74px;
 }
 
 .site-footer p {
@@ -489,8 +489,8 @@ a {
   }
 
   .brand-lockup img {
-    width: 148px;
-    height: 70px;
+    width: 168px;
+    height: 66px;
   }
 
   .header-cta {
@@ -534,8 +534,8 @@ a {
   }
 
   .footer-brand img {
-    width: 148px;
-    height: 70px;
+    width: 168px;
+    height: 66px;
   }
 }
 
