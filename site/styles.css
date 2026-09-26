@@ -73,6 +73,7 @@ a {
   height: 88px;
   max-width: 190px;
   transform: translateY(-10px);
+  filter: brightness(1.18) saturate(1.08);
   object-fit: contain;
 }
 
@@ -501,6 +502,7 @@ a {
   display: block;
   width: 120px;
   height: auto;
+  filter: brightness(1.18) saturate(1.08);
 }
 
 .site-footer p {
