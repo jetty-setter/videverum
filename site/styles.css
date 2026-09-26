@@ -72,7 +72,7 @@ a {
   width: auto;
   height: 88px;
   max-width: 190px;
-  transform: none;
+  transform: translateY(-5px);
   object-fit: contain;
 }
 
@@ -521,7 +521,7 @@ a {
     width: auto;
     height: 78px;
     max-width: 170px;
-    transform: none;
+    transform: translateY(-4px);
   }
 
   .nav-links {
@@ -601,7 +601,7 @@ a {
     width: auto;
     height: 70px;
     max-width: 150px;
-    transform: none;
+    transform: translateY(-3px);
   }
 
   .header-cta {
