@@ -50,7 +50,7 @@ a {
 
 .header-inner {
   width: min(1160px, calc(100vw - 48px));
-  height: 82px;
+  height: 98px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@ a {
 .brand-lockup {
   position: relative;
   flex: 0 0 176px;
-  height: 82px;
+  height: 98px;
   overflow: visible;
 }
 
@@ -72,7 +72,7 @@ a {
   width: 168px;
   max-width: none;
   height: auto;
-  transform: translateY(-47%);
+  transform: translateY(-50%);
 }
 
 .nav-group {
@@ -523,12 +523,12 @@ a {
 @media (max-width: 980px) {
   .header-inner {
     width: calc(100vw - 32px);
-    height: 74px;
+    height: 88px;
   }
 
   .brand-lockup {
     flex-basis: 154px;
-    height: 74px;
+    height: 88px;
     overflow: visible;
   }
 
@@ -603,12 +603,12 @@ a {
 
   .header-inner {
     width: calc(100vw - 20px);
-    height: 68px;
+    height: 80px;
   }
 
   .brand-lockup {
     flex-basis: 138px;
-    height: 68px;
+    height: 80px;
     overflow: visible;
   }
 
