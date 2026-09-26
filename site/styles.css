@@ -62,17 +62,17 @@ a {
   position: relative;
   flex: 0 0 176px;
   height: 82px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .brand-logo {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 176px;
+  width: 168px;
   max-width: none;
   height: auto;
-  transform: translateY(-51%);
+  transform: translateY(-47%);
 }
 
 .nav-group {
@@ -527,12 +527,14 @@ a {
   }
 
   .brand-lockup {
-    flex-basis: 158px;
+    flex-basis: 154px;
     height: 74px;
+    overflow: visible;
   }
 
   .brand-logo {
-    width: 158px;
+    width: 150px;
+    transform: translateY(-47%);
   }
 
   .nav-links {
@@ -605,12 +607,14 @@ a {
   }
 
   .brand-lockup {
-    flex-basis: 142px;
+    flex-basis: 138px;
     height: 68px;
+    overflow: visible;
   }
 
   .brand-logo {
-    width: 142px;
+    width: 136px;
+    transform: translateY(-47%);
   }
 
   .header-cta {
