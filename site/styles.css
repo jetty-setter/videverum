@@ -590,53 +590,61 @@ a {
 
 /* Vide Verum brand lockup */
 .site-header {
-  min-height: 92px;
-  padding-top: 0;
-  padding-bottom: 0;
+  min-height: 96px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .site-header .brand-lockup {
-  width: 220px;
-  height: 86px;
-  overflow: hidden;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 .site-header .brand-logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 310px;
+  position: static;
+  display: block;
+  width: 176px;
+  height: auto;
   max-width: none;
-  transform: translate(-50%, -47%);
+  max-height: none;
+  transform: none;
+  object-fit: contain;
 }
 
 .footer-brand {
-  width: 170px;
-  overflow: hidden;
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 .footer-brand .brand-logo {
-  width: 170px;
+  position: static;
+  display: block;
+  width: 156px;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  transform: none;
+  object-fit: contain;
 }
 
 @media (max-width: 620px) {
   .site-header {
-    min-height: 78px;
-  }
-
-  .site-header .brand-lockup {
-    width: 178px;
-    height: 72px;
+    min-height: 84px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .site-header .brand-logo {
-    width: 252px;
-    transform: translate(-50%, -47%);
+    width: 150px;
   }
 
-  .footer-brand,
   .footer-brand .brand-logo {
-    width: 146px;
+    width: 138px;
   }
 }
