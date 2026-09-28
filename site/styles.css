@@ -1884,3 +1884,17 @@ a:focus-visible,button:focus-visible{
     left:-12px;
   }
 }
+
+
+/* Simplify hero capability rail */
+.hero-bottom{
+  gap:34px;
+}
+.hero-bottom span + span::before{
+  display:none;
+}
+@media(max-width:700px){
+  .hero-bottom{
+    gap:22px;
+  }
+}
