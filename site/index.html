@@ -1,84 +1,37 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#14161A" />
-  <title>VideVerum — Independent Software Company</title>
-  <meta name="description" content="VideVerum is the independent software company behind RabbitHole and QuicLens." />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="VideVerum — Independent Software Company" />
-  <meta property="og:description" content="Independent software for curiosity and research." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://videverum.com/" />
-  <link rel="canonical" href="https://videverum.com/" />
-  <link rel="icon" href="/favicon-v5.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a09">
+  <meta name="description" content="Vide Verum is an independent software company. Software for seeing what others miss.">
+  <title>Vide Verum — Software for seeing what others miss.</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="hero-video.js?v=2" defer></script>
+
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="/" aria-label="VideVerum home">
-        <img src="/brand-mark-v5.svg" alt="" />
-        <span>VideVerum</span>
-      </a>
-
-      <nav class="topnav" aria-label="Products">
-        <a href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">RabbitHole</a>
-        <a href="https://quiclens.com/" target="_blank" rel="noreferrer">QuicLens</a>
-      </nav>
-
-      <a class="github-link" href="https://github.com/jetty-setter" target="_blank" rel="noreferrer">GitHub ↗</a>
-    </header>
-
-    <main class="main">
-      <section class="company-note" aria-labelledby="company-title">
-        <p>Independent software company</p>
-        <h1 id="company-title">Two products. Two very different jobs.</h1>
-      </section>
-
-      <nav class="product-bays" aria-label="VideVerum products">
-        <a class="bay bay--rabbit" href="https://rabbithole.stephsimmons.dev/" target="_blank" rel="noreferrer">
-          <span class="bay-orbit" aria-hidden="true"></span>
-          <span class="bay-topline">
-            <span class="bay-type">Video discovery</span>
-            <span class="bay-status">Available now</span>
-          </span>
-
-          <span class="bay-body">
-            <strong class="bay-name">RabbitHole</strong>
-            <span class="bay-description">A curiosity-driven video experience.</span>
-            <span class="bay-tagline">Made for getting a little lost.</span>
-          </span>
-
-          <span class="bay-action">Visit RabbitHole <b aria-hidden="true">↗</b></span>
-        </a>
-
-        <a class="bay bay--quic" href="https://quiclens.com/" target="_blank" rel="noreferrer">
-          <span class="bay-orbit" aria-hidden="true"></span>
-          <span class="bay-topline">
-            <span class="bay-type">Research software</span>
-            <span class="bay-status">In development</span>
-          </span>
-
-          <span class="bay-body">
-            <strong class="bay-name">QuicLens</strong>
-            <span class="bay-description">Software for RT-QuIC studies.</span>
-            <span class="bay-tagline">Bring the experiment into focus.</span>
-          </span>
-
-          <span class="bay-action">View QuicLens <b aria-hidden="true">↗</b></span>
-        </a>
-      </nav>
-    </main>
-
-    <footer class="footerline">
-      <span>© 2026 VideVerum</span>
-      <span>See what is true.</span>
-    </footer>
-  </div>
+  <a class="skip-link" href="#products">Skip to our work</a>
+  <main>
+    <section class="hero" aria-labelledby="wordmark">
+      <video class="hero-video" muted loop playsinline preload="none" poster="assets/interrogation-poster.jpg" data-src="assets/interrogation-loop-v2.mp4" aria-hidden="true" tabindex="-1"></video>
+      <header class="header">
+        <a class="brand" href="#" aria-label="Vide Verum home">VIDE VERUM</a>
+        <nav aria-label="Main navigation"><a href="#products">Our work</a><a href="#company">The company</a></nav>
+      </header>
+      <div class="hero-copy">
+        <p class="eyebrow">Independent minds. Purposeful software.</p>
+        <div class="wordmark-wrap"><h1 id="wordmark">VIDE VERUM</h1></div>
+        <div class="hero-bottom"><p>Software for seeing<br>what others miss.</p><a class="work-link" href="#products">Explore our work</a></div>
+      </div>
+      <div class="hero-footer"><span>Look a little closer.</span><button class="motion-control" type="button" hidden>Pause motion</button><a href="#products" aria-label="Scroll to our work">Scroll to discover</a></div>
+    </section>
+    <section id="products" class="content">
+      <p class="eyebrow">01 / Our work</p><h2>Built to bring<br>something to light.</h2>
+      <a class="product" href="https://rabbithole.stephsimmons.dev/"><span class="product-number">01</span><div><h3>RabbitHole</h3><p>Video discovery built for curiosity. Follow a thread and see where it leads.</p></div></a>
+      <a class="product" href="https://quiclens.com/"><span class="product-number">02</span><div><h3>QuicLens</h3><p>Research software for RT-QuIC studies, built for evidence and clarity.</p></div></a>
+    </section>
+    <section id="company" class="content company"><p class="eyebrow">02 / The company</p><h2>Clarity takes<br>attention.</h2><p class="company-copy">Vide Verum is an independent software company. We build focused tools for curious people—tools that help you explore, investigate, and see what matters.</p><footer><span class="brand">VIDE VERUM</span><span>Independent by design.</span></footer></section>
+  </main>
 </body>
 </html>
