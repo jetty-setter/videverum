@@ -1990,3 +1990,33 @@ a:focus-visible,button:focus-visible{
     text-align:left;
   }
 }
+
+
+/* Place hero tagline with the wordmark */
+.hero-bottom{
+  display:block;
+  margin-top:12px;
+  padding-top:0;
+  border:0;
+}
+.hero-support{
+  margin:0;
+  max-width:none;
+  color:#e4e1d8;
+  font-size:clamp(14px,1.15vw,18px);
+  line-height:1.25;
+  font-weight:500;
+  letter-spacing:-.015em;
+  text-align:left;
+  text-transform:none;
+}
+@media(max-width:700px){
+  .hero-bottom{
+    margin-top:12px;
+  }
+  .hero-support{
+    max-width:none;
+    font-size:14px;
+    text-align:left;
+  }
+}
