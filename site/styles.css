@@ -2345,3 +2345,23 @@ select{
 .scene-state{
   font-family:"Barlow",Arial,Helvetica,sans-serif;
 }
+
+
+/* Navbar title scale */
+.header nav{
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:.09em;
+}
+@media(max-width:700px){
+  .header nav{
+    font-size:10.5px;
+    letter-spacing:.07em;
+  }
+}
+@media(max-width:460px){
+  .header nav{
+    font-size:10px;
+    letter-spacing:.055em;
+  }
+}
