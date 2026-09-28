@@ -2086,3 +2086,41 @@ a:focus-visible,button:focus-visible{
     line-height:1.12;
   }
 }
+
+
+/* Hero lockup proportion correction */
+.hero .eyebrow{
+  margin-bottom:5px;
+  font-size:9px;
+  letter-spacing:.17em;
+}
+.hero-bottom{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:8px;
+  padding-right:.35vw;
+}
+.hero-support{
+  width:auto;
+  max-width:none;
+  color:#d9d7cf;
+  font-size:clamp(13px,1vw,17px);
+  line-height:1;
+  font-weight:600;
+  letter-spacing:.01em;
+  text-align:right;
+}
+@media(max-width:700px){
+  .hero .eyebrow{
+    margin-bottom:4px;
+  }
+  .hero-bottom{
+    justify-content:flex-start;
+    margin-top:7px;
+    padding-right:0;
+  }
+  .hero-support{
+    font-size:13px;
+    text-align:left;
+  }
+}
