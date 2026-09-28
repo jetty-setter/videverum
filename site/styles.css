@@ -1019,3 +1019,91 @@ a:focus-visible,button:focus-visible{
     font-size:19px;
   }
 }
+
+
+/* Readability pass: keep hero dramatic, make body easier to scan */
+.services-intro h2{
+  max-width:980px;
+  font-size:clamp(48px,6vw,96px);
+  line-height:.96;
+}
+.services-lede{
+  max-width:760px;
+  font-size:clamp(18px,1.45vw,23px);
+  line-height:1.58;
+}
+.service-grid span{
+  font-size:clamp(22px,2vw,34px);
+  line-height:1.08;
+}
+.service-grid p{
+  max-width:620px;
+  font-size:15px;
+  line-height:1.72;
+}
+
+.products-opening h2{
+  max-width:960px;
+  font-size:clamp(48px,6.2vw,100px);
+  line-height:.95;
+}
+.products-opening>p:last-child{
+  max-width:700px;
+  font-size:clamp(18px,1.45vw,23px);
+  line-height:1.58;
+}
+
+.scene-copy h3{
+  font-size:clamp(62px,8vw,126px);
+  line-height:.84;
+}
+.scene-copy p{
+  max-width:540px;
+  font-size:clamp(16px,1.2vw,19px);
+  line-height:1.65;
+}
+
+.manifesto-line{
+  font-size:clamp(52px,7.4vw,116px);
+  line-height:.86;
+}
+.manifesto-copy{
+  width:min(640px,48%);
+}
+.manifesto-copy p{
+  font-size:clamp(18px,1.55vw,24px);
+  line-height:1.58;
+}
+
+@media(max-width:800px){
+  .services-intro h2{
+    font-size:clamp(44px,12vw,72px);
+  }
+  .services-lede{
+    font-size:18px;
+  }
+  .service-grid span{
+    font-size:28px;
+  }
+  .products-opening h2{
+    font-size:clamp(44px,12vw,74px);
+  }
+  .products-opening>p:last-child{
+    font-size:18px;
+  }
+  .scene-copy h3{
+    font-size:clamp(50px,15vw,82px);
+  }
+  .scene-copy p{
+    font-size:16px;
+  }
+  .manifesto-line{
+    font-size:clamp(48px,14vw,78px);
+  }
+  .manifesto-copy{
+    width:92%;
+  }
+  .manifesto-copy p{
+    font-size:18px;
+  }
+}
