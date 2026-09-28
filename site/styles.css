@@ -2020,3 +2020,23 @@ a:focus-visible,button:focus-visible{
     text-align:left;
   }
 }
+
+
+/* Hero lockup spacing */
+.hero .eyebrow{
+  margin-bottom:14px;
+}
+.hero-bottom{
+  margin-top:18px;
+}
+.hero-support{
+  line-height:1.2;
+}
+@media(max-width:700px){
+  .hero .eyebrow{
+    margin-bottom:12px;
+  }
+  .hero-bottom{
+    margin-top:16px;
+  }
+}
