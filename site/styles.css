@@ -1315,3 +1315,89 @@ a:focus-visible,button:focus-visible{
     min-height:60svh;
   }
 }
+
+
+/* Body tone: confident, calm, and less ominous */
+.services-stage{
+  background:#f4f3ef;
+  color:#151515;
+}
+.services-lede{
+  color:#555551;
+}
+.service-grid{
+  border-top-color:#11111118;
+}
+.service-grid article{
+  border-bottom-color:#11111118;
+}
+.service-grid p{
+  color:#666661;
+}
+
+.products-opening{
+  background:#151515;
+  border-bottom-color:#ffffff12;
+}
+.products-opening .eyebrow{
+  color:#9f9f9b;
+}
+.products-opening>p:last-child{
+  color:#b9b8b3;
+}
+
+.product-scene{
+  min-height:62vh;
+}
+.rabbit-scene::before{
+  background:linear-gradient(135deg,#181818 0%,#222 48%,#151515 100%);
+}
+.quic-scene::before{
+  background:linear-gradient(135deg,#171717 0%,#202020 52%,#141414 100%);
+}
+.product-scene::after{
+  background:linear-gradient(90deg,#0009 0%,#0005 45%,#0002 76%,#0005 100%);
+}
+.scene-light{
+  background:radial-gradient(circle,#ffffff10 0%,#ffffff04 32%,transparent 72%);
+  opacity:.32;
+  filter:blur(26px);
+}
+.scan-field{
+  opacity:.07;
+}
+.scene-meta,
+.product-type,
+.scene-state{
+  color:#a7a7a2;
+}
+.scene-copy p{
+  color:#c2c1bc;
+}
+.scene-link{
+  color:#efeee9;
+  border-color:#aaa9a4;
+}
+
+.company-manifesto{
+  background:#f6f5f1;
+  color:#141414;
+}
+.company-manifesto .eyebrow{
+  color:#777773;
+}
+.manifesto-copy p{
+  color:#4d4d49;
+}
+.company-manifesto footer{
+  border-top-color:#1111111f;
+}
+.company-manifesto footer>span:last-child{
+  color:#777773;
+}
+
+@media(max-width:800px){
+  .product-scene{
+    min-height:58svh;
+  }
+}
