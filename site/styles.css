@@ -2546,3 +2546,9 @@ select{
 .hero .eyebrow{
   color:#d8d0c2;
 }
+
+
+/* Slightly warmer hero eyebrow */
+.hero .eyebrow{
+  color:#d9ccba;
+}
