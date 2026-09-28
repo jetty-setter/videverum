@@ -845,3 +845,33 @@ a:focus-visible,button:focus-visible{
     text-align:right;
   }
 }
+
+
+/* Positioning rewrite cleanup */
+.hero-bottom{
+  justify-content:flex-start;
+}
+.hero-footer{
+  justify-content:flex-end;
+}
+.work-opening{
+  padding-top:144px;
+}
+.work-opening h2{
+  max-width:1320px;
+}
+.work-definition{
+  max-width:840px;
+}
+.work-title{
+  scroll-margin-top:86px;
+}
+@media(max-width:800px){
+  .work-opening{
+    padding-top:116px;
+  }
+  .header nav{
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+}
