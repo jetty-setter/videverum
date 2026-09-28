@@ -13,3 +13,130 @@
 .hero{background:#090907 url("assets/interrogation-poster.jpg") center center/cover no-repeat}.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#0002,transparent 30%,#0003 65%,#0006)}.wordmark-wrap h1{color:#e4e1d7;text-shadow:0 2px 24px #0004}.hero .eyebrow{color:#c2c0b7}.hero-copy{top:47%}.hero-bottom p{color:#dbd9d0}
 
 .hero{background-image:url("assets/interrogation-poster.jpg")}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none}.hero::before{z-index:-1}.hero-video[hidden]{display:none}
+
+
+/* Mobile composition: purpose-built rather than scaled-down desktop. */
+body{overflow-x:hidden}
+@media(max-width:700px){
+  .hero{
+    height:100svh;
+    min-height:620px;
+    background-position:50% 50%;
+  }
+  .hero-video{
+    object-position:50% 50%;
+  }
+  .header{
+    top:22px;
+    left:5vw;
+    right:5vw;
+    gap:18px;
+  }
+  .header .brand{
+    flex:0 0 auto;
+    white-space:nowrap;
+  }
+  .header nav{
+    justify-content:flex-end;
+    gap:16px;
+    line-height:1.2;
+  }
+  .hero-copy{
+    top:auto;
+    bottom:112px;
+    left:5vw;
+    right:5vw;
+    transform:none;
+  }
+  .hero .eyebrow{
+    margin-bottom:18px;
+    max-width:80vw;
+  }
+  .wordmark-wrap{
+    width:100%;
+  }
+  .wordmark-wrap h1,.illuminated{
+    font-size:clamp(42px,13vw,66px);
+    line-height:.94;
+    letter-spacing:-.06em;
+    white-space:nowrap;
+  }
+  .hero-bottom{
+    margin-top:24px;
+    gap:20px;
+  }
+  .hero-bottom p{
+    font-size:clamp(17px,5vw,21px);
+    line-height:1.35;
+  }
+  .work-link{
+    padding:10px 0;
+    gap:24px;
+  }
+  .hero-footer{
+    bottom:18px;
+    left:5vw;
+    right:5vw;
+    gap:12px;
+  }
+  .motion-control{
+    padding:8px 0;
+  }
+  .content{
+    padding:72px 5vw;
+  }
+  .content h2{
+    font-size:clamp(40px,12vw,58px);
+    margin:28px 0 48px;
+  }
+  .product{
+    display:grid;
+    grid-template-columns:28px minmax(0,1fr);
+    gap:14px;
+    padding:28px 0;
+  }
+  .product h3{
+    font-size:clamp(30px,9vw,42px);
+  }
+  .product p{
+    margin-bottom:0;
+  }
+  .company-copy{
+    font-size:17px;
+  }
+  .company footer{
+    margin-top:72px;
+    align-items:flex-start;
+  }
+}
+@media(max-width:430px){
+  .header nav{
+    gap:12px;
+    font-size:10px;
+  }
+  .hero-copy{
+    bottom:106px;
+  }
+  .hero-footer>a{
+    gap:10px;
+  }
+  .company footer{
+    flex-direction:column;
+  }
+}
+@media(max-width:700px) and (max-height:560px) and (orientation:landscape){
+  .hero{
+    min-height:560px;
+  }
+  .hero-copy{
+    bottom:78px;
+  }
+  .hero .eyebrow{
+    margin-bottom:10px;
+  }
+  .hero-bottom{
+    flex-direction:row;
+    align-items:flex-end;
+    margin-top:16px;
+  }
+}
