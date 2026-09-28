@@ -1107,3 +1107,211 @@ a:focus-visible,button:focus-visible{
     font-size:18px;
   }
 }
+
+
+/* Tight, unified visual system */
+:root{
+  --space-page:6vw;
+  --rule-light:#1111111f;
+  --rule-dark:#ffffff18;
+}
+
+/* Quieter persistent navigation */
+.header{
+  padding:16px var(--space-page);
+  background:rgba(8,8,8,.82);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid #ffffff0d;
+}
+.header nav{
+  gap:24px;
+}
+.header nav a::after{
+  bottom:-5px;
+}
+
+/* Services: denser and more editorial */
+.services-stage{
+  padding:96px var(--space-page) 64px;
+}
+.services-intro{
+  grid-template-columns:minmax(150px,.34fr) minmax(0,1.66fr);
+  gap:6vw;
+}
+.services-intro h2{
+  max-width:900px;
+  font-size:clamp(46px,5.4vw,84px);
+  line-height:.98;
+}
+.services-lede{
+  max-width:720px;
+  margin-top:36px;
+  font-size:clamp(18px,1.35vw,21px);
+}
+.service-grid{
+  margin-top:78px;
+}
+.service-grid article,
+.service-grid article:nth-child(even){
+  grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);
+  gap:6vw;
+  padding:28px 0 30px;
+}
+.service-grid article:nth-child(even){
+  padding-left:0;
+}
+.service-grid span{
+  font-size:clamp(21px,1.7vw,30px);
+}
+.service-grid p{
+  max-width:600px;
+  font-size:15px;
+  line-height:1.65;
+}
+
+/* Products: clear intro, restrained scenes */
+.products-opening{
+  padding:94px var(--space-page) 62px;
+}
+.products-opening h2{
+  max-width:860px;
+  font-size:clamp(46px,5.6vw,88px);
+  line-height:.97;
+}
+.products-opening>p:last-child{
+  max-width:680px;
+  margin-top:34px;
+  font-size:clamp(18px,1.35vw,21px);
+}
+
+.product-scene{
+  min-height:68vh;
+  grid-template-columns:minmax(0,1fr) minmax(280px,.5fr);
+  gap:28px 6vw;
+  padding:46px var(--space-page) 52px;
+}
+.product-scene::after{
+  background:linear-gradient(90deg,#000d 0%,#0007 48%,#0003 78%,#0008 100%);
+}
+.scene-copy{
+  max-width:760px;
+}
+.scene-copy h3{
+  font-size:clamp(56px,6.8vw,108px);
+  line-height:.86;
+}
+.scene-copy p{
+  max-width:520px;
+  margin-top:26px;
+  font-size:16px;
+  line-height:1.62;
+}
+.scene-link{
+  margin-top:24px;
+}
+.ghost-word{
+  display:none;
+}
+.scene-light{
+  width:min(28vw,420px);
+  opacity:.38;
+}
+.scan-field{
+  width:min(24vw,360px);
+  opacity:.12;
+}
+
+/* Company close: less poster, more statement */
+.company-manifesto{
+  padding:92px var(--space-page) 34px;
+}
+.manifesto-line{
+  margin-top:36px;
+  font-size:clamp(48px,6.2vw,98px);
+  line-height:.9;
+}
+.manifesto-line strong{
+  margin-left:12vw;
+}
+.manifesto-copy{
+  margin:70px 0 78px auto;
+  width:min(600px,46%);
+}
+.manifesto-copy p{
+  font-size:clamp(18px,1.4vw,22px);
+  line-height:1.58;
+}
+.company-manifesto footer{
+  padding-top:22px;
+}
+
+/* Consistent eyebrow rhythm */
+.services-stage .eyebrow,
+.products-opening .eyebrow,
+.company-manifesto .eyebrow{
+  margin-bottom:22px;
+}
+
+@media(max-width:800px){
+  :root{--space-page:5vw}
+  .header{
+    padding:14px var(--space-page);
+  }
+  .services-stage{
+    padding:82px var(--space-page) 52px;
+  }
+  .services-intro h2{
+    font-size:clamp(42px,11vw,66px);
+  }
+  .services-lede{
+    margin-top:28px;
+  }
+  .service-grid{
+    margin-top:54px;
+  }
+  .service-grid article,
+  .service-grid article:nth-child(even){
+    padding:24px 0 26px;
+  }
+  .products-opening{
+    padding:78px var(--space-page) 52px;
+  }
+  .products-opening h2{
+    font-size:clamp(42px,11vw,68px);
+  }
+  .product-scene{
+    min-height:64svh;
+    padding:32px var(--space-page) 38px;
+  }
+  .scene-copy h3{
+    font-size:clamp(48px,14vw,76px);
+  }
+  .scene-copy p{
+    margin-top:22px;
+  }
+  .company-manifesto{
+    padding:78px var(--space-page) 30px;
+  }
+  .manifesto-line{
+    font-size:clamp(44px,12vw,68px);
+  }
+  .manifesto-line strong{
+    margin-left:7vw;
+  }
+  .manifesto-copy{
+    margin:58px 0 64px;
+    width:92%;
+  }
+}
+@media(max-width:560px){
+  .header nav{
+    gap:9px;
+  }
+  .service-grid span{
+    font-size:24px;
+  }
+  .product-scene{
+    min-height:60svh;
+  }
+}
