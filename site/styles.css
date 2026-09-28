@@ -1836,3 +1836,51 @@ a:focus-visible,button:focus-visible{
     letter-spacing:.12em;
   }
 }
+
+
+/* Hero capability rail */
+.hero .eyebrow{
+  width:auto;
+  margin-bottom:22px;
+}
+.hero .eyebrow::after{
+  display:none;
+}
+.hero-bottom{
+  display:flex;
+  justify-content:flex-start;
+  gap:28px;
+  margin-top:22px;
+  padding-top:16px;
+  border-top:1px solid rgba(240,238,231,.22);
+}
+.hero-bottom span{
+  position:relative;
+  color:#d8d6cf;
+  font-size:10px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.hero-bottom span + span::before{
+  content:"/";
+  position:absolute;
+  left:-17px;
+  color:#77776f;
+  font-weight:400;
+}
+@media(max-width:700px){
+  .hero-bottom{
+    gap:20px;
+    flex-wrap:wrap;
+    row-gap:10px;
+  }
+  .hero-bottom span{
+    font-size:9px;
+    letter-spacing:.09em;
+  }
+  .hero-bottom span + span::before{
+    left:-12px;
+  }
+}
