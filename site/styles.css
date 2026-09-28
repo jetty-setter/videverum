@@ -2527,3 +2527,16 @@ select{
     padding-top:0;
   }
 }
+
+
+/* Lock hero color hierarchy */
+.hero .eyebrow{
+  color:#e2dfd7;
+}
+.wordmark-wrap h1,
+.illuminated{
+  color:#e4e1d7;
+}
+.hero-bottom .hero-support{
+  color:var(--accent-bright);
+}
