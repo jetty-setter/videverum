@@ -2540,3 +2540,9 @@ select{
 .hero-bottom .hero-support{
   color:var(--accent-bright);
 }
+
+
+/* Warmer hero eyebrow */
+.hero .eyebrow{
+  color:#d8d0c2;
+}
