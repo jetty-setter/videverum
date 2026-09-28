@@ -2169,3 +2169,40 @@ a:focus-visible,button:focus-visible{
     letter-spacing:.12em;
   }
 }
+
+
+/* Global eyebrow stature */
+.section-kicker,
+.services-stage .eyebrow,
+.products-opening .eyebrow,
+.about-section .eyebrow,
+.company-manifesto .eyebrow{
+  font-size:clamp(12px,1.05vw,16px);
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.14em;
+}
+
+/* Stronger hero tagline */
+.hero-support{
+  max-width:720px;
+  font-size:clamp(28px,3vw,46px);
+  line-height:1.04;
+  font-weight:500;
+  letter-spacing:-.04em;
+}
+@media(max-width:700px){
+  .section-kicker,
+  .services-stage .eyebrow,
+  .products-opening .eyebrow,
+  .about-section .eyebrow,
+  .company-manifesto .eyebrow{
+    font-size:11px;
+    letter-spacing:.12em;
+  }
+  .hero-support{
+    max-width:360px;
+    font-size:clamp(22px,7vw,30px);
+    line-height:1.06;
+  }
+}
