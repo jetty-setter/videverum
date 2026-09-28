@@ -144,13 +144,14 @@ body{overflow-x:hidden}
 
 /* Editorial body redesign */
 :root{
-  --ink:#171719;
-  --stone:#eee9e1;
-  --paper:#f6f2eb;
-  --clay:#b85f3f;
-  --steel:#61768a;
-  --muted-ink:#696764;
-  --hairline:#17171924;
+  --ink:#151515;
+  --charcoal:#202020;
+  --stone:#ecebe7;
+  --paper:#f5f4f0;
+  --soft-white:#deddd8;
+  --mid-gray:#8f8f8b;
+  --muted-ink:#666661;
+  --hairline:#15151524;
 }
 
 .work-section{
@@ -161,7 +162,7 @@ body{overflow-x:hidden}
 }
 .work-section .eyebrow,
 .company .eyebrow{
-  color:var(--clay);
+  color:var(--ink);
 }
 .section-intro{
   display:grid;
@@ -209,7 +210,7 @@ body{overflow-x:hidden}
 }
 .product-type{
   margin:0 0 14px;
-  color:var(--steel);
+  color:var(--mid-gray);
   font-size:10px;
   text-transform:uppercase;
   letter-spacing:.18em;
@@ -238,14 +239,14 @@ body{overflow-x:hidden}
   margin-top:24px;
   padding-bottom:5px;
   border-bottom:1px solid currentColor;
-  color:var(--clay);
+  color:var(--ink);
   font-size:12px;
 }
 .product:hover h3{
-  color:var(--clay);
+  color:var(--ink);
 }
 .product:hover .product-link{
-  color:var(--steel);
+  color:var(--mid-gray);
 }
 
 .company{
@@ -273,7 +274,7 @@ body{overflow-x:hidden}
 .company-copy{
   max-width:590px;
   margin:4px 0 80px;
-  color:#cbc5bc;
+  color:#c9c8c3;
   font-size:clamp(19px,2vw,27px);
   line-height:1.55;
   letter-spacing:-.02em;
@@ -287,15 +288,15 @@ body{overflow-x:hidden}
   align-items:center;
 }
 .company footer>span:last-child{
-  color:#96918a;
+  color:#8f8f8b;
   font-size:12px;
 }
 
 .work-link:hover{
-  color:#d89070;
+  color:#ffffff;
 }
 a:focus-visible,button:focus-visible{
-  outline-color:var(--clay);
+  outline-color:var(--ink);
 }
 
 @media(max-width:800px){
