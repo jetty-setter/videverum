@@ -2566,3 +2566,11 @@ select{
   font-weight:700;
   letter-spacing:-.055em;
 }
+
+
+/* Restore intended hero tagline treatment */
+.hero-bottom p.hero-support{
+  text-transform:none;
+  font-weight:600;
+  letter-spacing:-.045em;
+}
