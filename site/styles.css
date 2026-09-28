@@ -1898,3 +1898,57 @@ a:focus-visible,button:focus-visible{
     gap:22px;
   }
 }
+
+
+/* Hero capability hierarchy */
+.hero-bottom{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:36px;
+  margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid rgba(240,238,231,.22);
+}
+.hero-primary-capability{
+  color:#f1efe8;
+  font-size:clamp(18px,1.7vw,26px);
+  font-weight:650;
+  line-height:1;
+  letter-spacing:-.03em;
+  text-transform:none;
+}
+.hero-secondary-capabilities{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.hero-secondary-capabilities span{
+  color:#bdbbb4;
+  font-size:10px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.hero-bottom > span::before,
+.hero-secondary-capabilities span::before{
+  display:none !important;
+}
+@media(max-width:700px){
+  .hero-bottom{
+    align-items:flex-start;
+    gap:14px;
+    flex-direction:column;
+  }
+  .hero-primary-capability{
+    font-size:18px;
+  }
+  .hero-secondary-capabilities{
+    gap:20px;
+  }
+  .hero-secondary-capabilities span{
+    font-size:9px;
+    letter-spacing:.09em;
+  }
+}
