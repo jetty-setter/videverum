@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=40">
+  <link rel="stylesheet" href="styles.css?v=41">
   <script src="hero-video.js?v=4" defer></script>
 </head>
 <body>
@@ -37,25 +37,25 @@
         <p class="services-lede">Sometimes that means a new application. Sometimes it means replacing a process held together by spreadsheets, moving an older system to the cloud, or fixing a deployment process nobody wants to touch. We start with the problem and work from there.</p>
       </div>
 
-      <div class="service-grid" aria-label="Vide Verum services">
-        <article>
-          <span>Custom software</span>
+      <div class="service-list" aria-label="Vide Verum services">
+        <article class="service-item service-item-featured">
+          <div class="service-name">Custom software</div>
           <p>Internal tools, web applications, APIs, admin systems, customer portals, and other software that needs to fit the way your organization actually works.</p>
         </article>
-        <article>
-          <span>Cloud modernization</span>
+        <article class="service-item">
+          <div class="service-name">Cloud modernization</div>
           <p>AWS migrations, application modernization, infrastructure as code, CI/CD, and architecture updates for systems that have outgrown their original setup.</p>
         </article>
-        <article>
-          <span>Automation &amp; integrations</span>
+        <article class="service-item">
+          <div class="service-name">Automation &amp; integrations</div>
           <p>Connect systems, remove repetitive steps, and automate the work that should not require somebody to copy, paste, rekey, or babysit it.</p>
         </article>
-        <article>
-          <span>Platform engineering</span>
+        <article class="service-item">
+          <div class="service-name">Platform engineering</div>
           <p>Deployment patterns, observability, reliability, developer experience, and cloud foundations that make it easier to build and support what comes next.</p>
         </article>
-        <article>
-          <span>Technical strategy</span>
+        <article class="service-item">
+          <div class="service-name">Technical strategy</div>
           <p>Architecture reviews, modernization planning, and a practical second opinion when you know something needs to change but the right next step is not obvious.</p>
         </article>
       </div>
@@ -69,26 +69,28 @@
       </div>
 
       <div class="product-list">
-        <a class="product-scene rabbit-scene" href="https://rabbithole.stephsimmons.dev/">
-          <div class="scene-meta">
-            <p class="product-type">Video discovery</p>
+        <a class="product-row rabbit-scene" href="https://rabbithole.stephsimmons.dev/">
+          <div class="product-row-meta">
+            <span class="product-type">Video discovery</span>
+            <span class="product-index">01</span>
           </div>
-          <div class="scene-copy">
+          <div class="product-row-main">
             <h3>RabbitHole</h3>
             <p>A video discovery platform built around curiosity and exploration. Start with one thing, follow the thread, and see where it takes you.</p>
-            <span class="scene-link">Explore RabbitHole</span>
           </div>
+          <span class="scene-link">Explore</span>
         </a>
 
-        <a class="product-scene quic-scene" href="https://quiclens.com/">
-          <div class="scene-meta">
-            <p class="product-type">Research technology</p>
+        <a class="product-row quic-scene" href="https://quiclens.com/">
+          <div class="product-row-meta">
+            <span class="product-type">Research technology</span>
+            <span class="product-index">02</span>
           </div>
-          <div class="scene-copy">
+          <div class="product-row-main">
             <h3>QuicLens</h3>
             <p>Research software for RT-QuIC studies that makes complex experimental data easier to inspect, compare, and understand.</p>
-            <span class="scene-link">Explore QuicLens</span>
           </div>
+          <span class="scene-link">Explore</span>
         </a>
       </div>
     </section>
