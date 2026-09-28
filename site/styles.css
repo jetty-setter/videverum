@@ -2271,3 +2271,42 @@ button:focus-visible{
   --accent:#788589;
   --accent-bright:#a3adaf;
 }
+
+
+/* Refined type system */
+body{
+  font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;
+}
+.brand,
+.header nav,
+.eyebrow,
+.section-kicker,
+.wordmark-wrap h1,
+.illuminated,
+.hero-support,
+.services-intro h2,
+.service-grid span,
+.products-opening h2,
+.scene-copy h3,
+.about-heading h2,
+.scene-link,
+.product-type{
+  font-family:"Barlow",Arial,Helvetica,sans-serif;
+}
+
+/* Stronger navbar wordmark */
+.header .brand{
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:-.045em;
+}
+@media(max-width:700px){
+  .header .brand{
+    font-size:17px;
+  }
+}
+@media(max-width:460px){
+  .header .brand{
+    font-size:16px;
+  }
+}
