@@ -1401,3 +1401,55 @@ a:focus-visible,button:focus-visible{
     min-height:58svh;
   }
 }
+
+
+/* Navbar typography refinement */
+.header{
+  min-height:58px;
+  align-items:center;
+}
+.header .brand{
+  font-size:15px;
+  line-height:1;
+  letter-spacing:-.035em;
+  font-weight:800;
+}
+.header nav{
+  align-items:center;
+  gap:28px;
+  font-size:11px;
+  line-height:1;
+  letter-spacing:.015em;
+  color:#c2c2bd;
+}
+.header nav a{
+  display:flex;
+  align-items:center;
+  min-height:28px;
+  white-space:nowrap;
+}
+.header nav a:hover{
+  color:#fff;
+}
+
+@media(max-width:700px){
+  .header{
+    min-height:54px;
+    padding-top:14px;
+    padding-bottom:14px;
+  }
+  .header .brand{
+    font-size:13px;
+  }
+  .header nav{
+    gap:14px;
+    font-size:10px;
+    letter-spacing:0;
+  }
+}
+@media(max-width:460px){
+  .header nav{
+    gap:10px;
+    font-size:9.5px;
+  }
+}
