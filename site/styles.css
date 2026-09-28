@@ -2234,3 +2234,27 @@ a:focus-visible,button:focus-visible{
     font-size:clamp(20px,6vw,27px);
   }
 }
+
+
+/* Restrained steel-blue accent */
+:root{
+  --accent:#6f8796;
+  --accent-bright:#8fa6b3;
+}
+a:focus-visible,
+button:focus-visible{
+  outline-color:var(--accent-bright);
+}
+.header nav a:hover{
+  color:var(--accent-bright);
+}
+.scene-link{
+  border-bottom-color:var(--accent);
+}
+.product-scene:hover .scene-link{
+  color:var(--accent-bright);
+  border-color:var(--accent-bright);
+}
+.about-section footer .brand{
+  color:var(--accent);
+}
