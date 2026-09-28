@@ -2264,3 +2264,10 @@ button:focus-visible{
 .hero-bottom .hero-support{
   color:var(--accent-bright);
 }
+
+
+/* Warm the steel accent toward a smoky blue-gray */
+:root{
+  --accent:#788589;
+  --accent-bright:#a3adaf;
+}
