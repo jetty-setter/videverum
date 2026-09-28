@@ -2574,3 +2574,9 @@ select{
   font-weight:600;
   letter-spacing:-.045em;
 }
+
+
+/* Hero tagline case */
+.hero-bottom p.hero-support{
+  text-transform:uppercase;
+}
