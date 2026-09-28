@@ -20,14 +20,14 @@
       video.src = video.dataset.src;
     }
 
-    video.playbackRate = 0.65;
+    video.playbackRate = 0.8;
     video.play().catch(() => {
       video.hidden = true;
     });
   }
 
   video.addEventListener('loadedmetadata', () => {
-    video.playbackRate = 0.65;
+    video.playbackRate = 0.8;
   });
 
   video.addEventListener('error', () => {
