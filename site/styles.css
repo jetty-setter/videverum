@@ -2040,3 +2040,49 @@ a:focus-visible,button:focus-visible{
     margin-top:16px;
   }
 }
+
+
+/* Hero lockup proportion pass */
+.hero .eyebrow{
+  margin-bottom:16px;
+  font-size:9px;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:.18em;
+  color:#d2d0c8;
+}
+.wordmark-wrap h1,
+.illuminated{
+  font-size:clamp(64px,11.8vw,205px);
+}
+.hero-bottom{
+  margin-top:20px;
+}
+.hero-support{
+  max-width:520px;
+  color:#f0ede5;
+  font-size:clamp(20px,2vw,31px);
+  line-height:1.08;
+  font-weight:500;
+  letter-spacing:-.035em;
+}
+
+@media(max-width:700px){
+  .hero .eyebrow{
+    margin-bottom:12px;
+    font-size:8px;
+    letter-spacing:.16em;
+  }
+  .wordmark-wrap h1,
+  .illuminated{
+    font-size:clamp(46px,13vw,66px);
+  }
+  .hero-bottom{
+    margin-top:14px;
+  }
+  .hero-support{
+    max-width:320px;
+    font-size:clamp(18px,5vw,22px);
+    line-height:1.12;
+  }
+}
