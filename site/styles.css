@@ -875,3 +875,15 @@ a:focus-visible,button:focus-visible{
     justify-content:flex-end;
   }
 }
+
+
+/* Keep hero tagline as a single statement */
+.hero-bottom p{
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .hero-bottom p{
+    white-space:normal;
+    max-width:92vw;
+  }
+}
