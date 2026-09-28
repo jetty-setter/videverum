@@ -2552,3 +2552,10 @@ select{
 .hero .eyebrow{
   color:#d9ccba;
 }
+
+
+/* Strengthen hero tagline without uppercasing */
+.hero-bottom .hero-support{
+  font-weight:600;
+  letter-spacing:-.045em;
+}
