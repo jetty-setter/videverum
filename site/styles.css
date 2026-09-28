@@ -2580,3 +2580,9 @@ select{
 .hero-bottom p.hero-support{
   text-transform:uppercase;
 }
+
+
+/* Services eyebrow spacing */
+.services-intro .section-kicker{
+  margin-bottom:10px;
+}
