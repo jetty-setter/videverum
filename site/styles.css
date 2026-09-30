@@ -2236,10 +2236,10 @@ a:focus-visible,button:focus-visible{
 }
 
 
-/* Restrained steel-blue accent */
+/* Neutral silver accents with a restrained cool tint. */
 :root{
-  --accent:#6f8796;
-  --accent-bright:#8fa6b3;
+  --accent:#a7aaaa;
+  --accent-bright:#c5c8c8;
 }
 a:focus-visible,
 button:focus-visible{
@@ -2263,13 +2263,7 @@ button:focus-visible{
 /* Hero tagline accent */
 .hero-bottom .hero-support{
   color:var(--accent-bright);
-}
-
-
-/* Warm the steel accent toward a smoky blue-gray */
-:root{
-  --accent:#788589;
-  --accent-bright:#a3adaf;
+  text-shadow:0 2px 4px #000c,0 0 18px #0008;
 }
 
 
@@ -2535,7 +2529,8 @@ select{
 }
 .wordmark-wrap h1,
 .illuminated{
-  color:#e4e1d7;
+  color:#faf9f6;
+  text-shadow:0 2px 4px #0008;
 }
 .hero-bottom .hero-support{
   color:var(--accent-bright);
@@ -2548,9 +2543,10 @@ select{
 }
 
 
-/* Slightly warmer hero eyebrow */
+/* Soft charcoal eyebrow against the warm wall. */
 .hero .eyebrow{
-  color:#d9ccba;
+  color:#858787;
+  text-shadow:none;
 }
 
 
