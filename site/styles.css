@@ -2582,3 +2582,293 @@ select{
 .services-intro .section-kicker{
   margin-bottom:10px;
 }
+
+
+/* Product showcase: open editorial compositions, not cards */
+.product-showcase{
+  border-top:1px solid #ffffff1b;
+}
+.product-feature{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(140px,.42fr) minmax(0,1.05fr) minmax(320px,.9fr);
+  gap:5vw;
+  min-height:720px;
+  padding:72px 6vw 78px;
+  border-bottom:1px solid #ffffff1b;
+  overflow:hidden;
+  isolation:isolate;
+  background:transparent;
+}
+.product-feature-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  align-self:start;
+  color:#8e8e89;
+  font-family:"Barlow",Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.product-feature-copy{
+  position:relative;
+  z-index:2;
+  align-self:end;
+  max-width:690px;
+}
+.product-feature-copy h3{
+  margin:0;
+  font-family:"Barlow",Arial,Helvetica,sans-serif;
+  font-size:clamp(64px,7.8vw,124px);
+  font-weight:600;
+  line-height:.82;
+  letter-spacing:-.07em;
+}
+.product-feature-copy p{
+  max-width:590px;
+  margin:30px 0 0;
+  color:#b9b8b2;
+  font-size:17px;
+  line-height:1.7;
+}
+.product-feature-link{
+  display:inline-block;
+  margin-top:34px;
+  padding-bottom:7px;
+  border-bottom:1px solid #777773;
+  color:#f0eee8;
+  font-family:"Barlow",Arial,Helvetica,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  transition:color .2s ease,border-color .2s ease,transform .2s ease;
+}
+.product-feature:hover .product-feature-link{
+  color:var(--accent-bright);
+  border-color:var(--accent-bright);
+  transform:translateX(5px);
+}
+.product-feature-visual{
+  position:relative;
+  min-height:500px;
+  align-self:center;
+}
+
+/* RabbitHole gets an atmospheric editorial field instead of fake app chrome */
+.rabbit-feature{
+  grid-template-columns:minmax(140px,.38fr) minmax(0,.95fr) minmax(360px,1fr);
+}
+.rabbit-feature::before{
+  content:"";
+  position:absolute;
+  width:54vw;
+  height:54vw;
+  min-width:620px;
+  min-height:620px;
+  right:-14vw;
+  top:50%;
+  transform:translateY(-50%);
+  background:radial-gradient(circle,#21182b 0%,#141118 34%,#0b0b0b 68%);
+  opacity:.78;
+  z-index:-1;
+}
+.rabbit-visual{
+  min-height:560px;
+}
+.rabbit-hole-mark{
+  position:absolute;
+  width:min(31vw,470px);
+  aspect-ratio:1;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 48% 46%,#050505 0 26%,#0e0b12 27% 39%,#25172d 40% 47%,#0c0b0d 48% 55%,#1a1120 56% 61%,transparent 62%);
+  box-shadow:0 0 90px #7a4b8f1f;
+}
+.rabbit-hole-mark::after{
+  content:"";
+  position:absolute;
+  inset:18%;
+  border-radius:50%;
+  border:1px solid #ffffff14;
+  box-shadow:0 0 0 30px #ffffff05,0 0 0 70px #ffffff03;
+}
+.rabbit-word{
+  position:absolute;
+  z-index:2;
+  font-family:"Barlow",Arial,Helvetica,sans-serif;
+  font-weight:700;
+  letter-spacing:-.05em;
+  color:#ddd9d1;
+  opacity:.68;
+  white-space:nowrap;
+}
+.rabbit-word-one{
+  top:17%;
+  right:5%;
+  font-size:clamp(32px,4vw,62px);
+}
+.rabbit-word-two{
+  top:48%;
+  left:-4%;
+  font-size:clamp(48px,6.2vw,96px);
+  color:#6f596f;
+  opacity:.62;
+}
+.rabbit-word-three{
+  bottom:13%;
+  right:8%;
+  font-size:clamp(22px,2.8vw,44px);
+  opacity:.36;
+}
+
+/* QuicLens uses rhythm and signal rather than another mirrored rectangle */
+.quic-feature{
+  grid-template-columns:minmax(140px,.38fr) minmax(340px,.9fr) minmax(0,.95fr);
+}
+.quic-feature .product-feature-copy{
+  justify-self:end;
+  align-self:center;
+}
+.quic-visual{
+  min-height:500px;
+  align-self:center;
+}
+.quic-axis{
+  position:absolute;
+  left:4%;
+  right:2%;
+  bottom:22%;
+  height:1px;
+  background:#ffffff25;
+}
+.quic-axis::before{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:1px;
+  height:280px;
+  background:#ffffff20;
+}
+.quic-trace{
+  position:absolute;
+  inset:15% 0 18% 5%;
+}
+.quic-trace span{
+  position:absolute;
+  bottom:12%;
+  width:2px;
+  background:linear-gradient(to top,#5d4c65,#cfc8d4);
+  transform-origin:bottom;
+  opacity:.8;
+}
+.quic-trace span:nth-child(1){left:4%;height:28%;transform:rotate(-8deg)}
+.quic-trace span:nth-child(2){left:20%;height:47%;transform:rotate(5deg)}
+.quic-trace span:nth-child(3){left:38%;height:35%;transform:rotate(-3deg)}
+.quic-trace span:nth-child(4){left:55%;height:68%;transform:rotate(7deg)}
+.quic-trace span:nth-child(5){left:73%;height:54%;transform:rotate(-5deg)}
+.quic-trace span:nth-child(6){left:91%;height:82%;transform:rotate(3deg)}
+.quic-trace::after{
+  content:"";
+  position:absolute;
+  left:3%;
+  right:4%;
+  bottom:12%;
+  height:58%;
+  border-top:1px solid #9e879f;
+  transform:skewY(-12deg);
+  opacity:.55;
+}
+.quic-label{
+  position:absolute;
+  left:4%;
+  bottom:10%;
+  color:#858580;
+  font-family:"Barlow",Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.14em;
+}
+
+@media(max-width:980px){
+  .product-feature,
+  .rabbit-feature,
+  .quic-feature{
+    grid-template-columns:120px minmax(0,1fr);
+    min-height:auto;
+    padding:58px 5vw 62px;
+  }
+  .product-feature-meta{
+    grid-column:1;
+    grid-row:1;
+  }
+  .product-feature-copy{
+    grid-column:2;
+    grid-row:1 / span 2;
+    align-self:start;
+  }
+  .product-feature-visual{
+    grid-column:1 / -1;
+    grid-row:3;
+    min-height:420px;
+    margin-top:32px;
+  }
+  .quic-feature .product-feature-copy{
+    grid-column:2;
+    grid-row:1 / span 2;
+    justify-self:start;
+    align-self:start;
+  }
+  .quic-feature .product-feature-visual{
+    grid-column:1 / -1;
+    grid-row:3;
+  }
+  .rabbit-feature::before{
+    width:80vw;
+    height:80vw;
+    right:-25vw;
+    top:72%;
+  }
+}
+@media(max-width:700px){
+  .products-opening{
+    padding-bottom:34px;
+  }
+  .product-feature,
+  .rabbit-feature,
+  .quic-feature{
+    display:block;
+    padding:42px 5vw 48px;
+  }
+  .product-feature-meta{
+    max-width:none;
+    margin-bottom:56px;
+  }
+  .product-feature-copy h3{
+    font-size:clamp(58px,18vw,92px);
+  }
+  .product-feature-copy p{
+    font-size:16px;
+    margin-top:24px;
+  }
+  .product-feature-visual{
+    min-height:330px;
+    margin-top:42px;
+  }
+  .rabbit-hole-mark{
+    width:min(78vw,390px);
+    right:-8vw;
+  }
+  .rabbit-word-two{
+    left:0;
+  }
+  .quic-feature .product-feature-visual{
+    margin-top:34px;
+  }
+}
