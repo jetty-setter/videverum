@@ -3,12 +3,6 @@
 VideVerum is the parent company behind a small family of independent software
 products (RabbitHole, QuicLens, and others). This repository holds **only** the
 VideVerum corporate website and the infrastructure that serves it.
-
-The site was previously a UFO/UAP encyclopedia ("Vide Verum"). That application
-has been retired — its full source is on the [`archive/ufo-era`](https://github.com/jetty-setter/videverum/tree/archive/ufo-era)
-branch and its editorial data is in [`docs/legacy-data/`](docs/legacy-data/).
-See [`docs/aws-cleanup.md`](docs/aws-cleanup.md) for what changed and why.
-
 ---
 
 ## Architecture
