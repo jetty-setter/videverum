@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=61">
+  <link rel="stylesheet" href="styles.css?v=64">
   <script src="hero-video.js?v=4" defer></script>
 </head>
 <body>
@@ -22,7 +22,6 @@
         <nav aria-label="Main navigation"><a href="#services">SERVICES</a><a href="#products">PRODUCTS</a><a href="#company">ABOUT US</a></nav>
       </header>
       <div class="hero-copy">
-        <p class="eyebrow">Clarity by design</p>
         <div class="wordmark-wrap"><h1 id="wordmark">VIDE VERUM</h1></div>
         <div class="hero-bottom">
           <p class="hero-support">Technology that fits reality</p>
@@ -30,54 +29,50 @@
       </div>
     </section>
 
-    <section id="services" class="services-stage">
-      <div class="services-intro">
-        <p class="section-kicker">SERVICES</p>
-        <h2>We build, modernize, and untangle technology.</h2>
-        <p class="services-lede">Sometimes that means a new application. Sometimes it means replacing a process held together by spreadsheets, moving an older system to the cloud, or fixing a deployment process nobody wants to touch. We start with the problem and work from there.</p>
-      </div>
+    <section id="services" class="page-section page-section-light">
+      <div class="services-layout">
+        <div class="services-head">
+          <h2>Services</h2>
+          <p>We build new applications, replace processes that live in spreadsheets, move older systems to AWS, and fix deployments nobody wants to touch. Each job starts with the problem, and we choose the technology afterward.</p>
+        </div>
 
-      <div class="service-list" aria-label="Vide Verum services">
-        <article class="service-item service-item-featured">
-          <div class="service-name">Custom software</div>
-          <p>Internal tools, web applications, APIs, admin systems, customer portals, and other software that needs to fit the way your organization actually works.</p>
-        </article>
-        <article class="service-item">
-          <div class="service-name">Cloud modernization</div>
-          <p>AWS migrations, application modernization, infrastructure as code, CI/CD, and architecture updates for systems that have outgrown their original setup.</p>
-        </article>
-        <article class="service-item">
-          <div class="service-name">Automation &amp; integrations</div>
-          <p>Connect systems, remove repetitive steps, and automate the work that should not require somebody to copy, paste, rekey, or babysit it.</p>
-        </article>
-        <article class="service-item">
-          <div class="service-name">Platform engineering</div>
-          <p>Deployment patterns, observability, reliability, developer experience, and cloud foundations that make it easier to build and support what comes next.</p>
-        </article>
-        <article class="service-item">
-          <div class="service-name">Technical strategy</div>
-          <p>Architecture reviews, modernization planning, and a practical second opinion when you know something needs to change but the right next step is not obvious.</p>
-        </article>
+        <div class="services-body">
+          <article class="service">
+            <h3>Custom software</h3>
+            <p>Internal tools, web applications, APIs, admin systems, and customer portals, built to match how your organization already works.</p>
+          </article>
+          <article class="service">
+            <h3>Cloud modernization</h3>
+            <p>AWS migrations, application modernization, infrastructure as code, CI/CD, and architecture updates for systems that have outgrown their original setup.</p>
+          </article>
+          <article class="service">
+            <h3>Automation and integrations</h3>
+            <p>Connecting systems and removing repetitive steps, so nobody has to copy, paste, rekey, or babysit anything.</p>
+          </article>
+          <article class="service">
+            <h3>Platform engineering</h3>
+            <p>Deployment patterns, observability, reliability, developer experience, and cloud foundations.</p>
+          </article>
+          <article class="service">
+            <h3>Technical strategy</h3>
+            <p>Architecture reviews, modernization planning, and a second opinion when you know something has to change and the next step isn't obvious.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="products" class="work-stage">
-      <div class="products-opening">
-        <p class="section-kicker">PRODUCTS</p>
-        <h2>We build our own things, too.</h2>
-        <p>Our products give us room to explore ideas, test architecture, and solve problems we think are interesting enough to keep working on.</p>
+    <section id="products" class="page-section page-section-dark">
+      <div class="products-head">
+        <h2>Products</h2>
+        <p>We also build our own products, which gives us room to test ideas and architecture on problems interesting enough to stick with.</p>
       </div>
 
       <div class="product-showcase">
         <a class="product-feature rabbit-feature" href="https://rabbithole.stephsimmons.dev/">
-          <div class="product-feature-meta">
-            <span class="product-type">Multimedia · unexplained</span>
-            <span class="product-index">01</span>
-          </div>
           <div class="product-feature-copy">
             <h3>RabbitHole</h3>
-            <p>A multimedia site for the unexplained. Strange events, unanswered questions, fringe history, and the stories that refuse to fit neatly into an explanation.</p>
-            <span class="product-feature-link">Enter RabbitHole</span>
+            <p>A multimedia site about the unexplained: strange events, unanswered questions, and fringe history.</p>
+            <span class="product-feature-link">Visit RabbitHole</span>
           </div>
           <div class="product-feature-visual rabbit-visual" aria-hidden="true">
             <span class="rabbit-word rabbit-word-one">UNEXPLAINED</span>
@@ -88,10 +83,6 @@
         </a>
 
         <a class="product-feature quic-feature" href="https://quiclens.com/">
-          <div class="product-feature-meta">
-            <span class="product-type">Research technology</span>
-            <span class="product-index">02</span>
-          </div>
           <div class="product-feature-visual quic-visual" aria-hidden="true">
             <div class="quic-trace"><span></span><span></span><span></span><span></span><span></span><span></span></div>
             <div class="quic-axis"></div>
@@ -99,23 +90,21 @@
           </div>
           <div class="product-feature-copy">
             <h3>QuicLens</h3>
-            <p>Research software for RT-QuIC studies that makes complex experimental data easier to inspect, compare, and understand.</p>
-            <span class="product-feature-link">Explore QuicLens</span>
+            <p>Research software for RT-QuIC studies, built to make experimental data easier to inspect and compare.</p>
+            <span class="product-feature-link">Visit QuicLens</span>
           </div>
         </a>
       </div>
     </section>
 
-    <section id="company" class="about-section">
-      <div class="about-heading">
-        <p class="section-kicker">ABOUT US</p>
-        <h2>Vide Verum is an independent technology company.</h2>
+    <section id="company" class="page-section page-section-light about-block">
+      <h2>About</h2>
+      <div class="about-text">
+        <p>Vide Verum is an independent technology company. We build our own products and work with organizations that need new software, a cleaner cloud setup, automation, or a way forward from aging systems.</p>
+        <p>What happens after launch matters as much as the build. A system should be something the people running it can understand and support.</p>
+        <p><a class="mail-link" href="mailto:hello@videverum.com">hello@videverum.com</a></p>
       </div>
-      <div class="about-copy">
-        <p>We build our own products and work with organizations that need better software, cleaner cloud architecture, smarter automation, or a practical way forward from aging systems.</p>
-        <p>We care about how technology is built, but we care just as much about what happens after launch. Good systems should be understandable, supportable, and useful to the people who have to live with them.</p>
-      </div>
-      <footer><span class="brand">VIDE VERUM</span><span>Independent by design.</span></footer>
+      <footer class="page-footer"><span class="brand">VIDE VERUM</span><span>&copy; 2026 Vide Verum</span></footer>
     </section>
   </main>
 </body>
