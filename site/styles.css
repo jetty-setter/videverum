@@ -659,6 +659,19 @@ body {
   letter-spacing: -.07em;
 }
 
+.product-feature-copy h3 .wordmark {
+  display: block;
+  height: auto;
+}
+
+.rabbit-feature .wordmark {
+  width: min(100%, 360px);
+}
+
+.quic-feature .wordmark {
+  width: min(100%, 300px);
+}
+
 .product-feature-copy p {
   max-width: 590px;
   margin: 30px 0 0;
