@@ -40,5 +40,5 @@ tfplan
 !.vscode/extensions.json
 .idea/
 
-# Claude Code local
+# Local tool state
 .claude/
