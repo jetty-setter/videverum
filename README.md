@@ -1,8 +1,7 @@
 # VideVerum
 
-VideVerum is the parent company behind a small family of independent software
-products (RabbitHole, QuicLens, and others). This repository holds **only** the
-VideVerum corporate website and the infrastructure that serves it.
+This repository contains the [VideVerum website](https://videverum.com/) and the Terraform that deploys it. The site introduces RabbitHole and QuicLens. Website files live in [site/](site/).
+
 ---
 
 ## Architecture
